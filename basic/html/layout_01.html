@@ -21,25 +21,25 @@
 * margin
 * margin:50px auto; -> 위/아래 50px만큼씩 떨어뜨린다. 좌/우는 자동(가운데배치)
 */
+
   /*
   * '*'의 뜻은 전체라는 의미: 실제로 많이 사용하는 것은 지양
   * 간단하게 처리할 수 있는 기능을 모든 곳곳에 사용해서 무거워짐
   */
-    *{margin:0; padding:0;  border:0;} /*임시*/
+  
+    *{margin:0; padding:0;  border:0;
+      --fontColor:#fff;
+    }
    
     body{background-color:#057; margin:0;}
-    #box{width:600px; height:500px; margin:auto;}
+    #box{width:600px; height:auto; margin:auto;}
 
-    #headBox{
-      background-color:#f0a; height:100px;
-    }
-    #contentBox{
-      background-color:#fa0; height:300px;
-    }
-    #footBox{
-      background-color:#0af; height:100px;
-    }
-    .out_box{width:inherit;}
+      .out_box{width:inherit; height: 100px;}
+      #headBox{background-color: #f0a;
+        color:var(--fontColor);}
+      #contentBox{background-color: #fa0; height:300px;}
+      #footBox{background-color: #0af;}
+
   </style>
 
 </head>
