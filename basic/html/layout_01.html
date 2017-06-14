@@ -29,36 +29,35 @@
    
     body{background-color:#057; margin:0;}
     #box{width:600px; height:500px; margin:auto;}
+
+    .out_box{width:inherit;}
     #headBox{
-      background-color:#f0a;
-      width:600px; height:100px;
+      background-color:#f0a; height:100px;
     }
     #contentBox{
-      background-color:#fa0;
-      width:600px; height:300px;
+      background-color:#fa0; height:300px;
     }
     #footBox{
-      background-color:#0af;
-      width:600px; height:100px;
+      background-color:#0af; height:100px;
     }
   </style>
 
 </head>
 <body>
-  <!--style태그 안에서 쓰이는 언어가 다르기 때문이다.-->
+  <!-- style태그 안에서 쓰이는 언어가 다르기 때문이다. -->
   <script>
-    /*이렇게 주석을
-     쓰거나*/
-    //이렇게 한줄만 쓴다.
+    /* 이렇게 주석을
+     쓰거나 */
+    // 이렇게 한줄만 쓴다.
   </script>
   <div id="box">
-    <header id="headBox">
+    <header id="headBox" class="out_box">
       headBox
     </header> <!-- // #headBox --> 
-    <section id="contentBox">
+    <section id="contentBox" class="out_box">
       contentBox
     </section> <!-- // #contentBox -->
-    <footer id="footBox">
+    <footer id="footBox" class="out_box">
       footBox
     </footer> <!-- // #footBox -->
   </div><!-- // #box -->
