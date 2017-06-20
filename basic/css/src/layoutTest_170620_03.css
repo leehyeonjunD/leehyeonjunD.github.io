@@ -1,0 +1,30 @@
+/* ! layoutTest_170620_03.css  layoutTest_170620_03.html 문서 디자인 영역 */
+@charset "utf-8";
+
+#wrap{width:960px; height:2000px; background-color: #ccc; margin:0 auto;}
+
+/* #headBox ________________________________________________ */
+#headBox{width:auto; height:100px; background-color: #cff;
+  padding:10px; box-sizing:border-box;}
+  h1{width:70px; height:30px; float:left; background-color: #f8f; margin-right:200px;}
+  #gnb{width:300px; height:30px; float:left; background-color: #f8f;}
+  #unb{width:150px; height:30px; float:right; background-color: #f88;}
+
+/* #contentBox ________________________________________________ */
+#contentBox{width: 100%; height:auto; background-color: #ffc;
+   padding:30px; box-sizing:border-box;}
+  .adBox_1{width: 900px; height: 300px; background-color: #b67;}
+  .search_box{width: 100%; height: 200px; background-color: #bcb;}
+  .image_box{width:900px; height:900px; padding:10px; box-sizing:border-box;
+    background-color: #156;}
+    .image_box>ul{width: 100%; height: 100%;}
+    .image_box>ul>li{width: 100%; height:200px; background-color: #c7e;}
+    .image_box>ul>li.green_box{width: 100%; height:200px; background-color: #5f5;}
+    .image_box>ul>li.more_box{width: 100%; height:10px; background-color: #dd5;}
+  .adBox_2{width:900px; height:300px; background-color: #b81;}
+
+/* #footBox ________________________________________________ */
+#footBox{width:100%; height: 200px; background-color: #347;
+ padding:30px; box-sizing:border-box;}
+  #footBox>ul>li{width: 900px; height:50%; background-color: #939;}
+  address{width: 900px; height:50%; background-color: #489;}
