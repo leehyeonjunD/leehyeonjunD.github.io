@@ -1,0 +1,24 @@
+/* ! layoutTest_170620_01.css  layoutTest_170620_01.html 문서 디자인 영역 */
+@charset "utf-8";
+
+#wrap{width: 960px; height: 1340px; background-color: #ccc; margin:0 auto;}
+/* #headBox ________________________________________________ */
+#headBox{width:auto; height: 60px; background-color: #e0d; padding:10px; box-sizing:border-box;}
+  h1{width: 250px; height: 40px; float:left; background-color: #fff;}
+
+/* #contentBox ________________________________________________ */
+#contentBox{width:100%; height:auto; background-color: #ff0;}
+  .aside{width:20%; height:1200px; float:left; background-color: #cef;
+  padding:50px 45px; box-sizing:border-box;}
+    .side_1{width: 100px; height: 250px; background-color: #fcc; margin-bottom:250px;}
+    .side_2{width: 100px; height: 600px; background-color: #fcc;}
+  .ad_box{width:80%; height:1200px; float: right; background-color: #fa0; padding:75px 10px; box-sizing:border-box;}
+    .ad_box>ul{width: 100%; height: 100%;}
+    .ad_box>ul>li{width: 100%; height:250px; background-color: #fcc;}
+    .ad_box>ul>li.blue_box{background-color: #25c;}
+
+/* #footBox ________________________________________________ */
+#footBox{width:100%; height: 80px; background-color: #eee;
+ padding:10px; box-sizing:border-box;}
+  #footBox>h2{width: 170px; height: 60px; float:left; background-color: #fff;}
+  address{width: 700px; height: 60px; float:right; background-color: #fff;}

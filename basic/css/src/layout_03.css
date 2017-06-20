@@ -2,31 +2,48 @@
 @charset "utf-8";
 
 #wrap{width:960px; height:740px; background-color:#ccc; margin:0 auto;}
+/* #headBox ________________________________________________ */
 #headBox{width:100%; height:140px; background-color:#f06; 
         padding:20px 30px 0; box-sizing:border-box;}
   h1{width:150px; height:60px; float:left; 
   background-color: #c06; margin-bottom:20px;}
   #unb{width:500px; height:50px; float:right; 
     background-color:rgba(250,250,250,0.5);}
+
   #unb>ul{width:100%;height:100%;}
-  #unb>ul>li{width:24%;height: 100%; float:left; background-color:#acd; margin-left:1.3%;}
+  #unb>ul>li{width:24%;height: 100%; float:left; margin-left:1.3%; background-color:#acd;}
+  /* #gnb ________________________________________________ */
   #gnb{width:960px; height: 40px; float:left; background-color:#919;
     margin-left:-30px; padding:5px 30px; box-sizing:border-box;}
   #gnb>ul{width:100%; height:100%;}
+  /*#gnb>h2{width: 0; height: 0; overflow: hidden;}*/
   #gnb>ul>li{width:12%; height:100%; float:left; background-color:#fff; margin-left:0.57%;}
-#contentBox{width:100%;height:520px; background-color:#ddd;}
-  #contentBox>.log_in{width:200px; height:250px; float:left; background-color:#ff0;}
-    .box_inner{width:120px; height:200px; float:left; margin-top:20px; margin-left:10px;}
-    .box_1{width:120px; height:65px; float:left; background-color:#fff;}
-    #contentBox>.log_in>.box_2{width:40px; height:200px; float:left; background-color:#fff; margin-left:10px;}
-  #contentBox>.banner_box{width:760px; height:250px; float:left; background-color:#cc0; padding:10px; box-sizing:border-box;}
-    #box_3{width:720px; height:180px; float:left; background-color:#fff;}
-    #box_4{width:720px; height:30px; float:left; background-color:#fff; margin-top:10px;}
+  /*#gnb>ul>li.first_li{margin-left:0;}*/
+  
+/* #contentBox ________________________________________________ */
+#contentBox{width:100%; height:auto;}
+/*#contentBox{content:" "; display:block; width:0; height:0; clear:both;}*/
+  .log_in{width:40%; height:200px; float:left; padding:10px; box-sizing:border-box; background-color:#ff0;}
+    .log_in>ul{width:100%; height:100%; background-color:rgba(255,255,255,0.7);}
+    .log_in>ul>li{width:70%; height:60px; margin-bottom:5px; float:left;}
+    .login_1{background-color:#fff;}
 
-  #contentBox>.news_box{width:100%; height:270px; float:left; background-color:#990; padding:10px; box-sizing:border-box;}
-    .newsBox_5{width:150px; height:250px; float:left; margin-left:50px; background-color:#fff;}
+  .banner_box{width:60%; height:200px; float:left; 
+    padding:10px; box-sizing:border-box; background-color:#cc0;}
+    .banner_image{width:100%; height:150px; margin-bottom:10px; background-color:#cde;}
+    .indicator{width:100%; height:20px; background-color:#696;}
 
-#footBox{width:100%;height:80px; background-color:#1aa; padding:20px; box-sizing:border-box;}
-  #footBox>.sub_logo{width:100px;height:30px; float:left; background-color:#fff; margin-left:100px;}
-  #footBox>address{width:300px;height:30px; float:left; background-color:#fff; margin-left:100px;}
-  #footBox>.family{width:100px;height:30px; float:left; background-color:#fff; margin-left:100px;}
+  .news_box{width:100%; height:400px; float:left; padding:20px; box-sizing:border-box; background-color:#990;}
+    .news_box>ul{width:100%; height:100%;}
+    .news_box>ul>li{width:25%; height:100%; float:left; border:10px solid #fff; box-sizing:border-box;}
+    .news_1{background-color:#f01;}
+    .news_2{background-color:#f61;}
+    .news_3{background-color:#f91;}
+    .news_4{background-color:#fa1;}
+    .news_box>ul div{width:100%; height:100%;}
+
+/* #footBox ________________________________________________ */
+#footBox{width:100%; height:80px; padding:15px 20px; box-sizing:border-box; background-color:#1aa;}
+  #footBox>h2{width:100px; height:30px; float:left; background-color:#0ff;}
+  address{width:300px; height:30px; float:left; margin-left:150px; background-color:#f0f;}
+  .family{width:100px; height:30px; float:right; background-color:#ff0;}
