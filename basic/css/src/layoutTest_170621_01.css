@@ -11,7 +11,7 @@
    padding:15px 85px; box-sizing:border-box;}
     #gnb>ul{width:100%; height:inherit;}
     #gnb>ul>li{width:80px; height:30px; float:left; background-color: #fff; margin-left:50px;}
-  #unb{width:40px; height:40px; float:right; background-color:#8b7d6b; margin-top:15px; margin-right:15px;}
+  .unb{width:40px; height:40px; float:right; background-color:#8b7d6b; margin-top:15px; margin-right:15px;}
 
 /* #contentBox ________________________________________________ */
 #contentBox{width:100%; height:auto;}
