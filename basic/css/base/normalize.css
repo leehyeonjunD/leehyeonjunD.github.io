@@ -4,5 +4,3 @@
 .clearfix:after{content:" "; display:block; width:0; height:0; clear:both;}
 .hidden{display:block; width:0; height:0; overflow:hidden;}
 #wrap .first_li{margin-left:0;}
-#wrap .fr_box{margin-top:0;}
-#wrap .minibox{width:40px; height:40px; float:right; background-color:#333; margin:5px;}
