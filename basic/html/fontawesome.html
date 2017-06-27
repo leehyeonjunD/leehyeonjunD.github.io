@@ -26,6 +26,9 @@
     .link{padding:0.4em; color: #333; 
       border:1px solid #777; background-color: #afc; 
       background-image:linear-gradient(45deg, #afc, #0cf);}
+    .call{border:2px dotted #666; background-color: #ffd;
+      border-radius:0.1em;}
+    .call:hover{border:1px solid #34f; background-color: #fcc;}
 
   </style>
 </head>
@@ -63,9 +66,12 @@
       </li>
       <li>
         <i class="fa fa-phone"></i>
-        <span>call</span>
+        <span class="call">call</span>
       </li>
-      <li><i class="fa fa-question"></i> info</li>
+      <li>
+        <i class="fa fa-question"></i>
+        <a href="#">info</a>
+      </li>
       <li><i class="fa fa-thumbs-up"></i> like</li>
       <li><i class="fa fa-envelope-o"></i> email</li>
       <li><i class="fa fa-random"></i> random</li>
