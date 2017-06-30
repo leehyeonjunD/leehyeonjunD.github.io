@@ -14,39 +14,30 @@
 
     #unb{width:720px; height:20px; float:right;}
     #unb>ul{width:220px; height:20px; float:right;}
-    #unb>ul>li{width:74px; height:40px; background-repeat:no-repeat;}
-    #unb>ul>li:nth-child(1){width:40px; height:20px; float:left;
-                            background-image: url(../../img/kwater/img/header/unb/unb_1.jpg);}
-    #unb>ul>li:nth-child(2){width:50px; height:20px; float:left;
-                            background-image: url(../../img/kwater/img/header/unb/unb_2.jpg);}
-    #unb>ul>li:nth-child(3){width:56px; height:20px; float:left;
-                            background-image: url(../../img/kwater/img/header/unb/unb_3.jpg);}
-    #unb>ul>li:nth-child(4){width:74px; height:20px; float:left;
-                            background-image: url(../../img/kwater/img/header/unb/unb_4.jpg);}
+    #unb>ul>li{width:74px; height:20px; float:left; background-repeat:no-repeat;}
+    #unb>ul>li:nth-child(1){width:40px; background-image: url(../../img/kwater/img/header/unb/unb_1.jpg);}
+    #unb>ul>li:nth-child(2){width:50px; background-image: url(../../img/kwater/img/header/unb/unb_2.jpg);}
+    #unb>ul>li:nth-child(3){width:56px; background-image: url(../../img/kwater/img/header/unb/unb_3.jpg);}
+    #unb>ul>li:nth-child(4){width:74px; background-image: url(../../img/kwater/img/header/unb/unb_4.jpg);}
 
     #gnb{width:800px; height:34px; float:right;
         padding:0 0 30px 16px; box-sizing:border-box;}
     #gnb>ul{width:794px; height:34px; float:left;}
-    #gnb>ul>li{width:794px; height:34px; background-repeat:no-repeat; margin-right:29px;}
-    #gnb>ul>li:nth-child(1){width:136px; height:34px; float:left;
-                            background-image: url(../../img/kwater/img/gnb/gnb_01.jpg);}
-    #gnb>ul>li:nth-child(2){width:78px; height:34px; float:left;
-                            background-image: url(../../img/kwater/img/gnb/gnb_02.jpg);}
-    #gnb>ul>li:nth-child(3){width:80px; height:34px; float:left;
-                            background-image: url(../../img/kwater/img/gnb/gnb_03.jpg);}
-    #gnb>ul>li:nth-child(4){width:80px; height:34px; float:left;
-                            background-image: url(../../img/kwater/img/gnb/gnb_04.jpg);}
-    #gnb>ul>li:nth-child(5){width:58px; height:34px; float:left;
-                            background-image: url(../../img/kwater/img/gnb/gnb_05.jpg);}
-    #gnb>ul>li:nth-child(6){width:78px; height:34px; float:left;
-                            background-image: url(../../img/kwater/img/gnb/gnb_06.jpg);}
-    #gnb>ul>li:nth-child(7){width:110px; height:34px; float:left; margin-right:0;
-                            background-image: url(../../img/kwater/img/gnb/gnb_07.jpg);}
+    #gnb>ul>li{width:794px; height:34px; float:left;
+            background-repeat:no-repeat; margin-right:29px;}
+    #gnb>ul>li:nth-child(1){width:136px; background-image: url(../../img/kwater/img/gnb/gnb_01.jpg);}
+    #gnb>ul>li:nth-child(2){width:78px; background-image: url(../../img/kwater/img/gnb/gnb_02.jpg);}
+    #gnb>ul>li:nth-child(3){width:80px; background-image: url(../../img/kwater/img/gnb/gnb_03.jpg);}
+    #gnb>ul>li:nth-child(4){width:80px; background-image: url(../../img/kwater/img/gnb/gnb_04.jpg);}
+    #gnb>ul>li:nth-child(5){width:58px; background-image: url(../../img/kwater/img/gnb/gnb_05.jpg);}
+    #gnb>ul>li:nth-child(6){width:78px; background-image: url(../../img/kwater/img/gnb/gnb_06.jpg);}
+    #gnb>ul>li:nth-child(7){width:110px; background-image: url(../../img/kwater/img/gnb/gnb_07.jpg); margin-right:0;}
 
   #contentBox{width:960px; height:auto; background-color: #6cb;}
     .banner{width:100%; height: 498px; float:left;
-            background-image: url(../../img/kwater/img/banner.jpg);}
-    .sub{width: 100%; height: 100px; float:left;
+            background-image: url(../../img/kwater/img/banner.jpg);
+            background-repeat:no-repeat; background-position:center;}
+    .lnb{width: 100%; height: 100px; float:left;
         background-image: url(../../img/kwater/img/lnb/lnb.png);}
     .content_news{width: 960px; height:auto; float:left;} 
                       /* 박스에서ul있을때 높이auto로 잡기 */
@@ -63,31 +54,46 @@
     .content_news>ul>li:nth-child(7){background-position:-480px -220px;}
     .content_news>ul>li:nth-child(8){background-position:-720px -220px;}
 
-    .content_info{width: 960px; height:220px; float:left;}
-    .content_info>ul{width: 960px; height:220px;}
+    .content_info{width: 960px; height:100px; float:left;}
+    .content_info>ul{width: 960px; height:100px;}
     .content_info>ul>li{width:218px; height: 75px; float:left;
                         margin-left:3px; margin-right:20px;
                         background-repeat:no-repeat;}
     .content_info>ul>li:nth-child(1){background-image: url(../../img/kwater/img/content/content_info_1.png);}
     .content_info>ul>li:nth-child(2){background-image: url(../../img/kwater/img/content/content_info_2.png);}
     .content_info>ul>li:nth-child(3){background-image: url(../../img/kwater/img/content/content_info_3.png);}
-    .content_info>ul>li:nth-child(4){margin-right:7px; background-image: url(../../img/kwater/img/content/content_info_4.png);}
+    .content_info>ul>li:nth-child(4){background-image: url(../../img/kwater/img/content/content_info_4.png); margin-right:7px;}
 
-  #footerBox{width: 100%; height: 210px; background-color: #bbc;}
+    .info{width: 960px; height:auto; float:left;}
+    .info>ol{width:100%; height:65px; float:left;}
+    .info>ol>li{float:left;
+                background-image: url(../img/icon/iconBasic.jpg);
+                background-repeat:no-repeat;
+                background-position:;}
+    .info>ol>li:nth-child(1){}
+    .info>ol>li:nth-child(2){}
+    .info>ol>li:nth-child(3){}
+    .info>ol>li:nth-child(4){}
+
+  #footerBox{width:100%; height:115px; background-color: #bbc;
+            padding:5px; padding-top:38px; box-sizing:border-box;}
+
     .info_1{background-image: url(../../img/kwater/img/footer/h2.jpg);
-            background-repeat:no-repeat;}
-    .info_1>ul{width:270px; height:94px;}
-    .info_1>ul>li{height: 19px; float:left;}
-    .info_1>ul>li:nth:child(1){width: 90px; background-image: url(../../img/kwater/img/footer/f_map.jpg);}
-    .info_1>ul>li:nth:child(2){width: 77px; background-image: url(../../img/kwater/img/footer/f_map-31.jpg);}
-    .info_1>ul>li:nth:child(3){width: 68px; background-image: url(../../img/kwater/img/footer/f_map-32.jpg);}
+            background-repeat:no-repeat; float:left;}
+        .info_1>.info_logo{width: 94px; height:48px;}
+        .info_1>ul{width:270px; height:94px; float:right;}
+        .info_1>ul>li{height: 19px; float:left;}
+        .info_1>ul>li:nth-child(1){width:90px; background-image: url(../../img/kwater/img/footer/f_map.jpg);}
+        .info_1>ul>li:nth-child(2){width:77px; background-image: url(../../img/kwater/img/footer/f_map-31.jpg);}
+        .info_1>ul>li:nth-child(3){width:68px; background-image: url(../../img/kwater/img/footer/f_map-32.jpg);}
 
-    .info_2{width:507px; height:28px;
+    .info_2{width:510px; height:48px; float:left;
             background-image: url(../../img/kwater/img/footer/address.jpg);
             background-repeat:no-repeat;}
-    .mark{width: 188px; height:95px;}
-    .mark>ul{width: 188px; height:95px;}
-    .mark>ul>li{height: 95px; float:left; background-repeat:no-repeat;}
-    .mark>ul>li:nth-child(1){width: 81px; background-image: url(../../img/kwater/img/footer/mark_01.jpg);}
-    .mark>ul>li:nth-child(1){width: 89px; background-image: url(../../img/kwater/img/footer/mark_02.jpg);}
+
+    .mark{width:170px; height:95px; margin-top: -15px; float:left;}
+        .mark>ul{width: 188px; height:95px;}
+        .mark>ul>li{height: 95px; float:left; background-repeat:no-repeat;}
+        .mark>ul>li:nth-child(1){width: 81px; background-image: url(../../img/kwater/img/footer/mark_01.jpg);}
+        .mark>ul>li:nth-child(1){width: 89px; background-image: url(../../img/kwater/img/footer/mark_02.jpg);}
 </style>
