@@ -1,7 +1,6 @@
 /* step_01.scss */
-$primaryColor : #bcc;
-$basicColor : rgba(140, 200, 60, 0.5);
-$blue:#0ac;
+
+@import "../_setting/_base.scss";
 
 #wrap{
   width:100%; min-height:960px; 
