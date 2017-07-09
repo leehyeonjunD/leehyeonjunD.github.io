@@ -1,0 +1,129 @@
+@charset "utf-8";
+/*! hotelJoin_header.css */
+
+#wrap{width:950px; height:auto; min-height:150px; margin:0 auto;}
+
+#headBox{width:100%; height:182px; background-color:#263747;}
+  #unb{
+    width:100%; height:40px; float:left;
+    background-color:#404040;
+    border:1px solid #aff;
+  }
+  #unb:after{content:" "; display:block; clear:both;}
+  #unb>ul{width:100%; height:auto;}
+  #unb>ul>li{
+    width:100%; height:19px; float:left;
+    background-repeat:no-repeat;
+  }
+  #unb>ul>li:nth-child(1){
+    background-image: url("../../img/hotelJoin/img/header/unbMenu/unbMenu_01.png");
+  }
+  #unb>ul>li:nth-child(2){
+    background-image: url("../../img/hotelJoin/img/header/unbMenu/unbMenu_02.png");
+  }
+  #unb>ul>li:nth-child(3){
+    background-image: url("../../img/hotelJoin/img/header/unbMenu/unbMenu_03.png");
+}
+  #unb>ul>li:nth-child(4){
+    background-image: url("../../img/hotelJoin/img/header/unbMenu/unbMenu_04.png");
+}
+  #unb>ul>li:nth-child(5){
+    background-image: url("../../img/hotelJoin/img/header/unbMenu/unbMenu_05.png");
+}
+  #unb>ul>li:nth-child(6){
+    background-image: url("../../img/hotelJoin/img/header/unbMenu/unbMenu_06.png");
+}
+
+  #logoMenu{width:950px; height:80px; float:left;
+    background-color:#243545;
+    border:1px solid #aff;}
+  h1{
+    background-image: url("../../img/hotelJoin/img/header/logoMenu/logoMenu_01.png");
+    background-repeat:no-repeat;
+    background-position:center;
+  }
+  #logoMenu>ul{width:100%; height:auto;}
+  #logoMenu>ul>li{
+    width:100%; height::18px; float:left;
+    background-repeat:no-repeat;
+  }
+
+  #logoMenu>ul>li:nth-child(1){
+    background-image: url("../../img/hotelJoin/img/header/logoMenu/logoMenu_02.png");
+    background-position:-669px -36px;
+}
+  #logoMenu>ul>li:nth-child(2){
+    background-image: url("../../img/hotelJoin/img/header/logoMenu/logoMenu_03.png");
+    background-position:-795px -36px;
+  }
+  #logoMenu>ul>li:nth-child(3){
+    background-image: url("../../img/hotelJoin/img/header/logoMenu/logoMenu_04.png");
+    background-position:-894px -36px;
+}
+
+  #gnb{
+    width:950px; height:61px; float:left;
+    background-color:#2c3e4c;
+    border:1px solid #aff;
+  }
+  #gnb>ul{width:100%; height:100%;}
+  #gnb>ul>li{
+    width:100%; height::100%; float:left;
+    background-repeat:no-repeat;
+  }
+  #gnb>ul>li:nth-child(1){
+    background-image: url("../../img/hotelJoin/img/header/gnbMenu/gnbMenu_01.png");
+    background-position:0 -21px;
+  }
+  #gnb>ul>li:nth-child(2){
+    background-image: url("../../img/hotelJoin/img/header/gnbMenu/gnbMenu_02.png");
+    background-position:-61px -21px;
+  }
+  #gnb>ul>li:nth-child(3){
+    background-image: url("../../img/hotelJoin/img/header/gnbMenu/gnbMenu_03.png");
+    background-position:-156px -21px;
+  }
+  #gnb>ul>li:nth-child(4){
+    background-image: url("../../img/hotelJoin/img/header/gnbMenu/gnbMenu_04.png");
+    background-position:-205px -21px;
+  }
+  #gnb>ul>li:nth-child(5){
+    background-image: url("../../img/hotelJoin/img/header/gnbMenu/gnbMenu_05.png");
+    background-position:-270px -21px;
+  }
+  #gnb>ul>li:nth-child(6){
+    background-image: url("../../img/hotelJoin/img/header/gnbMenu/gnbMenu_06.png");
+    background-position:-321px -21px;
+  }
+  #gnb>ul>li:nth-child(7){
+    background-image: url("../../img/hotelJoin/img/header/gnbMenu/gnbMenu_07.png");
+    background-position:-427px -21px;
+  }
+  #gnb>ul>li:nth-child(8){
+    background-image: url("../../img/hotelJoin/img/header/gnbMenu/gnbMenu_08.png");
+    background-position:-px -21px;
+  }
+  #gnb>ul>li:nth-child(9){
+    background-image: url("../../img/hotelJoin/img/header/gnbMenu/gnbMenu_09.png");
+    background-position:-490px -21px;
+  }
+  #gnb>ul>li:nth-child(10){
+    background-image: url("../../img/hotelJoin/img/header/gnbMenu/gnbMenu_10.png");
+    background-position:-538px -21px;
+  }
+  #gnb>ul>li:nth-child(11){
+    background-image: url("../../img/hotelJoin/img/header/gnbMenu/gnbMenu_11.png");
+    background-position:-620px -21px;
+  }
+  #gnb>ul>li:nth-child(12){
+    background-image: url("../../img/hotelJoin/img/header/gnbMenu/gnbMenu_12.png");
+    background-position:-682px -21px;
+  }
+  #gnb>ul>li:nth-child(13){
+    background-image: url("../../img/hotelJoin/img/header/gnbMenu/gnbMenu_13.png");
+    background-position:-731px -21px;
+  }
+  #gnb>ul>li:nth-child(14){
+    background-image: url("../../img/hotelJoin/img/header/gnbMenu/gnbMenu_14.png");
+    background-position:-780px -21px;
+  }
