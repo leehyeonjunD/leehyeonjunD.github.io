@@ -1,33 +1,190 @@
 <!DOCTYPE html>
 <html lang="ko-KR">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <!--[if lte IE 9]>
-  <script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
-  <script src="../ie/ie7/src/IE9.js"></script>
-  <script src="../ie/css3pie/PIE_IE9.js"></script>
+    <script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+    <script src="../ie/ie7/IE9.js"></script>
+    <script src="../ie/css3pie/PIE_IE9.js"></script>
   <![endif]-->
 
-  <link rel="stylesheet" type="text/css" href="../css/base/reset.css" />
-  <link rel="stylesheet" type="text/css" href="../css/base/normalize.css"" />
-  <link rel="stylesheet" type="text/css" href="../fontAwesome/css/font-awesome.min.css" />
-  <link rel="stylesheet" type="text/css" href="../css/src/k_water_header.css" />
-  <link rel="stylesheet" type="text/css" href="../css/src/k_water_main.css" />
-  <link rel="stylesheet" type="text/css" href="../css/src/k_water_footer.css" />
+  <link rel="stylesheet" href="../css/base/reset.css" />
+  <link rel="stylesheet" href="../css/base/normalize.css" />
+  <link rel="stylesheet" href="../fontAwesome/css/font-awesome.min.css" />
+  <!-- css work file link -->
+  <link rel="stylesheet" href="../css/src/k_water_header_study_170630.css">
+  <link rel="stylesheet" href="../css/src/k_water_main_study_170630.css">
+  <link rel="stylesheet" href="../css/src/k_water_footer_study_170630.css">
 
+  <!-- jquery-->
   <script src="../js/jquery/jquery-3.2.1.min.js"></script>
   <script src="../js/jquery/jquery-ui.min.js"></script>
-  <title>my title</title>
-
+  <title>K Water 한국 수자원 공사</title>
 </head>
 <body>
   <div id="wrap">
     <header id="headBox">
-      <h1><a href="#">kwater_한국 수자원 공사</a></h1>
+      <h1><a href="#"><span class="hidden">kwater_한국 수자원 공사</span></a></h1>
+      <nav id="mainNav" class="hidden_wrap">
+        <h2 class="hidden">navigation</h2>
+        <ul id="unb">
+          <li><a href=""><span>link_01</span></a></li>
+          <li><a href=""><span>link_02</span></a></li>
+          <li><a href=""><span>link_03</span></a></li>
+          <li><a href=""><span>link_04</span></a></li>
+        </ul>
+        <ul id="gnb">
+          <li><a href=""><span>link_01</span></a></li>
+          <li><a href=""><span>link_02</span></a></li>
+          <li><a href=""><span>link_03</span></a></li>
+          <li><a href=""><span>link_04</span></a></li>
+          <li><a href=""><span>link_05</span></a></li>
+          <li><a href=""><span>link_06</span></a></li>
+          <li><a href=""><span>link_07</span></a></li>
+        </ul>
+      </nav>
     </header>
-    <section id="contentBox"></section>
-    <footer id="footBox"></footer>
+    <section id="contentBox">
+    <h2 class="hidden">main page 내용</h2>
+      <section id="adBox">
+        <h3 class="hidden">k-water 광고배너이미지</h3>
+        <!-- 광고배너 이미지  -->
+      </section>
+      <nav id="lnb">
+        <h3 class="hidden">local navigation</h3>
+        <ul class="hidden_wrap">
+          <li><a href="#"><span>lnb_1</span></a></li>
+          <li><a href="#"><span>lnb_2</span></a></li>
+          <li><a href="#"><span>lnb_3</span></a></li>
+          <li><a href="#"><span>lnb_4</span></a></li>
+          <li><a href="#"><span>lnb_5</span></a></li>
+          <li><a href="#"><span>lnb_6</span></a></li>
+          <li><a href="#"><span>lnb_7</span></a></li>
+          <li><a href="#"><span>lnb_8</span></a></li>
+          <li><a href="#"><span>lnb_9</span></a></li>
+          <li><a href="#"><span>lnb_10</span></a></li>
+        </ul>
+      </nav>
+      <article id="mainBox">
+        <h3>news 및 공지사항</h3>
+        <article class="info_01 info">
+          <h4 class="hidden">공지 사항</h4>
+          <ul class="hidden_wrap">
+            <li><a href="#"><span>공지사</span></a></li>
+            <li><a href="#"><span>공지사</span></a></li>
+            <li><a href="#"><span>공지사</span></a></li>
+            <li><a href="#"><span>공지사</span></a></li>
+          </ul>
+        </article>
+        <article class="info_02">
+          <h4 class="hidden">주요 뉴스</h4>
+          <div class="etc_news">
+            <div class="news_img"></div>
+            <div class="more_btn"><a href="#">more</a></div>
+            <dl>
+              <dt>news title</dt>
+              <dd><a href="#">news p</a></dd>
+            </dl>
+          </div>
+          <div class="etc_news">
+            <div class="news_img"></div>
+            <div class="more_btn"><a href="#">more</a></div>
+            <dl>
+              <dt>news title</dt>
+              <dd><a href="#">news p</a></dd>
+            </dl>
+          </div>
+          <div class="etc_news">
+            <div class="news_img"></div>
+            <div class="more_btn"><a href="#">more</a></div>
+            <dl>
+              <dt>news title</dt>
+              <dd><a href="#">news p</a></dd>
+            </dl>
+          </div>
+          <div class="etc_news">
+            <div class="news_img"></div>
+            <div class="more_btn"><a href="#">more</a></div>
+            <dl>
+              <dt>news title</dt>
+              <dd><a href="#">news p</a></dd>
+            </dl>
+          </div>
+        </article>
+        <article class="info_03 info">
+          <h4 class="hidden">안내</h4>
+          <ul>
+            <li><a href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i> 토지분양안내</a></li>
+            <li><a href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i> 입찰안내</a></li>
+            <li><a href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i> 열린채용</a></li>
+            <li><a href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i> 소셜센터</a></li>
+          </ul>
+        </article>
+        <article class="info_04">
+          <h4 class="hidden">기타 안내사항</h4>
+          <dl>
+            <dt>내용 제목</dt>
+            <dd>
+              <ul>
+                <li><a href="#">Lorem ipsum dolor.</a></li>
+                <li><a href="#">Lorem ipsum dolor.</a></li>
+                <li><a href="#">Lorem ipsum dolor.</a></li>
+                <li><a href="#">Lorem ipsum dolor.</a></li>
+              </ul>
+            </dd>
+          </dl>
+          <dl>
+            <dt>내용 제목</dt>
+            <dd>
+              <ul>
+                <li><a href="#">Lorem ipsum dolor.</a></li>
+                <li><a href="#">Lorem ipsum dolor.</a></li>
+                <li><a href="#">Lorem ipsum dolor.</a></li>
+                <li><a href="#">Lorem ipsum dolor.</a></li>
+              </ul>
+            </dd>
+          </dl>
+          <dl>
+            <dt>내용 제목</dt>
+            <dd>
+              <ul class="row_list">
+                <li><a href="#">ipsum dolor.</a></li>
+                <li><a href="#">ipsum dolor.</a></li>
+                <li><a href="#">ipsum dolor.</a></li>
+                <li><a href="#">ipsum dolor.</a></li> 
+                <li><a href="#">ipsum dolor.</a></li>
+                <li><a href="#">ipsum dolor.</a></li>
+                <li><a href="#">ipsum dolor.</a></li>
+                <li><a href="#">ipsum dolor.</a></li>
+              </ul>
+            </dd>
+          </dl>
+        </article>
+      </article>
+    </section>
+    <footer id="footBox">
+      <h2><span class="hidden">kwater info</span></h2>
+      <div id="footInfo">
+        <h3 class="hidden">infomation 정보</h3>
+        <ul class="fnb">
+          <li><a href="#">개인정보 처리방침</a></li>
+          <li><a href="#">업무추진 비공개</a></li>
+          <li><a href="#">찾아오시는 길</a></li>
+        </ul>
+        <address>
+          <p class="hidden">우편번호....</p>
+          <p class="hidden">copyright...</p>
+        </address>
+      </div>
+      <div class="mark">
+        <h3 class="hidden">인증마크 및 QR코드</h3>
+        <ul>
+          <li><span class="hidden">......mark</span></li>
+          <li><span class="hidden">한국 수자원공사 mark</span></li>
+        </ul>
+      </div>
+    </footer>
   </div>
-</body>     
+</body>
 </html>
