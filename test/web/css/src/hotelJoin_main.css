@@ -1,4 +1,5 @@
 @charset "utf-8";
 /*! hotelJoin_main.css */
 
-#conBox{width:100%; height:auto; background-color:#369;}
+#conBox{width:100%; height:auto; background-color:#aad;
+        border:2px solid #fda;}
