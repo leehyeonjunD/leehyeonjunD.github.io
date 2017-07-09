@@ -34,19 +34,19 @@
         width:56px;
         position:absolute;
         left:142px;
-        margin-left:37px;
+        margin-left:10px;
     }
     #infoBox>.fnb>li:nth-child(3){
         width:57px;
         position:absolute;
         left:235px;
-        margin-left:37px;
+        margin-left:5px;
     }
     #infoBox>.fnb>li:nth-child(4){
         width:87px;
         position:absolute;
         left:327px;
-        margin-left:35px;
+        margin-left:5px;
     }
     #infoBox>.sns{width:245px; height:28px;}
     #infoBox>.sns>li{
@@ -83,9 +83,20 @@
     }
 
   #addressBox{
+      width: ; height: ; float:left;
       background-color:#464646;
       font-size:11px;
   }
     #addressBox>p>span{
         background-image: url("../../img/hotelJoin/img/footer/addressBox/addressBox_01.jpg");
     }
+    #mark{
+        width:950px; height:168px;
+        background-image: url("../../img/hotelJoin/img/footer/addressBox/address_01.png");
+        background-repeat:no-repeat;
+        background-position:center;
+    }
+      #mark>ul{}
+      #mark>ul>li{}
+      #mark>ul>li:nth-child(1){}
+      #mark>ul>li:nth-child(2){}
