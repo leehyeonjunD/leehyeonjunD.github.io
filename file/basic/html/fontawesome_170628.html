@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!--[if lte IE 9]>
+  <script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" type="text/css" href="../css/base/reset.css" />
+  <link rel="stylesheet" type="text/css" href="../css/base/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="../fontAwesome/css/font-awesome.min.css" />
+  <title>my fontawesome test</title>
+  <style>
+    #wrap{width: 960px; height: auto; margin:0 auto;}
+    h1{text-align:center; padding:1em; background-color:#abf;}
+    ul{width:80%; margin:0 auto;}
+    li{width: 100%; height: auto; margin-bottom:0.5em; border-bottom:1px solid #777;}
+    li:hover{border-bottom-color:#c06;}
+    .green_woman{font-size:2em; color:#0f5;}
+    .green_woman:hover{font-size:2em; color:#f08;}
+    .pink_man{font-size:2em; color:#fd94ee;}
+    .pink_man:hover{font-size:2em; color:#ee9;}
+    button{background-color:#d07; color: #fff; padding:0.5em;
+          transition: all 500ms ease-out;}
+    button:hover{box-shadow:0.2em 0.2em 0.2em #755; color: #456; background-color: #eee;}
+    .link{padding:0.4em; color: #333; 
+      border:1px solid #777; background-color: #afc; 
+      background-image:linear-gradient(45deg, #afc, #0cf);}
+    .call{border:2px dotted #666; background-color: #ffd;
+      border-radius:0.1em;}
+    .call:hover{border:1px solid #34f; background-color: #fcc;}
+
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <h1>fontawesome</h1>
+    <ul>
+      <li><i class="fa fa-users" aria-hidden="true"></i> people</li>
+      <li>sns link icon
+        <a href="#">
+          <i class="fa fa-facebook-square"></i>
+          <span class="hidden">facebook</span>
+        </a>
+        <a href="#">
+          <i class="fa fa-instagram"></i>
+          <span class="hidden">instagram</span>
+        </a>
+        <a href="#">
+          <i class="fa fa-pinterest fa-2x"></i>
+          <span class="hidden">spinterest</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span class="green_woman"><i class="fa fa-female"></i> woman</span>
+        </a>
+        <a href="#">
+          <span class="pink_man"><i class="fa fa-male"></i> man</span>
+        </a>
+      </li>
+      <li><button type="button"><span class="fa fa-sign-in"></span> log in</button></li>
+      <li>
+        <i class="fa fa-anchor"></i>
+        <span class="link">link</span>
+      </li>
+      <li>
+        <i class="fa fa-phone"></i>
+        <span class="call">call</span>
+      </li>
+      <li>
+        <i class="fa fa-question"></i>
+        <a href="#">info</a>
+      </li>
+      <li><i class="fa fa-thumbs-up"></i> like</li>
+      <li><i class="fa fa-envelope-o"></i> email</li>
+      <li><i class="fa fa-random"></i> random</li>
+    </ul>
+  </div>
+</body>     
+</html>
