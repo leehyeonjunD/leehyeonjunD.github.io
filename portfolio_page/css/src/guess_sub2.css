@@ -120,7 +120,7 @@
             .order>ul>li{width:45px; height:30px; float:left;}
             .order>ul>li:nth-child(1){}
             .order>ul>li:nth-child(2){}
-            .order>ul>li:nth-child(3){}
+            .order>ul>li:nth-child(3){margin-left:570px;}
 
         .image{
             width:100%; height:210px;
