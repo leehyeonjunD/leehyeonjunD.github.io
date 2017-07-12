@@ -37,13 +37,15 @@
     #gnb{
         width:220px; height:340px; 
         float:left;
+        padding:45px 15px 50px 15px;
+        box-sizing:border-box;
         background-color:#b2b2b2;
     }
         #gnb>ul{width:100%; height:auto;}
         #gnb>ul>li{
-                width:100%; height:auto; 
+                width:180px; height:40px; 
                 float:left;
-                width:180px; height:40px;
+                margin-bottom:10px;
                 background-color:powderblue;
         }
         #gnb>ul>li:nth-child(1){}
