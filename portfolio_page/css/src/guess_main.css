@@ -19,7 +19,7 @@
     #unb{
             width:104px; height:40px; 
             float:right;
-            background-color:#ddf;
+            background-color:#dde;
     }
     #unb>ul{width:104px; height:40px;}
     #unb>ul>li{
@@ -59,7 +59,6 @@
         float:right;
         padding:20px 20px 0 20px;
         box-sizing:border-box;
-        background-color:#dde;
     }
         #sales>#saleBox{
             width:690px; height:400px;
