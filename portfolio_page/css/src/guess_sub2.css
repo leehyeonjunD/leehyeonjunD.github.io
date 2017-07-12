@@ -1,0 +1,123 @@
+@charset "utf-8";
+/*! guess_sub2.html */
+
+#wrap{
+      width:960px; height:auto; margin:0 auto;
+}
+
+#headBox{
+        width:100%; height:100px;
+        background-color:#a3a3a6;
+}
+    #search{
+            width:230px; height:40px; 
+            float:left;
+            margin-left:20px;
+            background-color:#44d;
+    }
+
+    #unb{
+            width:104px; height:40px; 
+            float:right;
+            background-color:#ddf;
+    }
+    #unb>ul{width:104px; height:40px;}
+    #unb>ul>li{
+            width:40px; height:40px; 
+            float:left;
+            background-color:yellow; 
+    }
+    #unb>ul>li:nth-child(1){}
+    #unb>ul>li:nth-child(2){margin-left:24px;}
+
+#conBox{
+        width:100%; height:auto;
+        background-color:#f1f1f1;
+}
+    #gnb{
+        width:220px; height:340px; 
+        float:left;
+        background-color:#b2b2b2;
+    }
+        #gnb>ul{width:100%; height:auto;}
+        #gnb>ul>li{
+                width:100%; height:auto; 
+                float:left;
+                width:180px; height:40px;
+                background-color:powderblue;
+        }
+        #gnb>ul>li:nth-child(1){}
+        #gnb>ul>li:nth-child(2){}
+        #gnb>ul>li:nth-child(3){}
+        #gnb>ul>li:nth-child(4){}
+        #gnb>ul>li:nth-child(5){}
+
+    #longBox{
+        width:740px; height:550px;
+        float:right;
+        padding:50px 20px 0 20px;
+        box-sizing:border-box;
+        background-color:#dde;
+    }
+        #longBox>#jeansBox{
+            width:700px; height:500px;
+            background-color:#468;
+        }
+            #jeansBox>ul{}
+            #jeansBox>ul>li{
+                width:230px; height:500px; 
+                float:left;
+                margin-right:5px;
+            }
+            #jeansBox>ul>li:nth-child(1){background-color:#dca;}
+            #jeansBox>ul>li:nth-child(2){background-color:#fdc;}
+            #jeansBox>ul>li:nth-child(3){
+                margin-right:0; background-color:#bca;
+            }
+
+    #products{
+        width:740px; height:462px;
+        float:right;
+        border:1px solid #222;
+    }
+        #gBox1{
+            width:220px; height:420px; 
+            float:left;
+        }
+        #gBox1>ul{
+            width:220px; height:420px;
+            padding-right:20px;
+            box-sizing:border-box;
+        }
+        #gBox1>ul>li{
+            width:220px; height:420px;
+            float:left;
+            margin-bottom:20px;
+            background-color:#e39191;
+        }
+        #gBox1>ul>li:nth-child(1){
+            width:200px; height:200px; 
+        }
+        #gBox1>ul>li:nth-child(2){
+            width:200px; height:200px; 
+        }
+
+        #gBox2{
+            width:520px; height:420px;
+            float:right;
+            background-color:powderblue;
+        }
+
+#footBox{
+        width:100%; height:100px;
+        background-color:#363636;
+}
+    address{
+        width:100%; height:80px; color:#fff;
+    }
+    #footLogo{
+        background-image: url("../../img/guess_logo_1.png");
+        background-repeat:no-repeat;
+        background-position:center;
+    }
+    #snsBtn{width:100%;}
