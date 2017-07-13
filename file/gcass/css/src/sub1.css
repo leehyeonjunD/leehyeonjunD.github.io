@@ -245,10 +245,22 @@
     border-bottom: 0;
     position: absolute;
     bottom: 0;
-    left: 0;
-    color: #fff; }
+    left: 0; }
   #curriculum > dl:nth-of-type(2) > dd {
     min-height: 150px; }
+  #curriculum > dl > dd > ul {
+    width: 100%;
+    height: auto;
+    padding: 40px 0 60px 28px;
+    box-sizing: border-box; }
+  #curriculum > dl > dd > ul > li {
+    margin-bottom: 18px;
+    font-size: 1.5rem;
+    color: #fff; }
+    #curriculum > dl > dd > ul > li:nth-child(2) {
+      margin-top: 40px; }
+    #curriculum > dl > dd > ul > li:last-of-type {
+      margin-bottom: 0; }
 
 #curri_narr {
   width: 100%;
