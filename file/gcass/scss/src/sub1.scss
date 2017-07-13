@@ -1,0 +1,211 @@
+// sub1.scss
+/* sub1.css */
+
+@import "../base/variable";
+@import "../base/mixin";
+@import "./layout/footer";
+
+body{background-image: url($url + "sub/bg01_patt.jpg");}
+
+
+#headBox #gnb > h2, #sideBox > h2 { 
+  width: 0; height: 0;
+  display: block; 
+  position: absolute; 
+  z-index: -100; 
+  overflow: hidden;
+}
+
+#wrap {
+  width: 980px; height: auto;
+  min-height:1300px;
+  margin: 0 auto;
+}
+#wrap:after {content: " "; display: block; clear: both;}
+
+
+#sideBox { 
+  width: 100%; height: 30px; 
+  float: left; 
+  background-color: #888888; 
+}
+
+#sideBox>ul{width:auto; height: 100%; float: right;}
+
+#sideBox>ul>li{width:90px; height:30px; float: left;}
+
+#sideBox>ul>li:last-child {width:250px;}
+
+#sideBox>ul a{ 
+  width: 100%; height: 100%; 
+  display: block; 
+  background-image: url($url + "aside.png"); 
+  background-repeat: no-repeat; 
+  background-position: 0 0; 
+}
+
+#sideBox>ul a:hover{ background-image: url($url + "aside_on.png"); }
+
+#sideBox>ul a>span{ 
+  width: 0; height: 0; 
+  display: block; 
+  position: absolute; 
+  overflow: hidden; 
+}
+
+#sideBox>ul>li>a{
+  $url:"../img/sub/";
+  $nav:"top_nav.jpg";
+  @include link($u:$url, $f:$nav, $f2:$nav, $r:no-repeat, $p:0 top, $p2:0 bottom);
+}
+#sideBox>ul>li:nth-child(1)>a{ 
+  background-position: -460px 0; 
+  transition: all 0.3s linear; 
+}
+#sideBox>ul>li:nth-child(2)>a{ 
+  background-position:-550px 0; 
+  transition: all 0.3s linear; 
+}
+#sideBox>ul>li:nth-child(3)>a{ 
+  background-position:-640px 0; 
+  transition: all 0.3s linear; 
+}
+#sideBox>ul>li:last-child>a{ 
+  background-position:right 0; 
+  transition: all 0.3s linear; 
+}
+
+#sideBox>ul>li:nth-child(1)>a:hover{ 
+  background-position: -460px 0; 
+  transition: all 0.3s linear; 
+}
+#sideBox>ul>li:nth-child(2)>a:hover{ 
+  background-position:-550px 0; 
+  transition: all 0.3s linear; 
+}
+#sideBox>ul>li:nth-child(3)>a:hover{ 
+  background-position:-640px 0; 
+  transition: all 0.3s linear; 
+}
+#sideBox>ul>li:last-child>a:hover{ 
+  background-position:right 0; 
+  transition: all 0.3s linear; 
+}
+
+$sideLi:(-460px, -550px, -640px, right);
+@for $i from 1 through length($sideLi){
+  #sideBox>ul>li:nth-child(#{$i})>a{background-position:nth($sideLi, $i) 0;}
+  #sideBox>ul>li:nth-child(#{$i})>a:hover{background-position:nth($sideLi, $i) bottom;}
+} // @for
+
+#headBox {
+  width: 250px; height: auto; min-height: 710px;
+  float: left; 
+  padding: 55px 55px 104px 42px; 
+  box-sizing: border-box; 
+}
+
+#headBox a { 
+  width: 100%; height: 100%; 
+  display: block; 
+  background-image: url($url + "header/header.png"); 
+  background-repeat: no-repeat; 
+  background-position: 0 0;
+}
+
+#headBox a:hover { 
+  background-image: url($url + "header/header_on.png"); 
+  background-color:rgba(map-get($color, gray),0.3);
+}
+
+#headBox a > span { 
+  width: 0; height: 0; 
+  display: block; 
+  position: absolute; 
+  overflow: hidden;
+}
+
+#headBox > h1 { 
+  width: 100%; height: 105px; 
+  margin-bottom: 40px; 
+  background-color:transparent;
+}
+
+#headBox #gnb { width: 100%; height: auto; }
+
+#headBox #gnb ul { width: 100%; height: auto; }
+
+#headBox #gnb ul > li { width: 100%; height: 38px; margin-bottom: 25px; }
+
+#headBox #gnb ul > li:nth-last-child(2) { margin-bottom: 8px; }
+
+#headBox #gnb ul > li:last-child { height: 112px; margin-bottom: 0; }
+
+#headBox #gnb ul > li:nth-child(1) > a { background-position: 0 -144px; }
+
+#headBox #gnb ul > li:nth-child(2) > a { background-position: 0 -206px; }
+
+#headBox #gnb ul > li:nth-child(3) > a { background-position: 0 -268px; }
+
+#headBox #gnb ul > li:nth-child(4) > a { background-position: 0 -331px; }
+
+#headBox #gnb ul > li:nth-child(5) > a { background-position: 0 -393px; }
+
+#headBox #gnb ul > li:nth-child(6) > a { background-position: 0 -438px; }
+
+
+#contentBox{ 
+  width:730px; height:auto; min-height:710px; 
+  float: left;
+  background-color:transparent;
+  padding:64px 40px 0 84px;
+  box-sizing:border-box;
+}
+#contentBox>hgroup{
+  width:100%; height: 44px; 
+  margin-bottom:48px;
+  color:map-get($color, white);
+    h2, h3{
+      height:100%; 
+      float: right;
+      color:inherit;
+      line-height:44px;
+      font-weight:normal;
+    }
+    h2{font-size:2rem; margin-left:23px;}
+    h3{font-size:( 18/16 )+rem;}
+} // hgroup
+
+//  #contentBox>dl{
+//   width:730px; 
+//   height:762px;
+// }
+//  #contentBox>dl>#mouse1{
+//     width:654px; height:300px; 
+//     background-image: url($url + "sub/mouse.png");
+//     background-repeat:no-repeat; 
+//     background-position:center;
+// }
+//  #contentBox>dl>#mouse2{
+//   width:654px; height:210px; float:left; 
+// }
+//   #contentBox>dl>#mouse2>ul{}
+//   #contentBox>dl>#mouse2>ul>li{
+//       border-left:3px solid #bbb; 
+//       border-right:3px solid #bbb; 
+//       padding:40px 50px 50px 25px;
+//       box-sizing:border-box;
+//       margin-right:27px;
+//       font-size:16pt;
+//       color:#eee;
+//   }
+//   #contentBox>dl>#mouse2 #text1{width: 200px; height:210px; float:left; }
+//   #contentBox>dl>#mouse2 #text2{width: 200px; height:210px; float:left; }
+//   #contentBox>dl>#mouse2 #text3{width: 200px; height:210px; float:left; margin-right:0;}
+
+#footBox { 
+  width:100%; height:110px; 
+  float:left; 
+  background-color:map-get($color,white); 
+  border-top: 1px solid #555; 
+}
