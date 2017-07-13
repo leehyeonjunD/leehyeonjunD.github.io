@@ -1,8 +1,9 @@
 // variable.scss
 
-//색상정의
+// 색상정의
 $color:(
     primary:#777,
+    gray:#888,
     black:#171717,
     font:#333,
     point:#fd0,
@@ -10,8 +11,10 @@ $color:(
     line:#555
 );
 
+// url
 $url:"../../img/";
 
+// hidden
 %hidden{
     width:0; height:0; 
     display:block;

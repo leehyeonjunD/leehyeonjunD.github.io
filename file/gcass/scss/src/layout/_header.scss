@@ -1,5 +1,7 @@
 // _header.scss
 
+
+// #wrap
 #wrap{
     width:980px; height:auto; 
     margin:0 auto;
@@ -9,6 +11,7 @@
     content:" "; display:block; clear:both;
 }
 
+// #headBox
 #headBox{
     width:250px; height:auto; min-height:710px; 
     float:left;
@@ -24,16 +27,13 @@
             }
             >li:nth-last-child(2){margin-bottom:8px;}
             >li:last-child{height:112px; margin-bottom:0;}
+
 // list 반복문으로 변경
             $gnbLink:(0 -144px, 0 -206px, 0 -268px, 0 -331px, 0 -393px, 0 -438px);
 
             @for $i from 1 through length($gnbLink){
-                >li:nth-child(#{$i})>a{background-position:nth($gnbLink, $i);}    
+                >li:nth-child(#{$i})>a{background-position:nth($gnbLink, $i); transition:all 0.3s linear;}    
             }// @for
-
-          // a{
-          //     >span{}
-          // }// a
         }// ul
     }// #gnb
 }//#headBox

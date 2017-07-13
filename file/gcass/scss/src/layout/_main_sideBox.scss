@@ -15,8 +15,7 @@
       a{@include link($f:"aside.png", $f2:"aside_on.png", $p:0 0);}
       $sideLink:(-545px 0,-640px 0,right 0);
       @for $i from 1 through length($sideLink){
-        >li:nth-child(#{$i})>a{background-position:nth($sideLink, $i);
-                              transition:all 0.3s linear;}
+        >li:nth-child(#{$i})>a{background-position:nth($sideLink, $i); transition:all 0.3s linear;}
     }// @for
   }// ul
 }// sideBox
