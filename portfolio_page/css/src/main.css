@@ -1,0 +1,244 @@
+/* main.css */
+#headBox, #gnb, #longBox, .title, .order, .price { box-sizing: border-box; }
+
+/*! guess_main.html */
+#wrap { width: 960px; height: auto; margin: 0 auto; }
+
+#headBox { width: 100%; height: 100px; padding: 30px 15px 30px 15px; box-sizing: border-box; background-color: #a3a3a6; }
+
+#search { width: 230px; height: 40px; float: left; margin: 0 140px 0 20px; background-color: #44d; }
+
+h1 { width: 160px; height: 40px; float: left; background-color: #faa; }
+
+h1 > a { width: 100%; height: auto; display: block; background-image: url(""); background-repeat: no-repeat; background-position: center; }
+
+#unb { width: 104px; height: 40px; float: right; background-color: #dde; }
+
+#unb > ul { width: 104px; height: 40px; }
+
+#unb > ul > li { width: 40px; height: 40px; float: left; background-color: yellow; }
+
+#unb > ul > li:nth-child(2) { margin-left: 24px; }
+
+#conBox { width: 100%; height: auto; background-color: #f1f1f1; }
+
+#gnb { width: 220px; height: 340px; float: left; padding: 45px 15px 50px 15px; box-sizing: border-box; background-color: #b2b2b2; }
+
+#gnb > ul { width: 100%; height: auto; }
+
+#gnb > ul > li { width: 180px; height: 40px; float: left; margin-bottom: 10px; background-color: powderblue; }
+
+#sales { width: 740px; height: 444px; float: right; padding: 20px 20px 0 20px; box-sizing: border-box; }
+
+#sales > #saleBox { width: 690px; height: 400px; background-color: #468; }
+
+#lnb { width: 740px; height: 476px; float: right; padding: 146px 0 128px 50px; box-sizing: border-box; position: relative; }
+
+#lnb > ul { width: 100%; height: 200px; }
+
+#lnb > ul > li { width: 150px; height: 150px; float: left; padding-right: 10px; box-sizing: border-box; margin-right: 20px; background-color: rgba(150, 150, 200, 0.5); }
+
+#lnb > ul > li:nth-child(4) { margin-right: 0; }
+
+#lnb > #more { width: 54px; height: 26px; padding-right: 0; position: absolute; left: 50%; bottom: 130px; margin-left: -27px; background-color: rgba(164, 185, 206, 0.5); }
+
+#gallery { width: 740px; height: 462px; float: right; }
+
+#gBox1 { width: 220px; height: 420px; float: left; }
+
+#gBox1 > ul { width: 220px; height: 420px; padding-right: 20px; box-sizing: border-box; }
+
+#gBox1 > ul > li { width: 220px; height: 420px; float: left; margin-bottom: 20px; background-color: #e39191; }
+
+#gBox1 > ul > li:nth-child(1) { width: 200px; height: 200px; }
+
+#gBox1 > ul > li:nth-child(2) { width: 200px; height: 200px; }
+
+#gBox2 { width: 520px; height: 420px; float: right; background-color: powderblue; }
+
+#footBox { width: 100%; height: 100px; background-color: #363636; }
+
+address { width: 100%; height: 80px; color: #fff; }
+
+#footLogo { background-image: url("../../img/guess_logo_1.png"); background-repeat: no-repeat; background-position: center; }
+
+#snsBtn { width: 100%; }
+
+/*! guess_sub1.html */
+#wrap { width: 960px; height: auto; margin: 0 auto; }
+
+#headBox { width: 100%; height: 100px; padding: 30px 15px 30px 15px; box-sizing: border-box; background-color: #a3a3a6; }
+
+#search { width: 230px; height: 40px; float: left; margin: 0 140px 0 20px; background-color: #44d; }
+
+h1 { width: 160px; height: 40px; float: left; background-color: #faa; }
+
+h1 > a { width: 100%; height: auto; display: block; background-image: url(""); background-repeat: no-repeat; background-position: center; }
+
+#unb { width: 104px; height: 40px; float: right; background-color: #dde; }
+
+#unb > ul { width: 104px; height: 40px; }
+
+#unb > ul > li { width: 40px; height: 40px; float: left; background-color: yellow; }
+
+#unb > ul > li:nth-child(2) { margin-left: 24px; }
+
+#conBox { width: 100%; height: auto; background-color: #f1f1f1; }
+
+#gnb { width: 220px; height: 340px; float: left; padding: 45px 15px 50px 15px; box-sizing: border-box; background-color: #b2b2b2; }
+
+#gnb > ul { width: 100%; height: auto; }
+
+#gnb > ul > li { width: 180px; height: 40px; float: left; margin-bottom: 10px; background-color: powderblue; }
+
+#about { width: 740px; height: 380px; padding-right: 20px; box-sizing: border-box; float: right; /*background-color:rgba(200,230,250,0.5);*/ }
+
+#board { width: 700px; height: 340px; padding: 34px 15px 0 15px; box-sizing: border-box; float: right; margin-top: 2.5em; background-color: #e2dbcb; }
+
+/*#board>div{width: 100%; height: auto;}*/
+#board > .we { width: 420px; height: 280px; /*     background-color:rgba(195,151,151,0.5)*/ }
+
+.we > h3 { background-color: #fff; font-size: 2em; }
+
+.we > h3 > .mini_text { font-size: 0.5em; }
+
+.we > p { background-color: #ffa; box-sizing: border-box; padding: 1em; margin-top: 0.5em; }
+
+#birth { width: 740px; height: 450px; float: right; padding-top: 100px; box-sizing: border-box; }
+
+#question { width: 740px; height: 100px; float: left; border: 1px solid #222; text-align: center; padding-top: 30px; box-sizing: border-box; }
+
+#explain { width: 740px; height: 250px; }
+
+#explain > ul { width: 740px; height: 150px; }
+
+#explain > ul > li { height: 150px; float: left; background-color: #e2dbcb; }
+
+#explain > ul > li:nth-child(1) { width: 150px; background-color: #dff; }
+
+#explain > ul > li:nth-child(2) { width: 440px; background-color: #dfd; text-align: center; padding-top: 40px; box-sizing: border-box; }
+
+#explain > ul > li:nth-child(3) { width: 150px; background-color: #ddf; }
+
+#story { width: 740px; height: 390px; float: right; background-color: rgba(131, 211, 125, 0.2); }
+
+#tBox1 { width: 370px; height: 390px; float: left; text-align: center; }
+
+#tBox2 { width: 370px; height: 390px; float: right; background-color: #fff; }
+
+#footBox { width: 100%; height: 100px; background-color: #363636; }
+
+address { width: 100%; height: 80px; color: #fff; }
+
+#footLogo { background-image: url("../../img/guess_logo_1.png"); background-repeat: no-repeat; background-position: center; }
+
+#snsBtn { width: 100%; }
+
+/*! guess_sub2.html */
+#wrap { width: 960px; height: auto; margin: 0 auto; }
+
+#headBox { width: 100%; height: 100px; padding: 30px 15px 30px 15px; background-color: #a3a3a6; }
+
+#search { width: 230px; height: 40px; float: left; margin: 0 140px 0 20px; background-color: #44d; }
+
+h1 { width: 160px; height: 40px; float: left; background-color: #faa; }
+
+h1 > a { width: 100%; height: auto; display: block; background-repeat: no-repeat; background-position: center; }
+
+#unb { width: 104px; height: 40px; float: right; background-color: #dde; }
+
+#unb > ul { width: 104px; height: 40px; }
+
+#unb > ul > li { width: 40px; height: 40px; float: left; background-color: yellow; }
+
+#unb > ul > li:nth-child(2) { margin-left: 24px; }
+
+#conBox { width: 100%; height: auto; background-color: #f1f1f1; }
+
+#gnb { width: 220px; height: 340px; float: left; padding: 45px 15px 50px 15px; background-color: #b2b2b2; }
+
+#gnb > ul { width: 100%; height: auto; }
+
+#gnb > ul > li { width: 180px; height: 40px; float: left; margin-bottom: 10px; background-color: powderblue; }
+
+#longBox { width: 740px; height: 550px; float: right; padding: 50px 20px 0 20px; }
+
+#longBox > #jeansBox { width: 700px; height: 500px; background-color: #dde; }
+
+#jeansBox > ul > li { width: 230px; height: 500px; float: left; margin-right: 5px; }
+
+#jeansBox > ul > li:nth-child(1) { background-color: #dca; }
+
+#jeansBox > ul > li:nth-child(2) { background-color: #fdc; }
+
+#jeansBox > ul > li:nth-child(3) { margin-right: 0; background-color: #bca; }
+
+#products { width: 740px; height: 600px; float: right; }
+
+.title { width: 100%; height: 120px; float: left; padding: 30px 0 30px 30px; }
+
+.title > h3 { width: 250px; height: 50px; float: left; margin-left: 170px; text-align: center; font-size: 2em; border-bottom: 5px solid #bbb; }
+
+.top_btn { width: 40px; height: 40px; float: right; margin-top: 5px; border-radius: 2em; border: 0.5px solid #222; background-color: red; color: #fff; text-align: center; }
+
+.order { width: 740px; height: 90px; float: left; padding: 30px 10px 30px 10px; border: 0.5px solid #222; }
+
+.order > .ul { width: 740px; height: 90px; }
+
+.order > ul > li { width: 45px; height: 30px; float: left; margin-right: 20px; border: 0.5px solid #222; background-color: lightyellow; }
+
+.order > ul > li:nth-child(3) { margin: 0 0 0 500px; }
+
+.image { width: 740px; height: 210px; float: left; }
+
+.image > ul { width: 740px; height: 210px; }
+
+.image > ul > li { width: 210px; height: 210px; float: left; margin-right: 55px; background-color: pink; }
+
+.image > ul > li:nth-child(3) { margin-right: 0; }
+
+.price { width: 740px; height: 150px; float: left; padding-top: 30px; margin-right: 50px; }
+
+.box1 { width: 210px; height: 70px; float: left; margin-right: 55px; }
+
+.box1 > ul > li { height: 20px; float: left; }
+
+.box1 > ul > li:nth-child(1) { width: 60px; margin-right: 60px; background-color: #ccc; }
+
+.box1 > ul > li:nth-child(2) { margin-right: 0; }
+
+.box1 > ul > li:nth-child(3) { width: 135px; background-color: #ccc; }
+
+.box1 > ul > li:nth-child(4) { margin-right: 0; }
+
+.box2 { width: 210px; height: 70px; float: left; margin-right: 55px; }
+
+.box2 > ul > li { height: 20px; float: left; }
+
+.box2 > ul > li:nth-child(1) { width: 60px; margin-right: 60px; background-color: #ccc; }
+
+.box2 > ul > li:nth-child(2) { margin-right: 0; }
+
+.box2 > ul > li:nth-child(3) { width: 135px; background-color: #ccc; }
+
+.box2 > ul > li:nth-child(4) { margin-right: 0; }
+
+.box3 { width: 210px; height: 70px; float: left; }
+
+.box3 > ul > li { height: 20px; float: left; }
+
+.box3 > ul > li:nth-child(1) { width: 60px; margin-right: 60px; background-color: #ccc; }
+
+.box3 > ul > li:nth-child(2) { margin-right: 0; }
+
+.box3 > ul > li:nth-child(3) { width: 135px; background-color: #ccc; }
+
+.box3 > ul > li:nth-child(4) { margin-right: 0; }
+
+#footBox { width: 100%; height: 100px; background-color: #363636; }
+
+address { width: 100%; height: 80px; color: #fff; }
+
+#footLogo { background-image: url("../../img/guess_logo_1.png"); background-repeat: no-repeat; background-position: center; }
+
+#snsBtn { width: 100%; }

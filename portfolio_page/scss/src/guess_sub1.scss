@@ -1,0 +1,164 @@
+@charset "utf-8";
+/*! guess_sub1.html */
+
+#wrap{
+      width:960px; height:auto; margin:0 auto;
+}
+
+#headBox{
+        width:100%; height:100px;
+        padding:30px 15px 30px 15px;
+        box-sizing:border-box;
+        background-color:#a3a3a6;
+}
+    #search{
+            width:230px; height:40px; 
+            float:left;
+            margin:0 140px 0 20px;
+            background-color:#44d;
+    }
+
+    h1{width:160px; height:40px; float:left; 
+      background-color:#faa;}
+      h1>a{width:100%; height:auto; display: block;
+      background-image:url(""); 
+      background-repeat:no-repeat; 
+      background-position:center;}
+
+    #unb{
+            width:104px; height:40px; 
+            float:right;
+            background-color:#dde;
+    }
+    #unb>ul{width:104px; height:40px;}
+    #unb>ul>li{
+            width:40px; height:40px; 
+            float:left;
+            background-color:yellow; 
+    }
+    #unb>ul>li:nth-child(1){}
+    #unb>ul>li:nth-child(2){margin-left:24px;}
+
+#conBox{
+        width:100%; height:auto;
+        background-color:#f1f1f1;
+}
+    #gnb{
+        width:220px; height:340px; 
+        float:left;
+        padding:45px 15px 50px 15px;
+        box-sizing:border-box;
+        background-color:#b2b2b2;
+    }
+        #gnb>ul{width:100%; height:auto;}
+        #gnb>ul>li{
+                width:180px; height:40px; 
+                float:left;
+                margin-bottom:10px;
+                background-color:powderblue;
+        }
+        #gnb>ul>li:nth-child(1){}
+        #gnb>ul>li:nth-child(2){}
+        #gnb>ul>li:nth-child(3){}
+        #gnb>ul>li:nth-child(4){}
+        #gnb>ul>li:nth-child(5){}
+
+    #about{
+        width:740px; height:380px;
+        padding-right:20px;
+        box-sizing:border-box;
+        float:right;
+        /*background-color:rgba(200,230,250,0.5);*/
+    }
+        #board{
+            width:700px; height:340px;
+            padding:34px 15px 0 15px;
+            box-sizing:border-box;
+            float:right;
+            margin-top:2.5em;
+            background-color:#e2dbcb;
+        }
+        /*#board>div{width: 100%; height: auto;}*/
+
+            #board >.we{
+                width:420px; height:280px;
+           /*     background-color:rgba(195,151,151,0.5)*/
+            }
+            .we>h3{background-color: #fff; font-size:2em;}
+            .we>h3>.mini_text{font-size: 0.5em;}
+            .we>p{
+                background-color: #ffa;
+                box-sizing: border-box;
+                padding:1em;
+                margin-top:0.5em;
+            }
+    
+    #birth{
+        width:740px; height:450px;
+        float:right;
+        padding-top:100px;
+        box-sizing:border-box;
+    }
+        #question{
+            width:740px; height:100px; float:left;
+            border:1px solid #222;
+            text-align:center;
+            padding-top:30px;
+            box-sizing:border-box;
+        }
+        #explain{
+            width:740px; height:250px;
+        }
+            #explain>ul{
+                width:740px; height:150px; 
+            }
+            #explain>ul>li{
+                height:150px; 
+                float:left;
+                background-color:#e2dbcb;
+            }
+            #explain>ul>li:nth-child(1){
+                width:150px;
+                background-color: #dff;
+            }
+            #explain>ul>li:nth-child(2){
+                width:440px; 
+                background-color: #dfd;
+                text-align:center;
+                padding-top:40px;
+                box-sizing:border-box;
+            }
+            #explain>ul>li:nth-child(3){
+                width:150px; 
+                background-color: #ddf;
+            }
+
+    #story{
+        width:740px; height:390px;
+        float:right;
+        background-color:rgba(131,211,125,0.2);
+    }
+        #tBox1{
+            width:370px; height:390px; 
+            float:left;
+            text-align:center;
+        }
+        #tBox2{
+            width:370px; height:390px;
+            float:right;
+            background-color:#fff;
+        }
+
+#footBox{
+        width:100%; height:100px;
+        background-color:#363636;
+}
+    address{
+        width:100%; height:80px; color:#fff;
+    }
+    #footLogo{
+        background-image: url("../../img/guess_logo_1.png");
+        background-repeat:no-repeat;
+        background-position:center;
+    }
+    #snsBtn{width:100%;}
