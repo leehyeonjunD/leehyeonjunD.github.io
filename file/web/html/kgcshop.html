@@ -28,34 +28,73 @@
         <header id="headBox">
             <nav class="menu_utill clearfix">
                 <span class="inner_box clearfix">
-                    <span class="link"><a href="http://www.kgc.co.kr/" target="_blank" title="새 창 열림"></a></span>
-                    <span class="unb">
-                        <a href="#" class="login"></a>
-                        <a href="#" class="member"></a>
-                        <a href="#" class="order"></a>
-                        <a href="#" class="center"></a>
-                        <a href="#" class="shop"></a>
+                    <span class="link"><a href="http://www.kgc.co.kr/" target="_blank" title="새 창 열림">
+                            <p>(주)한국인삼공사</p>
+                    </a></span>
+                    <nav class="unb">
+                        <ul class="clearfix">
+                            <li>
+                                <a href="#" class="login">
+                                    <p>로그인</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="member">
+                                    <p>회원가입</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="order">
+                                    <p>주문배송조회</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="center">
+                                    <p>고객센터</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="shop">
+                                    <p>장바구니</p>
+                                </a>
+                            </li>
+                        </ul>
                     </span>
-                </span> <!-- .inner_box -->
-            </nav>
+                </nav> <!-- .inner_box -->
+            </nav> <!-- .menu_utill -->
+
             <div class="header_top clearfix">
-                <h1><a href="#">kgcshop</a></h1>
-                <div class="search_area"></div>
+                <h1><a href="#"><p class="hidden">kgcshop</p></a></h1>
+                <div class="search_box">
+                    <span class="search_area">
+                        <input type="text" placeholder="어떤 상품을 찾으세요?" id="srhBar">
+                        <button id="srhBtn">검색</button>
+                    </span>
+                </div> <!-- .search_box -->
                 <div class="header_banner"></div>
-            </div>
-            <nav class="gnb"></nav>
+            </div> <!-- .header_top -->
+
+            <nav class="gnb">
+                <span class="inner_box">
+                    <button class="menu_all">
+                        전체메뉴
+                    </button>
+                    <span class="menu_link"></span>
+                </span>
+            </nav>
 
         </header>
         <!-- header -->
 
-        <section id="conBox">
+        <section id="conBox" class="clearfix">
             <h1 class="hidden">main page</h1>
             <div class="main_banner"></div>
             <div class="banner_area"></div>
             <div class="recomm_area"></div>
             <div class="theme_banner"></div>
-            <div class="brand_banner"></div>
             <div class="brand_contents"></div>
+            <div class="brand_products"></div>
+            <div class="brand_banner"></div>
         </section>
         <!-- contentBox -->
 
