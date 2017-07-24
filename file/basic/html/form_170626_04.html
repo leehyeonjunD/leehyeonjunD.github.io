@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!--[if lte IE 6]>
+  <script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="../css/base/reset.css" />
+  <link rel="stylesheet" href="../css/base/normalize.css" />
+  <title>form login 04</title>
+  <style>
+    body{background-color:#ddd; 
+      padding:3em; box-sizing: border-box;
+      margin-top:12em;}
+    #wrap{width:400px; height:350px;
+          margin:0 auto; background-color: #fff;}
+    h1{width:100%; height:70px; 
+      padding:10px 20px; box-sizing:border-box;
+      color: #fff;
+      background-color:#7c00ff;}
+
+    fieldset>div{width: 100%; height:auto; padding:1em; box-sizing: border-box;}
+
+    .userName{width:100%; height:100%; 
+        padding:0.5em; box-sizing:border-box;
+        border-bottom:1px solid #ddd;
+        color:#ddd; background-color:transparent;}
+    .pwd{width:100%; height:100%; 
+        padding:0.5em; box-sizing:border-box;
+        border-bottom:1px solid #ddd;
+        color:#ddd; background-color:transparent;}
+    .remember{width: 100%; height:20px; font-weight:bold;}
+    .login_btn{width:80px; height:60px; 
+      text-align:center; 
+      background-color: #e3d; float:right; margin-right: 10px; margin-top:40px;
+      border-radius:0.1em;}
+    input[type="submit"]{color:#fff; font-weight:bold;}
+
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <h1>Login</h1>
+    <form action="#" method="post">
+      <fieldset>
+        <legend></legend>
+        <div>
+          <label for="userName"></label>
+          <input type="id" name="userName" class="userName" value="" placeholder="Username">
+        </div>
+
+        <div>
+          <label for="pwd"></label>
+          <input type="pwd" name="pwd" class="pwd" value="" placeholder="Password">
+        </div>
+
+        <div class="remember">
+          <input type="checkbox" name="rememberMe" class="rememberMe" value="remember">
+          <label for="rememberMe">Remember Me</label>
+        </div>
+
+        <div class="login_btn">
+          <input type="submit" value="Login" />
+        </div>
+
+      </fieldset>
+    </form>
+  </div>
+</body>
+</html>
