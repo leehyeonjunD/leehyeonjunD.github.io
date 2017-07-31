@@ -1,0 +1,195 @@
+@charset "utf-8";
+/*! guess_sub2.html */
+
+#wrap{
+      width:960px; height:auto; margin:0 auto;
+}
+
+#headBox{
+        width:100%; height:100px;
+        padding:30px 15px 30px 15px;
+        @extend %boxsize;
+        background-color:map-get($color,primary);
+}
+    #search{
+            width:230px; height:40px; 
+            float:left;
+            margin:0 140px 0 20px;
+            background-color:map-get($color,point);
+    }
+
+    h1{width:160px; height:40px; float:left; 
+      background-color:nth($l, 1);}
+      h1>a{width:100%; height:auto; display: block;
+      // background-image:url(""); 
+      background-repeat:no-repeat; 
+      background-position:center;}
+
+    #unb{
+            width:104px; height:40px; 
+            float:right;
+            background-color:nth($l, 2);
+    }
+    #unb>ul{width:104px; height:40px;}
+    #unb>ul>li{
+            width:40px; height:40px; 
+            float:left;
+            background-color:nth($l, 6); 
+    }
+    #unb>ul>li:nth-child(1){}
+    #unb>ul>li:nth-child(2){margin-left:24px;}
+
+#conBox{
+        width:100%; height:auto;
+        background-color:nth($l, 7);
+}
+    #gnb{
+        width:220px; height:340px; 
+        float:left;
+        padding:45px 15px 50px 15px;
+        @extend %boxsize;
+        background-color:nth($l, 8);
+    }
+        #gnb>ul{width:100%; height:auto;}
+        #gnb>ul>li{
+                width:180px; height:40px; 
+                float:left;
+                margin-bottom:10px;
+                background-color:nth($l, 3);
+        }
+        #gnb>ul>li:nth-child(1){}
+        #gnb>ul>li:nth-child(2){}
+        #gnb>ul>li:nth-child(3){}
+        #gnb>ul>li:nth-child(4){}
+        #gnb>ul>li:nth-child(5){}
+
+    #longBox{
+        width:740px; height:550px;
+        float:right;
+        padding:50px 20px 0 20px;
+        @extend %boxsize;
+    }
+        #longBox>#jeansBox{
+            width:700px; height:500px;
+            background-color:nth($l, 2);
+        }
+            #jeansBox>ul{}
+            #jeansBox>ul>li{
+                width:230px; height:500px; 
+                float:left;
+                margin-right:5px;
+            }
+            #jeansBox>ul>li:nth-child(1){background-color:#dca;}
+            #jeansBox>ul>li:nth-child(2){background-color:#fdc;}
+            #jeansBox>ul>li:nth-child(3){
+                margin-right:0; background-color:nth($l, 4);
+            }
+
+    #products{
+        width:740px; height:600px;
+        float:right;
+    }
+        .title{
+            width:100%; height:120px; 
+            float:left;
+            padding:30px 0 30px 30px;
+            @extend %boxsize;
+        }
+             .title>h3{
+                  width:250px; height:50px;
+                  float:left;
+                  margin-left:170px;
+                  text-align:center;
+                  font-size:2em;
+                  border-bottom:5px solid map-get($color,line);
+              }
+         .top_btn{
+              width:40px; height:40px;
+              float:right;
+              margin-top:5px;
+              border-radius:2em;
+              border:0.5px solid #222;
+              background-color:nth($l, 9);
+              color:map-get($color,white);
+              text-align:center;
+          }
+
+        .order{
+            width:740px; height:90px;
+            float:left;
+            padding:30px 10px 30px 10px;
+            @extend %boxsize;
+            border:0.5px solid #222;
+        }
+            .order>.ul{
+                width:740px; height:90px;
+            }
+            .order>ul>li{
+                width:45px; height:30px; 
+                float:left; 
+                margin-right:20px;
+                border:0.5px solid #222;
+                background-color:lightyellow;
+            }
+            .order>ul>li:nth-child(1){}
+            .order>ul>li:nth-child(2){}
+            .order>ul>li:nth-child(3){margin:0 0 0 500px;}
+
+        .image{
+            width:740px; height:210px;
+            float:left;
+        }
+            .image>ul{
+                width:740px; height:210px;
+            }
+            .image>ul>li{
+                width:210px; height:210px; float:left;
+                margin-right:55px;
+                background-color:pink;
+            }
+            .image>ul>li:nth-child(1){}
+            .image>ul>li:nth-child(2){}
+            .image>ul>li:nth-child(3){margin-right:0;}
+
+        .price{
+            width:740px; height:150px; 
+            float:left;
+            padding-top:30px;
+            @extend %boxsize;
+            margin-right:50px;
+        }
+          .box1{width:210px; height:70px; float:left; margin-right:55px;}
+            .box1>ul{}
+            .box1>ul>li{height: 20px; float:left;}
+            .box1>ul>li:nth-child(1){width: 60px; margin-right:60px; background-color:nth($l, 5);}
+            .box1>ul>li:nth-child(2){margin-right:0;}
+            .box1>ul>li:nth-child(3){width:135px; background-color:nth($l, 5);}
+            .box1>ul>li:nth-child(4){margin-right:0;}
+          .box2{width:210px; height:70px; float:left; margin-right:55px;}
+            .box2>ul{}
+            .box2>ul>li{height: 20px; float:left;}
+            .box2>ul>li:nth-child(1){width: 60px; margin-right:60px; background-color:nth($l, 5);}
+            .box2>ul>li:nth-child(2){margin-right:0;}
+            .box2>ul>li:nth-child(3){width:135px; background-color:nth($l, 5);}
+            .box2>ul>li:nth-child(4){margin-right:0;}
+          .box3{width:210px; height:70px; float:left;}
+            .box3>ul{}
+            .box3>ul>li{height: 20px; float:left;}
+            .box3>ul>li:nth-child(1){width: 60px; margin-right:60px; background-color:nth($l, 5);}
+            .box3>ul>li:nth-child(2){margin-right:0;}
+            .box3>ul>li:nth-child(3){width:135px; background-color:nth($l, 5);}
+            .box3>ul>li:nth-child(4){margin-right:0;}
+
+#footBox{
+        width:100%; height:100px;
+        background-color:nth($l, 10);
+}
+    address{
+        width:100%; height:80px; color:map-get($color,white);
+    }
+    #footLogo{
+        background-image: url($u + "guess_logo_1.png");
+        background-repeat:no-repeat;
+        background-position:center;
+    }
+    #snsBtn{width:100%;}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>OCTO_MUSIC</title>
+  <style>
+    *{margin:0; padding:0; border:0;}
+
+    body{background-color:#ccc; width: 360px; margin:0 auto;
+      border:1px solid #888;}
+   
+    #warp{width:360px; height:auto; margin:auto;}
+      #headBox{background-color: #ccc;}
+     .nav{background-color: #f00; width:70px; height:70px;
+       float:left;}
+     .logo{background-color:#f13; width:360px; height:70px; float:top; font-size:20pt; text-align:left;}
+    #contentBox{height:auto;}
+    #contentBox:after{content:" "; display: block; width: 0; height: 0; clear: both;}
+     .sideBox{width:10%; height:500px; background-color:#922; float:left;}
+     .inner{width:90%; height:500px; background-color:#555; float:right;}
+    #footBox{background-color: #fff; width:100%; height:100px; float:left; border:1px solid #888;}
+
+    .clearfix::after{content:" "; display: block; 
+        width: 0; height: 0; clear: both;}
+  </style>
+</head>
+<body>
+	<div id="wrap">
+   <header id="headBox">
+     <div class="nav">메뉴클릭</div>
+     <div class="logo">
+       <h2>Octo!</h2>
+     </div>
+   </header><!-- // #headBox -->
+   <div id="conBox">
+
+   <section id="contentBox" class="out_box">
+    <aside class="sideBox">사이드바</aside><!-- // #sideBox -->
+    <article class="inner">컨텐트박스
+     <h3>랜덤뮤직</h3>
+    </article>
+   <section/><!-- // #contentBox -->
+
+   </div><!-- // #conBox -->
+   <footer id="footBox">
+     <h2>Octo! 회사소개</h2>
+   </footer><!-- // #footBox -->
+  </div><!-- // #wrap -->
+</body>
+</html>
