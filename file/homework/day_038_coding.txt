@@ -1,0 +1,32 @@
+- 1920 * 3000, 96dpi, rgb
+-graba(cafe), 최근파일 다운
+
+div(의미없음)- block
+span(의미없음)- inline
+header
+nav
+aside
+article
+footer
+
+p, h1~h6, 
+ul, li
+il, li
+dl, dt, dd
+address - (font-style:normal)
+
+16px = 12pt = 1em(부모 기준, 상대, 폰트/박스가 다르다!
+ = 1rem(최초의 기준,상대) = 100%
+
+<ul>
+    <li>
+        <dl>
+	    <dt></dt>
+	    <dd>
+		<ol>
+		    <li></li>
+		</ol>    
+	    </dd>
+        </dl>
+    </li>
+</ul>
