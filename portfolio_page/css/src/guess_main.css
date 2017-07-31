@@ -1,4 +1,5 @@
-/*! guess_main.html */
+@charset "UTF-8";
+/*! guess_main.html 디자인 영역*/
 #wrap {
   width: 940px;
   height: auto;
@@ -8,18 +9,18 @@
 #headBox {
   width: 100%;
   height: 160px;
-  padding: 60px;
+  padding: 50px;
   box-sizing: border-box;
 }
 
 #headBox > h1 {
   width: 206px;
-  height: 42px;
+  height: 50px;
   float: left;
-  background-color: #904;
+  background-color: transparent;
   background-image: url("../../img/guess_logo_3.png");
   background-repeat: no-repeat;
-  background-position: -56px 60px;
+  background-size: 100%;
 }
 
 #headBox > #btn_menu {
@@ -29,6 +30,7 @@
   background-color: transparent;
   background-image: url("../../img/btn_menu_2.png");
   background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 #conBox {
@@ -41,7 +43,10 @@
   width: 940px;
   height: 500px;
   margin-bottom: 11.25em;
-  background-color: #fcb;
+  background-color: transparent;
+  background-image: url("../../img/guess_ad.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 #conBox > #articleBox {
@@ -112,7 +117,10 @@
   height: 614px;
   float: right;
   margin-left: 140px;
-  background-color: #468;
+  background-color: transparent;
+  background-image: url("../../img/guess_model.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 #conBox > #articleBox > #video {
@@ -143,7 +151,10 @@
   height: 566px;
   float: right;
   margin-left: 20px;
-  background-color: #cdf;
+  background-color: transparent;
+  background-image: url("../../img/guess_video.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 #conBox > #articleBox > #gallery {
@@ -174,7 +185,6 @@
   height: 1218px;
   float: right;
   margin-left: 20px;
-  background-color: #cdf;
 }
 
 #conBox > #articleBox > #gallery > #imgBox > #innerBox {
@@ -182,7 +192,6 @@
   height: 630px;
   float: left;
   margin-bottom: 60px;
-  border: 1px solid #333;
 }
 
 #conBox > #articleBox > #gallery > #imgBox > #innerBox > #imgStyle {
@@ -190,21 +199,30 @@
   height: 630px;
   float: left;
   margin-right: 94px;
-  border: 1px solid #333;
+  background-color: transparent;
+  background-image: url("../../img/guess_nana.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 #conBox > #articleBox > #gallery > #imgBox > #innerBox > #imgJacket {
   width: 420px;
   height: 558px;
   float: left;
-  border: 1px solid #333;
+  background-color: transparent;
+  background-image: url("../../img/guess_suzy_f.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 #conBox > #articleBox > #gallery > #imgBox > #imgGallery {
   width: 100%;
   height: 530px;
   float: left;
-  border: 1px solid #333;
+  background-color: transparent;
+  background-image: url("../../img/guess_suzy_s.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 #footBox {

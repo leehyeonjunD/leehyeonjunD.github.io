@@ -1,110 +1,158 @@
-/*! guess_sub2.html */
-#headBox, #gnb, #longBox, .title, .order, .price { box-sizing: border-box; }
+@charset "UTF-8";
+/*! guess_sub2.html 디자인 영역*/
+#wrap {
+  width: 940px;
+  height: auto;
+  margin: 0 auto;
+}
 
-#wrap { width: 960px; height: auto; margin: 0 auto; }
+#headBox {
+  width: 100%;
+  height: 160px;
+  padding: 50px;
+  box-sizing: border-box;
+}
 
-#headBox { width: 100%; height: 100px; padding: 30px 15px 30px 15px; background-color: #a3a3a6; }
+#headBox > h1 {
+  width: 206px;
+  height: 50px;
+  float: left;
+  background-color: transparent;
+  background-image: url("../../img/guess_logo_3.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
 
-#search { width: 230px; height: 40px; float: left; margin: 0 140px 0 20px; background-color: #44d; }
+#headBox > #btn_menu {
+  width: 54px;
+  height: 56px;
+  float: right;
+  background-color: transparent;
+  background-image: url("../../img/btn_menu_2.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
 
-h1 { width: 160px; height: 40px; float: left; background-color: #faa; }
+#conBox {
+  width: 100%;
+  height: 4944px;
+  background-color: #fff;
+}
 
-h1 > a { width: 100%; height: auto; display: block; background-repeat: no-repeat; background-position: center; }
+#conBox > #adBox {
+  width: 940px;
+  height: 226px;
+  margin-bottom: 5em;
+  background-color: transparent;
+  background-image: url("../../img/guess_ads.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
 
-#unb { width: 104px; height: 40px; float: right; background-color: #dde; }
+#conBox > #articleBox {
+  width: 100%;
+  height: 4944px;
+  background-color: #fb9;
+}
 
-#unb > ul { width: 104px; height: 40px; }
+#conBox > #articleBox > #aboutInfo {
+  width: 100%;
+  height: 826px;
+  margin-bottom: 11.25em;
+  background-color: gray;
+}
 
-#unb > ul > li { width: 40px; height: 40px; float: left; background-color: yellow; }
+#conBox > #articleBox > #aboutInfo > h3 {
+  width: 100%;
+  float: left;
+  font-size: 2.25em;
+  font-family: 'Nanum Gothic', sans-serif;
+  text-align: center;
+  margin-bottom: 40px;
+}
 
-#unb > ul > li:nth-child(2) { margin-left: 24px; }
+#conBox > #articleBox > #aboutInfo > .redLine {
+  width: 380px;
+  height: 2px;
+  float: left;
+  margin: 0 280px 130px 280px;
+  background-color: #c33;
+}
 
-#conBox { width: 100%; height: auto; background-color: #f1f1f1; }
+#conBox > #articleBox > #aboutInfo > #aboutImg {
+  width: 80%;
+  height: 296px;
+  float: right;
+  background-color: transparent;
+  background-image: url("../../img/guess_banner.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
 
-#gnb { width: 220px; height: 340px; float: left; padding: 45px 15px 50px 15px; background-color: #b2b2b2; }
+#conBox > #articleBox > #aboutInfo > #aboutText {
+  border: 1px solid #333;
+}
 
-#gnb > ul { width: 100%; height: auto; }
+#conBox > #articleBox > #aboutInfo > #adImg {
+  border: 1px solid #333;
+}
 
-#gnb > ul > li { width: 180px; height: 40px; float: left; margin-bottom: 10px; background-color: powderblue; }
+#conBox > #articleBox > #aboutInfo > #guessText {
+  border: 1px solid #333;
+}
 
-#longBox { width: 740px; height: 550px; float: right; padding: 50px 20px 0 20px; }
+#conBox > #articleBox > #brandInfo {
+  width: 100%;
+  height: 520px;
+  margin-bottom: 11.25em;
+  border: 1px solid #333;
+}
 
-#longBox > #jeansBox { width: 700px; height: 500px; background-color: #dde; }
+#conBox > #articleBox > #totalInfo {
+  width: 100%;
+  height: 500px;
+  margin-bottom: 11.25em;
+  border: 1px solid #333;
+}
 
-#jeansBox > ul > li { width: 230px; height: 500px; float: left; margin-right: 5px; }
+#conBox > #articleBox > #styleInfo {
+  width: 100%;
+  height: 500px;
+  margin-bottom: 11.25em;
+  border: 1px solid #333;
+}
 
-#jeansBox > ul > li:nth-child(1) { background-color: #dca; }
+#conBox > #articleBox > #logoInfo {
+  width: 100%;
+  height: 480px;
+  margin-bottom: 11.25em;
+  border: 1px solid #333;
+}
 
-#jeansBox > ul > li:nth-child(2) { background-color: #fdc; }
+#conBox > #articleBox > #asapInfo {
+  width: 100%;
+  height: 500px;
+  margin-bottom: 10em;
+  border: 1px solid #333;
+}
 
-#jeansBox > ul > li:nth-child(3) { margin-right: 0; background-color: #bca; }
+#conBox > #articleBox > #lifeInfo {
+  width: 100%;
+  height: 500px;
+  margin-bottom: 5em;
+  border: 1px solid #333;
+}
 
-#products { width: 740px; height: 600px; float: right; }
+#footBox {
+  width: 100%;
+  height: 100px;
+  background-color: #c1c1c1;
+}
 
-.title { width: 100%; height: 120px; float: left; padding: 30px 0 30px 30px; }
-
-.title > h3 { width: 250px; height: 50px; float: left; margin-left: 170px; text-align: center; font-size: 2em; border-bottom: 5px solid #bbb; }
-
-.top_btn { width: 40px; height: 40px; float: right; margin-top: 5px; border-radius: 2em; border: 0.5px solid #222; background-color: red; color: #fff; text-align: center; }
-
-.order { width: 740px; height: 90px; float: left; padding: 30px 10px 30px 10px; border: 0.5px solid #222; }
-
-.order > .ul { width: 740px; height: 90px; }
-
-.order > ul > li { width: 45px; height: 30px; float: left; margin-right: 20px; border: 0.5px solid #222; background-color: lightyellow; }
-
-.order > ul > li:nth-child(3) { margin: 0 0 0 500px; }
-
-.image { width: 740px; height: 210px; float: left; }
-
-.image > ul { width: 740px; height: 210px; }
-
-.image > ul > li { width: 210px; height: 210px; float: left; margin-right: 55px; background-color: pink; }
-
-.image > ul > li:nth-child(3) { margin-right: 0; }
-
-.price { width: 740px; height: 150px; float: left; padding-top: 30px; margin-right: 50px; }
-
-.box1 { width: 210px; height: 70px; float: left; margin-right: 55px; }
-
-.box1 > ul > li { height: 20px; float: left; }
-
-.box1 > ul > li:nth-child(1) { width: 60px; margin-right: 60px; background-color: #ccc; }
-
-.box1 > ul > li:nth-child(2) { margin-right: 0; }
-
-.box1 > ul > li:nth-child(3) { width: 135px; background-color: #ccc; }
-
-.box1 > ul > li:nth-child(4) { margin-right: 0; }
-
-.box2 { width: 210px; height: 70px; float: left; margin-right: 55px; }
-
-.box2 > ul > li { height: 20px; float: left; }
-
-.box2 > ul > li:nth-child(1) { width: 60px; margin-right: 60px; background-color: #ccc; }
-
-.box2 > ul > li:nth-child(2) { margin-right: 0; }
-
-.box2 > ul > li:nth-child(3) { width: 135px; background-color: #ccc; }
-
-.box2 > ul > li:nth-child(4) { margin-right: 0; }
-
-.box3 { width: 210px; height: 70px; float: left; }
-
-.box3 > ul > li { height: 20px; float: left; }
-
-.box3 > ul > li:nth-child(1) { width: 60px; margin-right: 60px; background-color: #ccc; }
-
-.box3 > ul > li:nth-child(2) { margin-right: 0; }
-
-.box3 > ul > li:nth-child(3) { width: 135px; background-color: #ccc; }
-
-.box3 > ul > li:nth-child(4) { margin-right: 0; }
-
-#footBox { width: 100%; height: 100px; background-color: #363636; }
-
-address { width: 100%; height: 80px; color: #fff; }
-
-#footLogo { background-image: url("../../img/guess_logo_1.png"); background-repeat: no-repeat; background-position: center; }
-
-#snsBtn { width: 100%; }
+#footBox > p {
+  padding-top: 40px;
+  box-sizing: border-box;
+  font-size: 1em;
+  font-family: 'Nanum Gothic', sans-serif;
+  text-align: center;
+}

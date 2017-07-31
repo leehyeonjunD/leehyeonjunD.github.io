@@ -1,6 +1,8 @@
 @charset "utf-8";
+/*! guess_main.html 디자인 영역*/
 // @import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
-/*! guess_main.html */
+@import "../base/variable";
+@import "../base/mixin";
 
 #wrap{
       width:940px; height:auto; margin:0 auto;
@@ -8,33 +10,27 @@
 
 #headBox{
         width:100%; height:160px;
-        padding:60px; 
+        padding:50px; 
         box-sizing:border-box;
         >h1{
-            width:206px; height:42px;
+            width:206px; height:50px;
             float:left;
-            background-color:#904;
-            background-image:url("../../img/guess_logo_3.png");
-            background-repeat:no-repeat;
-            background-position:-56px 60px;
+            @include bg($f:"guess_logo_3.png");
         }
         >#btn_menu{
                     width:54px; height:56px;
                     float:right;
-                    background-color:transparent;
-                    background-image:url("../../img/btn_menu_2.png");
-                    background-repeat:no-repeat;
-                    
+                    @include bg($f:"btn_menu_2.png");
         }
 }   // #headBox
 
 #conBox{
         width:100%; height:4140px;
-        background-color:#fff;
+        background-color:map-get($color,primary);
         >#adBox{
                 width:940px; height:500px;
                 margin-bottom:11.25em;
-                background-color:#fcb;
+                @include bg($f:"guess_ad.jpg");
         }
         >#articleBox{
                 width:940px; height:3460px;
@@ -50,15 +46,12 @@
                         margin-bottom:40px;
                     }
                     >.redLine{
-                        width:380px; height:2px;
-                        float:left;
-                        margin:0 280px 130px 280px;
-                        background-color:#c33;
+                            @include redLn();
                     }
                     >#aboutText{
                             width:340px; height:616px;
                             float:left;
-                            background-color:#fff;
+                            background-color:map-get($color,primary);
                             padding:186px 8px 146px 98px;
                             box-sizing:border-box;
                             >#weGuess{
@@ -89,7 +82,7 @@
                         width:460px; height:614px;
                         float:right;
                         margin-left:140px;
-                        background-color:#468;
+                        @include bg($f:"guess_model.jpg");
                     }
                 }
                 >#video{
@@ -104,16 +97,13 @@
                         margin-bottom:40px;
                     }
                     >.redLine{
-                        width:380px; height:2px;
-                        float:left;
-                        margin:0 280px 130px 280px;
-                        background-color:#c33;
+                        @include redLn();
                     }
                     >#videoImg{
                         width:100%; height:566px;
                         float:right;
                         margin-left:20px;
-                        background-color:#cdf;
+                        @include bg($f:"guess_video.png");
                     }
                 }
                 >#gallery{
@@ -128,37 +118,32 @@
                         margin-bottom:40px;
                     }
                     >.redLine{
-                        width:380px; height:2px;
-                        float:left;
-                        margin:0 280px 130px 280px;
-                        background-color:#c33;
+                        @include redLn();
                     }
                     >#imgBox{
                         width:100%; height:1218px;
                         float:right;
                         margin-left:20px;
-                        background-color:#cdf;
                         >#innerBox{
                             width:100%; height:630px;
                             float:left;
                             margin-bottom:60px;
-                            border:1px solid #333;
                             >#imgStyle{
                                 width:420px; height:630px;
                                 float:left;
                                 margin-right:94px;
-                                border:1px solid #333;
+                                @include bg($f:"guess_nana.jpg");
                             }
                             >#imgJacket{
                                 width:420px; height:558px;
                                 float:left;
-                                border:1px solid #333;
+                                @include bg($f:"guess_suzy_f.jpg");
                             }
                         }
                         >#imgGallery{
                             width:100%; height:530px;
                             float:left;
-                            border:1px solid #333;
+                            @include bg($f:"guess_suzy_s.jpg");
                         }
                     }
                 }
@@ -169,7 +154,6 @@
         width:100%; height:100px;
         background-color:#c1c1c1;
         >p{
-            // padding:42 276 42 280px;
             padding-top:40px;
             box-sizing:border-box;
             font-size:1em;
