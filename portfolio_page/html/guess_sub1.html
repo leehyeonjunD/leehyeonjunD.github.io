@@ -18,87 +18,67 @@
   <!--  jquery -->
   <script src="../js/jquery/jquery-3.2.1.min.js"></script>
   <script src="../js/jquery/jquery-ui.min.js"></script>
-  <title>GUESS 게스</title>
+  <title>SIGN IN 로그인</title>
 
 </head>
 <body>
   <div id="wrap">
-    <header id="headBox">
-      <div id="search"></div>
-      <h1 class="hidden_wrap">
-        <a href="./guess_main.html">Guess main</a>
-      </h1>
-      <nav id="unb">
-        <ul>
-            <li>
-              <a href="#">
-                <i class="fa "></i>
-                <span class="hidden">find store</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fa "></i>
-                <span class="hidden">shopping bag</span>
-              </a>
-            </li>
-        </ul>
-      </nav>
+    <header id="headBox" class="clearfix">
+        <h1 class="hidden_wrap"><a href="#"><span>guess</span></a></h1>
+        <div id="btn_menu"><a href="#"></a></div>
     </header>
-    <section id="conBox" class="clearfix">
-      <nav id="gnb">
-        <ul>
-          <li><a href="#">NEW</a></li>
-          <li><a href="#">BEST</a></li>
-          <li><a href="./guess_sub2.html">JEANS</a></li>
-          <li><a href="#">UNDER WEAR</a></li>
-          <li><a href="./guess_sub1.html">ABOUT GUESS</a></li>
-        </ul>
-      </nav> <!-- #gnb -->
 
-      <article id="about">
-        <h2 class="hidden">about guess</h2>
-        <div id="board">
-          <div class="we">
-            <p class="mini_text">Lorem ipsum.</p>
-            <h3>We are guess</h3>
-            <p>Lorem ipsum dolor sit amet,<br />Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis tempore, eligendi magnam, temporibus nostrum, consequuntur, aspernatur officia ipsam error repellat rem. In inventore recusandae, dolorem voluptate praesentium atque sint alias.</p>
+    <section id="conBox">
+      <div id="rowLogin">
+        <div id="innerBox">
+          <h2><p>SIGN IN</p></h2>
+          <div>
+            <form action="#" method="post" id="formPage">
+              <fieldset>
+                <legend>Retuning customer</legend>
+                <div class="id">
+                  <label for="userEmail" class="hidden">
+                    사용자 이메일을 입력하세요.
+                  </label>
+                  <input type="text" id="userEmail"
+                          name="userEmail" value=""
+                          placeholder="Email address:"
+                          autocomplete="on" />
+                </div> <!-- // .id -->
+                <div class="pwd">
+                  <label for="userPwd" class="hidden">
+                    비밀번호를 입력하세요.
+                  </label>
+                  <input type="password" id="pwd"
+                          name="userPwd" value=""
+                          placeholder="Password:" />
+                </div> <!-- // .pwd -->
+                <div class="login_btn">
+                  <input type="submit" value="SIGN IN" />
+                </div> <!-- // .login_btn -->
+              </fieldset>
+              <fieldset>
+                <legend>I'm a new customer</legend>
+                <div class="id">
+                  <label for="userEmail" class="hidden">
+                    사용할 이메일을 입력하세요.
+                  </label>
+                  <input type="text" id="newEmail"
+                          name="newEmail" value=""
+                          placeholder="Your email address:" />
+                </div> <!-- // .id -->
+                <div class="login_btn">
+                  <input type="button" value="SIGN UP" />
+                </div> <!-- // .login_btn -->
+              </fieldset>
+            </form>
           </div>
-        </div>
-      </article> <!-- #about -->
-
-      <article id="birth">
-        <div id="question">
-          <p>Loremum dolor sit amet, consectetur adipisicing elit. Error, quo.</p>
-        </div>
-        <div id="explain">
-          <ul>
-            <li></li>
-            <li><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque iure natus impedit ratione, excepturi iusto porro tempore obcaecati deserunt mollitia.</p></li>
-            <li></li>
-          </ul>
-        </div>
-      </article> <!-- #birth -->
-
-      <article id="story">
-        <h2 class="hidden">gallery contents</h2>
-        <div id="tBox1">
-          <h3 class="hidden">text</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam adipisci tenetur dolorum quaerat dolor ex voluptas ratione reprehenderit mollitia dolores. Officiis, ullam dicta nobis aliquid ducimus excepturi laboriosam enim quibusdam, nam eveniet nemo vero. Sit, doloribus recusandae sapiente minima. Ratione ipsam reiciendis quam, voluptatem velit aut itaque unde deleniti aperiam neque totam molestias nulla perspiciatis, temporibus voluptatum provident impedit facere distinctio qui et. Nisi corporis sit doloremque, et, porro earum blanditiis quos volupr eius assumenda, dicta dolore dolorum soluta ad reprehenderit. Expedita nisi incidunt qui possimus, alias, odit eum accusantium placeat perferendis quidem sint blanditiis voluptates dignissimos quibusdam recusandae dolore!</p>
-        </div>
-        <div id="tBox2">
-          <h3 class="hidden">image</h3>
-          <p>picture</p>
-        </div>
-      </article> <!-- #story -->
+        </div> <!-- #innerBox -->
+      </div>
     </section>
+
     <footer id="footBox">
-      <address>
-        <p>고객상담 080-000-0000</p>
-        <p>&copy; Copy right 2017 Guess</p>
-      </address>
-      <div id="footLogo"></div>
-      <div id="snsBtn"></div>
+        <p>Copyright &copy; Lee HyeonJun 2017 All Rights Reserved.</p>
     </footer>
   </div>
 </body>     
