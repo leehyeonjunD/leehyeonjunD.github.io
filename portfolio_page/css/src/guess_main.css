@@ -11,6 +11,7 @@
   height: 160px;
   padding: 50px;
   box-sizing: border-box;
+  text-transform: uppercase;
 }
 
 #headBox > h1 {
@@ -23,7 +24,7 @@
   background-size: 100%;
 }
 
-#headBox > #btn_menu {
+#headBox #btn_menu {
   width: 54px;
   height: 56px;
   float: right;
@@ -58,23 +59,18 @@
   width: 940px;
   height: 824px;
   margin-bottom: 11.25em;
+  text-transform: uppercase;
 }
 
 #conBox > #articleBox > #story > h3 {
-  width: 100%;
-  float: left;
+  width: 380px;
+  height: 48px;
   font-size: 2.25em;
   font-family: 'Nanum Gothic', sans-serif;
   text-align: center;
-  margin-bottom: 40px;
-}
-
-#conBox > #articleBox > #story > .redLine {
-  width: 380px;
-  height: 2px;
-  float: left;
-  margin: 0 280px 130px 280px;
-  background-color: #c33;
+  border-bottom: 2px solid #c33;
+  padding-bottom: 40px;
+  margin: 0 auto 130px;
 }
 
 #conBox > #articleBox > #story > #aboutText {
@@ -84,6 +80,7 @@
   background-color: #fff;
   padding: 186px 8px 146px 98px;
   box-sizing: border-box;
+  text-transform: uppercase;
 }
 
 #conBox > #articleBox > #story > #aboutText > #weGuess {
@@ -100,12 +97,13 @@
   margin-bottom: 128px;
 }
 
-#conBox > #articleBox > #story > #aboutText > #btnBox {
+#conBox > #articleBox > #story > #aboutText #btnBox {
   width: 140px;
   height: 50px;
   padding: 6px 40px;
   box-sizing: border-box;
   margin-left: 60px;
+  text-transform: inherit;
   font-size: 1.5em;
   font-family: 'Nanum Gothic', sans-serif;
   border: 1px solid #333;
@@ -127,23 +125,18 @@
   width: 940px;
   height: 770px;
   margin-bottom: 11.25em;
+  text-transform: uppercase;
 }
 
 #conBox > #articleBox > #video > h3 {
-  width: 100%;
-  float: left;
+  width: 380px;
+  height: 48px;
   font-size: 2.25em;
   font-family: 'Nanum Gothic', sans-serif;
   text-align: center;
-  margin-bottom: 40px;
-}
-
-#conBox > #articleBox > #video > .redLine {
-  width: 380px;
-  height: 2px;
-  float: left;
-  margin: 0 280px 130px 280px;
-  background-color: #c33;
+  border-bottom: 2px solid #c33;
+  padding-bottom: 40px;
+  margin: 0 auto 130px;
 }
 
 #conBox > #articleBox > #video > #videoImg {
@@ -161,23 +154,18 @@
   width: 940px;
   height: 1426px;
   margin-bottom: 5em;
+  text-transform: uppercase;
 }
 
 #conBox > #articleBox > #gallery > h3 {
-  width: 100%;
-  float: left;
+  width: 380px;
+  height: 48px;
   font-size: 2.25em;
   font-family: 'Nanum Gothic', sans-serif;
   text-align: center;
-  margin-bottom: 40px;
-}
-
-#conBox > #articleBox > #gallery > .redLine {
-  width: 380px;
-  height: 2px;
-  float: left;
-  margin: 0 280px 130px 280px;
-  background-color: #c33;
+  border-bottom: 2px solid #c33;
+  padding-bottom: 40px;
+  margin: 0 auto 130px;
 }
 
 #conBox > #articleBox > #gallery > #imgBox {
@@ -187,17 +175,11 @@
   margin-left: 20px;
 }
 
-#conBox > #articleBox > #gallery > #imgBox > #innerBox {
-  width: 100%;
-  height: 630px;
-  float: left;
-  margin-bottom: 60px;
-}
-
-#conBox > #articleBox > #gallery > #imgBox > #innerBox > #imgStyle {
+#conBox > #articleBox > #gallery > #imgBox > #imgStyle {
   width: 420px;
   height: 630px;
   float: left;
+  margin-bottom: 60px;
   margin-right: 94px;
   background-color: transparent;
   background-image: url("../../img/guess_nana.jpg");
@@ -205,10 +187,11 @@
   background-size: 100%;
 }
 
-#conBox > #articleBox > #gallery > #imgBox > #innerBox > #imgJacket {
+#conBox > #articleBox > #gallery > #imgBox > #imgJacket {
   width: 420px;
   height: 558px;
   float: left;
+  margin-bottom: 60px;
   background-color: transparent;
   background-image: url("../../img/guess_suzy_f.jpg");
   background-repeat: no-repeat;

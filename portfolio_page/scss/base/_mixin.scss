@@ -1,15 +1,9 @@
 @charset "utf-8";
 // variable.scss
 
-@mixin bg($c:transparent,$u:$url,$f:none){
+@mixin bg($c:transparent,$u:$url,$f:none, $s:100%){
             background-color:$c;
             background-image:url($u+$f);
             background-repeat:no-repeat;
-            background-size:100%;
-}
-@mixin redLn($c:map-get($color,primary2),$m:0 280px 130px 280px){
-                width:380px; height:2px;
-                float:left;
-                margin:$m;
-                background-color:$c;
+            background-size:$s;
 }

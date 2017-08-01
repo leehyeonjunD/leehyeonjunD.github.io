@@ -36,7 +36,7 @@
             <form action="#" method="post" id="formPage">
               <fieldset>
                 <legend>Retuning customer</legend>
-                <div class="id">
+                <div class="email">
                   <label for="userEmail" class="hidden">
                     사용자 이메일을 입력하세요.
                   </label>
@@ -49,18 +49,19 @@
                   <label for="userPwd" class="hidden">
                     비밀번호를 입력하세요.
                   </label>
-                  <input type="password" id="pwd"
-                          name="userPwd" value=""
+                  <input type="password" id="userPwd"
+                          name="pwd" value=""
                           placeholder="Password:" />
                 </div> <!-- // .pwd -->
                 <div class="login_btn">
                   <input type="submit" value="SIGN IN" />
                 </div> <!-- // .login_btn -->
               </fieldset>
+              
               <fieldset>
                 <legend>I'm a new customer</legend>
-                <div class="id">
-                  <label for="userEmail" class="hidden">
+                <div class="email">
+                  <label for="newEmail" class="hidden">
                     사용할 이메일을 입력하세요.
                   </label>
                   <input type="text" id="newEmail"
@@ -68,7 +69,7 @@
                           placeholder="Your email address:" />
                 </div> <!-- // .id -->
                 <div class="login_btn">
-                  <input type="button" value="SIGN UP" />
+                  <input type="submit" value="SIGN UP" />
                 </div> <!-- // .login_btn -->
               </fieldset>
             </form>

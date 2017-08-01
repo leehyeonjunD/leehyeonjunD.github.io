@@ -24,38 +24,49 @@
 <body>
     <div id="wrap">
       <header id="headBox" class="clearfix">
-        <h1 class="hidden_wrap"><a href="#"><span>guess</span></a></h1>
-        <div id="btn_menu"><a href="#"></a></div>
+        <h1><a href="./guess_main.html"><span class="hidden">guess</span></a></h1>
+        <div>
+          <button type="button" id="btn_menu"><span class="hidden">버튼클릭시 메뉴생성</span></button>
+          <dl>
+            <dt class="hidden">navigation 영역</dt>
+            <dd class="hidden"><a href="#">log in</a></dd>
+            <dd class="hidden"><a href="#">denim</a></dd>
+            <dd class="hidden"><a href="#">t shirts</a></dd>
+            <dd class="hidden"><a href="#">gallery</a></dd>
+            <dd class="hidden"><a href="#">about guess</a></dd>
+          </dl>
+        </div>
+
       </header>
 
       <section id="conBox">
         <h2 class="hidden_wrap"><a href="#"><span>guess main</span></a></h2>
-        <section id="adBox"></section>
+        <section id="adBox">
+          <h3 class="hidden">오리지널 광고 영역</h3>
+          <p class="hidden">오리지널 룩에 관한 게스 광고.</p>
+        </section>
         <section id="articleBox">
           <article id="story" class="clearfix">
-            <h3 class="clearfix">ABOUT GUESS</h3>
-            <div class="redLine clearfix"></div>
+            <h3>About guess</h3>
             <div id="aboutText">
               <p id="weGuess">WE ARE GUESS</p>
               <p id="guessWhat">GUESS WHAT?</p>
-              <div id="btnBox">VIEW</div>
+              <div>
+                <a href="#" id="btnBox">view</a>
+              </div>
             </div>
             <div id="slideImg"></div>
           </article>
           <article id="video" class="clearfix">
-            <h3 class="clearfix">VIDEO</h3>
-            <div class="redLine"></div>
+            <h3>Video</h3>
             <div id="videoImg"></div>
           </article>
           <article id="gallery" class="clearfix">
-            <h3 class="clearfix">GALLERY</h3>
-            <div class="redLine"></div>
-            <div id="imgBox">
-              <div id="innerBox" class="clearfix">
-                <div id="imgStyle"></div>
-                <div id="imgJacket"></div>
-              </div>
-              <div id="imgGallery"></div>
+            <h3>Gallery</h3>
+            <div id="imgBox" class="clearfix">
+              <div id="imgStyle"><p class="hidden">가수 나나가 봄 자켓을 입은 모습입니다.</p></div>
+              <div id="imgJacket"><p class="hidden">가수 수지가 가을 자켓을 입은 모습입니다.</p></div>
+              <div id="imgGallery"><p class="hidden">가수 수지가 봄 상품을 입은 모습입니다.</p></div>
             </div>
           </article>
         </section> <!-- #articleBox -->

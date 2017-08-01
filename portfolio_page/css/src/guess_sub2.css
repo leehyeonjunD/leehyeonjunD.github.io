@@ -60,45 +60,70 @@
   height: 826px;
   margin-bottom: 11.25em;
   background-color: gray;
+  text-transform: uppercase;
 }
 
 #conBox > #articleBox > #aboutInfo > h3 {
-  width: 100%;
-  float: left;
+  width: 380px;
+  height: 48px;
   font-size: 2.25em;
   font-family: 'Nanum Gothic', sans-serif;
   text-align: center;
-  margin-bottom: 40px;
+  border-bottom: 2px solid #c33;
+  padding-bottom: 16px;
+  margin: 0 auto 8.125em;
 }
 
-#conBox > #articleBox > #aboutInfo > .redLine {
-  width: 380px;
-  height: 2px;
-  float: left;
-  margin: 0 280px 130px 280px;
-  background-color: #c33;
+#conBox > #articleBox > #aboutInfo > #aboutBox {
+  position: relative;
 }
 
-#conBox > #articleBox > #aboutInfo > #aboutImg {
+#conBox > #articleBox > #aboutInfo > #aboutBox > #aboutImg {
   width: 80%;
   height: 296px;
   float: right;
   background-color: transparent;
   background-image: url("../../img/guess_banner.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right center;
+}
+
+#conBox > #articleBox > #aboutInfo > #aboutBox > #aboutText {
+  width: 340px;
+  height: 240px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -120px;
+  background-color: #fff;
+}
+
+#conBox > #articleBox > #aboutInfo > #guessBox > #guessImg {
+  width: 296px;
+  height: 280px;
+  float: left;
+  background-color: transparent;
+  background-image: url("../../img/guess_ad_k1.jpg");
+  background-repeat: no-repeat;
   background-size: 100%;
 }
 
-#conBox > #articleBox > #aboutInfo > #aboutText {
-  border: 1px solid #333;
+#conBox > #articleBox > #aboutInfo > #guessBox > #guessHug {
+  width: 296px;
+  height: 280px;
+  float: right;
+  background-color: transparent;
+  background-image: url("../../img/guess_ad_k2.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
-#conBox > #articleBox > #aboutInfo > #adImg {
-  border: 1px solid #333;
-}
-
-#conBox > #articleBox > #aboutInfo > #guessText {
-  border: 1px solid #333;
+#conBox > #articleBox > #aboutInfo > #guessBox > #guessText {
+  width: 340px;
+  height: 280px;
+  float: center;
+  background-color: #fff;
 }
 
 #conBox > #articleBox > #brandInfo {
@@ -106,6 +131,27 @@
   height: 520px;
   margin-bottom: 11.25em;
   border: 1px solid #333;
+}
+
+#conBox > #articleBox > #brandInfo > #brandImg {
+  width: 260px;
+  height: 500px;
+  float: right;
+  margin-left: 100px;
+  margin-left: 160px;
+  background-color: transparent;
+  background-image: url("../../img/guess_model2.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+#conBox > #articleBox > #brandInfo > #brandText {
+  width: 200px;
+  float: left;
+  font-size: 1em;
+  font-family: 'Nanum Gothic', sans-serif;
+  text-align: center;
+  background-color: #cc9;
 }
 
 #conBox > #articleBox > #totalInfo {
