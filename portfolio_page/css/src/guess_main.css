@@ -1,134 +1,143 @@
 @charset "UTF-8";
-/*! guess_main.html 디자인 영역*/
+/* guess_main.html 디자인 영역 */
+#headBox, #headBox > .nav_btn > dl dd:nth-child(2), #headBox > .nav_btn > dl dd:nth-child(3), #headBox > .nav_btn > dl dd:nth-child(4), #headBox > .nav_btn > dl dd:nth-child(5), #headBox > .nav_btn > dl dd:last-child, #conBox > #articleBox > #story > #aboutText, #conBox > #articleBox > #story > #aboutText #btnBox, #footBox > p {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
 #wrap {
-  width: 940px;
+  width: 100%;
+  min-width: 940px;
   height: auto;
-  margin: 0 auto;
-  margin-top: 10em;
+  margin-top: 130px;
 }
 
 #headBox {
-  width: inherit;
-  height: 160px;
+  width: 940px;
+  height: auto;
   position: fixed;
   z-index: 100;
   top: 0;
+  left: 50%;
+  margin-left: -470px;
+  padding: 30px;
   background-color: #fff;
-  padding: 50px;
-  box-sizing: border-box;
   text-transform: uppercase;
 }
 
 #headBox > h1 {
-  width: 206px;
-  height: 50px;
+  width: 220px;
+  height: 70px;
   float: left;
   background-color: transparent;
   background-image: url("../../img/guess_logo_3.png");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: contain;
+}
+
+#headBox > h1 > a {
+  width: 100%;
+  height: auto;
 }
 
 #headBox > .nav_btn {
-  width: 280px;
+  width: 240px;
   height: auto;
   position: relative;
 }
 
 #headBox > .nav_btn > #btn_menu {
-  width: 54px;
-  height: 56px;
+  width: 46px;
+  height: 48px;
   float: right;
   position: absolute;
   top: 10%;
-  right: -200%;
+  right: -260%;
   background-color: transparent;
   background-image: url("../../img/btn_menu_2.png");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: contain;
 }
 
 #headBox > .nav_btn > dl {
   width: inherit;
-  height: 400px;
+  height: auto;
   position: absolute;
   float: right;
-  top: 220%;
-  right: -218%;
+  top: 143%;
+  right: -280%;
   z-index: 100;
   background-color: #e6e6e6;
 }
 
 #headBox > .nav_btn > dl dd:nth-child(2) {
-  width: 280px;
-  height: 110px;
+  width: 240px;
+  height: 100px;
   float: left;
-  padding: 40px 150px 40px 40px;
-  box-sizing: border-box;
+  padding: 30px;
   font-weight: bold;
-  font-size: 1.5em;
-  font-family: 'NanumGothic', 'OpenSans', sans-serif;
+  font-size: 1.4em;
+  font-family: "NanumGothic", "OpenSans", arial, sans-serif;
   text-align: center;
   border-bottom: 1px solid #333;
 }
 
 #headBox > .nav_btn > dl dd:nth-child(3) {
-  width: 280px;
+  width: 240px;
   height: 72px;
   float: left;
-  padding: 26px 160px 26px 40px;
-  box-sizing: border-box;
+  padding: 20px;
   font-weight: bold;
-  font-size: 1.5em;
-  font-family: 'NanumGothic', 'OpenSans', sans-serif;
+  font-size: 1.4em;
+  font-family: "NanumGothic", "OpenSans", arial, sans-serif;
   text-align: center;
 }
 
 #headBox > .nav_btn > dl dd:nth-child(3):hover {
-  background-color: #c33;
+  background-color: #fff;
 }
 
 #headBox > .nav_btn > dl dd:nth-child(4) {
-  width: 280px;
+  width: 240px;
   height: 72px;
   float: left;
-  padding: 20px 140px 26px 40px;
-  box-sizing: border-box;
+  padding: 20px;
   font-weight: bold;
-  font-size: 1.5em;
-  font-family: 'NanumGothic', 'OpenSans', sans-serif;
+  font-size: 1.4em;
+  font-family: "NanumGothic", "OpenSans", arial, sans-serif;
   text-align: center;
 }
 
 #headBox > .nav_btn > dl dd:nth-child(4):hover {
-  background-color: #c33;
+  background-color: #fff;
 }
 
 #headBox > .nav_btn > dl dd:nth-child(5) {
-  width: 280px;
+  width: 240px;
   height: 72px;
   float: left;
-  padding: 20px 140px 26px 40px;
-  box-sizing: border-box;
+  padding: 20px;
   font-weight: bold;
-  font-size: 1.5em;
-  font-family: 'NanumGothic', 'OpenSans', sans-serif;
+  font-size: 1.4em;
+  font-family: "NanumGothic", "OpenSans", arial, sans-serif;
   text-align: center;
 }
 
 #headBox > .nav_btn > dl dd:nth-child(5):hover {
-  background-color: #c33;
+  background-color: #fff;
 }
 
 #headBox > .nav_btn > dl dd:last-child {
-  width: 280px;
+  width: 240px;
   height: 74px;
   float: left;
-  padding: 20px 70px 44px 40px;
-  box-sizing: border-box;
+  padding: 20px;
   font-weight: bold;
-  font-size: 1.5em;
-  font-family: 'NanumGothic', 'OpenSans', sans-serif;
+  font-size: 1.4em;
+  font-family: "NanumGothic", "OpenSans", arial, sans-serif;
   text-align: center;
 }
 
@@ -137,25 +146,30 @@
 }
 
 #conBox {
-  width: 100%;
-  height: 4140px;
+  width: 940px;
+  height: auto;
+  margin: 0 auto;
   background-color: #fff;
 }
 
 #conBox > #adBox {
-  width: 940px;
-  height: 500px;
+  width: 100vw;
+  height: 1000px;
   position: relative;
+  left: 50%;
+  margin: 0 auto;
+  margin-left: -50vw;
   margin-bottom: 11.25em;
   background-color: transparent;
   background-image: url("../../img/guess_ad.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 
 #conBox > #articleBox {
-  width: 940px;
+  width: 100%;
   height: 3460px;
+  margin: 0 auto;
 }
 
 #conBox > #articleBox > #story {
@@ -169,7 +183,7 @@
   width: 380px;
   height: 48px;
   font-size: 2.25em;
-  font-family: 'NanumGothic', 'OpenSans', sans-serif;
+  font-family: "NanumGothic", "OpenSans", arial, sans-serif;
   text-align: center;
   border-bottom: 2px solid #c33;
   padding-bottom: 40px;
@@ -182,20 +196,19 @@
   float: left;
   background-color: #fff;
   padding: 186px 8px 186px 98px;
-  box-sizing: border-box;
   text-transform: uppercase;
 }
 
 #conBox > #articleBox > #story > #aboutText > #weGuess {
   font-weight: bold;
   font-size: 2em;
-  font-family: 'NanumGothic', 'OpenSans', sans-serif;
+  font-family: "NanumGothic", "OpenSans", arial, sans-serif;
   text-align: right;
 }
 
 #conBox > #articleBox > #story > #aboutText > #guessWhat {
   font-size: 1.5em;
-  font-family: 'NanumGothic', 'OpenSans', sans-serif;
+  font-family: "NanumGothic", "OpenSans", arial, sans-serif;
   text-align: right;
   margin-bottom: 128px;
 }
@@ -204,11 +217,10 @@
   width: 140px;
   height: 50px;
   padding: 6px 40px;
-  box-sizing: border-box;
   margin-left: 60px;
   text-transform: inherit;
   font-size: 1.5em;
-  font-family: 'NanumGothic', 'OpenSans', sans-serif;
+  font-family: "NanumGothic", "OpenSans", arial, sans-serif;
   border: 1px solid #333;
   border-radius: 10px;
 }
@@ -231,7 +243,7 @@
   background-repeat: no-repeat;
   background-size: auto;
   background-position: center;
-  transition: all 500ms ease-in;
+  color: #fff;
 }
 
 #conBox > #articleBox > #story > #slideImg::after {
@@ -243,7 +255,6 @@
   position: absolute;
   top: 0;
   left: 0;
-  transition: all 500ms ease-in;
 }
 
 #conBox > #articleBox > #story > #slideImg:hover::after {
@@ -258,7 +269,7 @@
 }
 
 #conBox > #articleBox > #video {
-  width: 940px;
+  width: 100%;
   height: 770px;
   margin-bottom: 11.25em;
   text-transform: uppercase;
@@ -268,7 +279,7 @@
   width: 380px;
   height: 48px;
   font-size: 2.25em;
-  font-family: 'NanumGothic', 'OpenSans', sans-serif;
+  font-family: "NanumGothic", "OpenSans", arial, sans-serif;
   text-align: center;
   border-bottom: 2px solid #c33;
   padding-bottom: 40px;
@@ -276,18 +287,12 @@
 }
 
 #conBox > #articleBox > #video > #videoImg {
-  width: 100%;
-  height: 566px;
-  float: right;
-  margin-left: 20px;
-  background-color: transparent;
-  background-image: url("../../img/guess_video.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
+  width: 940px;
+  height: auto;
 }
 
 #conBox > #articleBox > #gallery {
-  width: 940px;
+  width: 100%;
   height: 1426px;
   margin-bottom: 5em;
   text-transform: uppercase;
@@ -297,7 +302,7 @@
   width: 380px;
   height: 48px;
   font-size: 2.25em;
-  font-family: 'NanumGothic', 'OpenSans', sans-serif;
+  font-family: "NanumGothic", "OpenSans", arial, sans-serif;
   text-align: center;
   border-bottom: 2px solid #c33;
   padding-bottom: 40px;
@@ -321,19 +326,21 @@
   background-color: transparent;
   background-image: url("../../img/guess_nana.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: contain;
 }
 
 #conBox > #articleBox > #gallery > #imgBox > #imgStyle > .imgCover {
-  width: 100px;
+  width: 140px;
   height: auto;
   float: left;
-  margin-bottom: 60px;
+  margin-bottom: 150px;
   position: absolute;
   bottom: 10px;
   left: 50%;
-  margin-left: -50px;
+  margin-left: -70px;
   display: none;
+  background-color: #333;
+  color: #fff;
 }
 
 #conBox > #articleBox > #gallery > #imgBox > #imgStyle:hover > .imgCover {
@@ -349,21 +356,25 @@
   background-color: transparent;
   background-image: url("../../img/guess_suzy_f.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: contain;
 }
 
 #conBox > #articleBox > #gallery > #imgBox > #imgJacket > .imgCover {
-  width: 100%;
+  width: 140px;
   height: auto;
   float: left;
-  margin-bottom: 60px;
-  margin-right: 94px;
+  margin-bottom: 150px;
   position: absolute;
+  bottom: 10px;
+  left: 50%;
+  margin-left: -70px;
   display: none;
-  background-color: transparent;
-  background-image: url("../../img/guess_nana.jpg");
-  background-repeat: no-repeat;
-  background-size: 100%;
+  background-color: #333;
+  color: #fff;
+}
+
+#conBox > #articleBox > #gallery > #imgBox > #imgJacket:hover > .imgCover {
+  display: block;
 }
 
 #conBox > #articleBox > #gallery > #imgBox > #imgGallery {
@@ -374,21 +385,25 @@
   background-color: transparent;
   background-image: url("../../img/guess_suzy_s.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: contain;
 }
 
 #conBox > #articleBox > #gallery > #imgBox > #imgGallery > .imgCover {
-  width: 100%;
+  width: 140px;
   height: auto;
   float: left;
-  margin-bottom: 60px;
-  margin-right: 94px;
+  margin-bottom: 150px;
   position: absolute;
+  bottom: 10px;
+  left: 50%;
+  margin-left: -70px;
   display: none;
-  background-color: transparent;
-  background-image: url("../../img/guess_nana.jpg");
-  background-repeat: no-repeat;
-  background-size: 100%;
+  background-color: #333;
+  color: #fff;
+}
+
+#conBox > #articleBox > #gallery > #imgBox > #imgGallery:hover > .imgCover {
+  display: block;
 }
 
 #footBox {
@@ -399,8 +414,7 @@
 
 #footBox > p {
   padding-top: 40px;
-  box-sizing: border-box;
   font-size: 1em;
-  font-family: 'NanumGothic', 'OpenSans', sans-serif;
+  font-family: "NanumGothic", "OpenSans", arial, sans-serif;
   text-align: center;
 }

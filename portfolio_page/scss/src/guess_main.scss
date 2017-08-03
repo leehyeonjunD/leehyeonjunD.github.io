@@ -4,94 +4,98 @@
 @import "../base/variable";
 @import "../base/mixin";
 
+body{overflow-x:hidden;}
 #wrap{
-      width:940px; height:auto; margin:0 auto; margin-top:10em;
+      width:100%; min-width:940px; height:auto; margin-top:130px;
 }
 
 #headBox{
-        width:inherit; height:160px;
+        width:940px; height:auto;
         position:fixed;
         z-index:100;
         top:0;
-        background-color:map-get($bgc,primary);
-        padding:50px; 
+        left:50%;
+        margin-left:-470px;
+        padding:30px;
         @extend %boxsize;
+        background-color:map-get($bgc,primary);
         text-transform:uppercase;
-        >h1 /*a*/{
-            width:206px; height:50px;
+        >h1{
+            width:220px; height:70px;
             float:left;
             @include bg($f:"guess_logo_3.png");
+            >a{width: 100%; height: auto;}
         }
         >.nav_btn{
-                width:280px; height:auto;
+                width:240px; height:auto;
                 position: relative;
             >#btn_menu{
-                width:54px; height:56px;
+                width:46px; height:48px;
                 float:right;
                 position: absolute;
                 top:10%;
-                right:-200%;
+                right:-260%;
                 @include bg($f:"btn_menu_2.png");
             }
             >dl{
-                width:inherit; height:400px;
+                width:inherit; height:auto;
                 position: absolute; 
                 float:right;
-                top:220%;
-                right:-218%;
+                top:143%;
+                right:-280%;
                 z-index:100;
                 background-color:#e6e6e6;
                 dd:nth-child(2){
-                    width:280px; height:110px;
+                    width:240px; height:100px;
                     float:left;
-                    padding:40px 150px 40px 40px;
+                    padding:30px;
                     @extend %boxsize;
                     font-weight:bold;
-                    font-size:1.5em;
+                    font-size:1.4em;
                     font-family:$ff;
                     text-align:center;
                     border-bottom:1px solid #333;
                 }
                 dd:nth-child(3){
-                    width:280px; height:72px;
+                    width:240px; height:72px;
                     float:left;
-                    padding:26px 160px 26px 40px;
+                    padding:20px;
                     @extend %boxsize;
                     font-weight:bold;
-                    font-size:1.5em;
+                    font-size:1.4em;
                     font-family:$ff;
                     text-align:center;
-                    &:hover{background-color:#c33;}
+                    &:hover{background-color:#fff;}
                 }
                 dd:nth-child(4){
-                    width:280px; height:72px;
+                    width:240px; height:72px;
                     float:left;
-                    padding:20px 140px 26px 40px;
+                    padding:20px;
                     @extend %boxsize;
                     font-weight:bold;
-                    font-size:1.5em;
+                    font-size:1.4em;
                     font-family:$ff;
                     text-align:center;
-                    &:hover{background-color:#c33;}
+                    &:hover{background-color:#fff;}
                 }
                 dd:nth-child(5){
-                    width:280px; height:72px;
+                    width:240px; height:72px;
                     float:left;
-                    padding:20px 140px 26px 40px;
+                    padding:20px;
                     @extend %boxsize;
                     font-weight:bold;
-                    font-size:1.5em;
+                    font-size:1.4em;
                     font-family:$ff;
                     text-align:center;
-                    &:hover{background-color:#c33;}
+                    &:hover{background-color:#fff;}
                 }
                 dd:last-child{
-                    width:280px; height:74px;
+                    width:240px; height:74px;
                     float:left;
-                    padding:20px 70px 44px 40px;
+                    padding:20px;
                     @extend %boxsize;
                     font-weight:bold;
-                    font-size:1.5em;
+                    font-size:1.4em;
                     font-family:$ff;
                     text-align:center;
                     &:hover{background-color:#c33;}
@@ -101,16 +105,20 @@
 }   // #headBox
 
 #conBox{
-        width:100%; height:4140px;
+        width:940px; height:auto;
+        margin:0 auto;
         background-color:map-get($bgc,primary);
         >#adBox{
-                width:940px; height:500px;
-                position: relative;
-                margin-bottom:11.25em;
-                @include bg($f:"guess_ad.jpg");
+            width:100vw; height:1000px;
+            position: relative;
+            left:50%;
+            margin:0 auto;
+            margin-left:-50vw;
+            margin-bottom:11.25em;
+            @include bg($f:"guess_ad.jpg",$s:cover);
         }
         >#articleBox{
-                width:940px; height:3460px;
+                width:100%; height:3460px; margin:0 auto;
                 >#story{
                     width:940px; height:824px;
                     margin-bottom:11.25em;
@@ -166,24 +174,23 @@
                         margin-left:190px;
                         position:relative;
                         @include bg($f:"guess_model.jpg",$s:auto); 
-                        background-position:center; 
-                        transition:all 500ms ease-in;
+                        background-position:center;
+                        color: #fff;
                         &::after{
                             content:" "; width:100%; height:100%; 
                             background-color:hsla(0,75%,80%,0.5); 
                             display:none; 
                             position:absolute; top:0; left:0;
-                            transition:all 500ms ease-in;}
+                        }
 
                         &:hover::after{display: block;}
                         &:hover{
-                            @include bg($f:"guess_model.jpg",$s:contain);
-                            
+                            @include bg($f:"guess_model.jpg");
                         }
                     }
                 }
                 >#video{
-                    width:940px; height:770px;
+                    width:100%; height:770px;
                     margin-bottom:11.25em;
                     text-transform:uppercase;
                     >h3{
@@ -196,14 +203,13 @@
                         margin: 0 auto 130px;
                     }
                     >#videoImg{
-                        width:100%; height:566px;
-                        float:right;
-                        margin-left:20px;
-                        @include bg($f:"guess_video.png");
+                        width:940px; height:auto;
+                        // margin-left:20px;
+                        // @include bg($f:"guess_video.png");
                     }
                 }
                 >#gallery{
-                    width:940px; height:1426px;
+                    width:100%; height:1426px;
                     margin-bottom:5em;
                     text-transform:uppercase;
                     >h3{
@@ -227,13 +233,15 @@
                             position: relative; 
                             @include bg($f:"guess_nana.jpg");
                             >.imgCover{
-                            width:100px; height:auto;
+                            width:140px; height:auto;
                             float:left;
-                            margin-bottom:60px;
+                            margin-bottom:150px;
                             position: absolute;
                             bottom: 10px; left: 50%; 
-                            margin-left: -50px;
-                             display: none;
+                            margin-left:-70px;
+                            display: none;
+                            background-color:#333;
+                            color:#fff;
                             }
                         &:hover>.imgCover{display: block;}
                         }
@@ -245,13 +253,15 @@
                             position: relative;
                             @include bg($f:"guess_suzy_f.jpg");
                             >.imgCover{
-                            width:100px; height:auto;
+                            width:140px; height:auto;
                             float:left;
-                            margin-bottom:60px;
+                            margin-bottom:150px;
                             position: absolute;
                             bottom: 10px; left: 50%; 
-                            margin-left: -50px;
-                             display: none;
+                            margin-left:-70px;
+                            display: none;
+                            background-color:#333;
+                            color:#fff;
                             }
                         &:hover>.imgCover{display: block;}
                         }
@@ -261,13 +271,15 @@
                             position: relative;
                             @include bg($f:"guess_suzy_s.jpg");
                             >.imgCover{
-                            width:100px; height:auto;
+                            width:140px; height:auto;
                             float:left;
-                            margin-bottom:60px;
+                            margin-bottom:150px;
                             position: absolute;
                             bottom: 10px; left: 50%; 
-                            margin-left: -50px;
-                             display: none;
+                            margin-left:-70px;
+                            display: none;
+                            background-color:#333;
+                            color:#fff;
                             }
                         &:hover>.imgCover{display: block;}
                         }
