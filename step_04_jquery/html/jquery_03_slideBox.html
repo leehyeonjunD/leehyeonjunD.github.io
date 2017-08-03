@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/base/reset.css">
+  <link rel="stylesheet" type="text/css" href="../fontAwesome/css/font-awesome.min.css" />
+  <script src="../js/jquery/jquery-3.2.1.min.js"></script>
+  <script src="../js/jquery/jquery-ui.min.js"></script>
+  <title>Document</title>
+  <style>
+    #wrap{width: 100%; min-height:960px; height: auto; margin: 0 auto;}
+    #wrap::after{content:" "; display: block; clear: both;}
+    #headBox{
+      width: 100%; height: auto; 
+      padding: 0.5em; box-sizing:border-box; 
+      background-color:#ccc; float: left;
+    }
+      h1{font-size: 2em; color: #539; font-weight: bold;}
+    #sideBox{
+      width: 20%; min-width:200px; 
+      height: auto; min-height:500px; 
+      background-color:#adf; 
+      float: left;
+    }
+    #contentBox{
+      width:80%; min-width: 740px; 
+      height: auto; min-height:500px;
+      background-color: #fda; 
+      float: left; 
+      padding:1em; box-sizing:border-box;
+    }
+    #contentBox dl{
+      width: 100%; height: auto;
+      padding:0.2em; 
+      background-color: #fff; 
+      border:1px solid #333;
+    }
+    #contentBox dt{
+      width: 100%; height: 1.5em; 
+      background-color: #7af; 
+      color:#fff; font-size: 1.3em; 
+      transition:all 300s ease-out; 
+      border-top:1px solid #777;
+    }
+    #contentBox dt:hover{background-color: #3ac;}
+    #contentBox i{
+      color: #fff;/* float: right; */
+      margin-top: 0.2em; margin-right: 2em; 
+      transition:all 300ms;
+    }
+    #contentBox dd{
+      width: 100%; height: auto; 
+      padding: 0.5em; box-sizing: border-box; 
+      background-color: #d1d1d1; 
+      color: #555;
+    }
+    #contentBox dd:hover{background-color: #999;}
+    button{font-size: 1em; color:inherit;}
+
+    /* jquery addClass 요소 */
+    .rotateArrow{transform:rotate(180deg);}
+    </style>
+</head>
+<body>
+  <div id="wrap">
+    <header id="headBox">
+      <h1>세로형 슬라이드 메뉴 만들기</h1>
+    </header>
+    <aside id="sideBox"></aside>
+    <article id="contentBox">
+      <dl>
+        <dt>
+          <button type="button">slide_title_01</button>
+          <i class="fa fa-arrow-circle-down"></i>
+        </dt>
+        <dd>slide_content_01<br />Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, numquam?</dd>
+        <dt>
+          <button type="button">slide_title_02</button>
+          <i class="fa fa-arrow-circle-down"></i>
+        </dt>
+        <dd>slide_content_02<br />Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus architecto nemo magnam expedita ex et vitae incidunt. Animi, eligendi, suscipit.</dd>
+        <dt>
+          <button type="button">slide_title_03</button>
+          <i class="fa fa-arrow-circle-down"></i>
+        </dt>
+        <dd>slide_content_03<br />Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit sequi nobis delectus perferendis itaque sit autem, placeat repellat illo aliquid!</dd>
+        <dt>
+          <button type="button">slide_title_04</button>
+          <i class="fa fa-arrow-circle-down"></i>
+        </dt>
+        <dd>slide_content_04<br />Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium earum nihil ab, assumenda iusto possimus maxime sit rerum nesciunt cupiditate.</dd>
+        <dt>
+          <button type="button">slide_title_05</button>
+          <i class="fa fa-arrow-circle-down"></i>
+        </dt>
+        <dd>slide_content_05<br />Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo iusto illo corporis expedita doloribus, cum nobis in provident ipsum quidem.</dd>
+      </dl>
+    </article>
+  </div>
+
+  <script>
+    (function($){
+      var content = $('#contentBox');
+      var conMenu = content.find('dd');
+      var conBtn = content.find('dt');
+      // 1. 모든 dd를 숨기기(display:none)
+      conMenu.hide(); // conMenu.css({display:none}); 와 동일한 기능
+      // 2. dt를 클릭하면 dd를 나타나게 만들기
+      var rotate = 0;  // 하나의 값을 가져오기위해 체크10번 해당사항
+      conBtn.on('click', function(e){
+        e.preventDefault();
+        // 단순하게 show명령어로는 모든 dd가 나타나게된다.
+        // conMenu.show(); // conMenu.css({display:block}); 와 동일한 기능
+
+      // 3. 선택한 dt의 바로 뒤에 존재하는 dd만을 나타나게 만들어라!
+        // on()를 통해 이벤트가 발생된 것(선택한것) $(this)
+        // next()
+          var _$this = $(this);
+        // _$this.next('dd').stop().slideDown();
+
+      //4. 클릭시 다시 올라오도록 처리
+        // _$this.next('dd').stop().slideToggle();
+
+          // 8번의 체크사항 검증
+          var viewDD = _$this.next('dd').css('display');
+          console.log(viewDD);
+          // 9. dd상태를 파악한 후 fontAwesome의 class이름을 변경되게 처리
+            // if(viewDD == 'none'){
+            // // _$this.find('i')
+            // //       .removeClass('fa-arrow-circle-down')
+            // //       .addClass('fa-arrow-circle-up');
+            //   _$this.find('i').addClass('rotateArrow');
+            // }else{
+            // // _$this.find('i')
+            // //       .removeClass('fa-arrow-circle-up')
+            // //       .addClass('fa-arrow-circle-down');
+            //   _$this.find('i').removeClass('rotateArrow');
+            // }
+
+          rotate += 180;
+          console.log(rotate);
+          _$this.find('i').css({transform:'rotate('+ rotate +'deg)'});
+
+      // 5. 다른것을 클릭했다면, 먼저 열러있던 메뉴항목은 닫히도록 처리
+          conMenu.stop().slideUp();
+          _$this.next('dd').stop().slideToggle();
+
+      // 6. this의 i요소에 담김 class이름 fa-arow-circle-down삭제
+        // _$this.find('i').removeClass('fa-arrow-circle-down');
+      // 7. 삭제된 fa-arrow-circle-down의 class이름 대신 fa-arrow-circle-up을 적용
+        // _$this.find('i').addClass('fa-arrow-circle-up');
+
+      // 6,7번 내용을 한줄로 정리
+        // _$this.find('i')
+              // .removeClass('fa-arrow-circle-down')
+              // .addClass('fa-arrow-circle-up');
+
+      // 8. 선택된 dt( $(this) )의 바로 뒤에오는 dd의 상태를 확인
+        // 검증- (5번 실행전에 검증!!)
+          // var viewDD = _$this.next('dd').css('display');
+          // console.log(viewDD);
+
+
+
+
+      });
+
+    })(this.jQuery);
+  </script>
+</body>
+</html>
