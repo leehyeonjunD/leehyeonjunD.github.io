@@ -1,0 +1,289 @@
+@charset "utf-8";
+/* guess_main.html 디자인 영역 */
+// @import url(https://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import "../base/variable";
+@import "../base/mixin";
+
+#wrap{
+      width:940px; height:auto; margin:0 auto; margin-top:10em;
+}
+
+#headBox{
+        width:inherit; height:160px;
+        position:fixed;
+        z-index:100;
+        top:0;
+        background-color:map-get($bgc,primary);
+        padding:50px; 
+        @extend %boxsize;
+        text-transform:uppercase;
+        >h1 /*a*/{
+            width:206px; height:50px;
+            float:left;
+            @include bg($f:"guess_logo_3.png");
+        }
+        >.nav_btn{
+                width:280px; height:auto;
+                position: relative;
+            >#btn_menu{
+                width:54px; height:56px;
+                float:right;
+                position: absolute;
+                top:10%;
+                right:-200%;
+                @include bg($f:"btn_menu_2.png");
+            }
+            >dl{
+                width:inherit; height:400px;
+                position: absolute; 
+                float:right;
+                top:220%;
+                right:-218%;
+                z-index:100;
+                background-color:#e6e6e6;
+                dd:nth-child(2){
+                    width:280px; height:110px;
+                    float:left;
+                    padding:40px 150px 40px 40px;
+                    @extend %boxsize;
+                    font-weight:bold;
+                    font-size:1.5em;
+                    font-family:$ff;
+                    text-align:center;
+                    border-bottom:1px solid #333;
+                }
+                dd:nth-child(3){
+                    width:280px; height:72px;
+                    float:left;
+                    padding:26px 160px 26px 40px;
+                    @extend %boxsize;
+                    font-weight:bold;
+                    font-size:1.5em;
+                    font-family:$ff;
+                    text-align:center;
+                    &:hover{background-color:#c33;}
+                }
+                dd:nth-child(4){
+                    width:280px; height:72px;
+                    float:left;
+                    padding:20px 140px 26px 40px;
+                    @extend %boxsize;
+                    font-weight:bold;
+                    font-size:1.5em;
+                    font-family:$ff;
+                    text-align:center;
+                    &:hover{background-color:#c33;}
+                }
+                dd:nth-child(5){
+                    width:280px; height:72px;
+                    float:left;
+                    padding:20px 140px 26px 40px;
+                    @extend %boxsize;
+                    font-weight:bold;
+                    font-size:1.5em;
+                    font-family:$ff;
+                    text-align:center;
+                    &:hover{background-color:#c33;}
+                }
+                dd:last-child{
+                    width:280px; height:74px;
+                    float:left;
+                    padding:20px 70px 44px 40px;
+                    @extend %boxsize;
+                    font-weight:bold;
+                    font-size:1.5em;
+                    font-family:$ff;
+                    text-align:center;
+                    &:hover{background-color:#c33;}
+                }
+            } // dl
+        } // .nav_btn
+}   // #headBox
+
+#conBox{
+        width:100%; height:4140px;
+        background-color:map-get($bgc,primary);
+        >#adBox{
+                width:940px; height:500px;
+                position: relative;
+                margin-bottom:11.25em;
+                @include bg($f:"guess_ad.jpg");
+        }
+        >#articleBox{
+                width:940px; height:3460px;
+                >#story{
+                    width:940px; height:824px;
+                    margin-bottom:11.25em;
+                    text-transform:uppercase;
+                    >h3{
+                        width:380px; height:48px;
+                        font-size:2.25em;
+                        font-family:$ff;
+                        text-align:center;
+                        border-bottom:2px solid map-get($bgc,primary2);
+                        padding-bottom:40px;
+                        margin: 0 auto 130px;
+                    }
+                    >#aboutText{
+                            width:340px; height:620px;
+                            float:left;
+                            background-color:map-get($bgc,primary);
+                            padding:186px 8px 186px 98px;
+                            @extend %boxsize;
+                            text-transform:uppercase;
+                            >#weGuess{
+                                font-weight:bold;
+                                font-size:2em;
+                                font-family:$ff;
+                                text-align:right;
+                            }
+                            >#guessWhat{
+                                font-size:1.5em;
+                                font-family:$ff;
+                                text-align:right;
+                                margin-bottom:128px;
+                            }
+                             #btnBox{
+                                width:140px; height:50px;
+                                padding:6px 40px;
+                                @extend %boxsize;
+                                margin-left:60px;
+                                text-transform:inherit;
+                                font-size:1.5em;
+                                font-family:$ff;
+                                border:1px solid #333;
+                                border-radius:10px;
+                                &:hover{
+                                    border:0; border-radius:10px;
+                                    background-color:#c33;
+                                    color:#fff;
+                                }
+                            }
+                    }
+                    >#slideImg{
+                        width:410px; height:700px;
+                        float:right;
+                        margin-left:190px;
+                        position:relative;
+                        @include bg($f:"guess_model.jpg",$s:auto); 
+                        background-position:center; 
+                        transition:all 500ms ease-in;
+                        &::after{
+                            content:" "; width:100%; height:100%; 
+                            background-color:hsla(0,75%,80%,0.5); 
+                            display:none; 
+                            position:absolute; top:0; left:0;
+                            transition:all 500ms ease-in;}
+
+                        &:hover::after{display: block;}
+                        &:hover{
+                            @include bg($f:"guess_model.jpg",$s:contain);
+                            
+                        }
+                    }
+                }
+                >#video{
+                    width:940px; height:770px;
+                    margin-bottom:11.25em;
+                    text-transform:uppercase;
+                    >h3{
+                        width:380px; height:48px;
+                        font-size:2.25em;
+                        font-family:$ff;
+                        text-align:center;
+                        border-bottom:2px solid map-get($bgc,primary2);
+                        padding-bottom:40px;
+                        margin: 0 auto 130px;
+                    }
+                    >#videoImg{
+                        width:100%; height:566px;
+                        float:right;
+                        margin-left:20px;
+                        @include bg($f:"guess_video.png");
+                    }
+                }
+                >#gallery{
+                    width:940px; height:1426px;
+                    margin-bottom:5em;
+                    text-transform:uppercase;
+                    >h3{
+                        width:380px; height:48px;
+                        font-size:2.25em;
+                        font-family:$ff;
+                        text-align:center;
+                        border-bottom:2px solid map-get($bgc,primary2);
+                        padding-bottom:40px;
+                        margin: 0 auto 130px;
+                    }
+                    >#imgBox{
+                        width:100%; height:1218px;
+                        float:right;
+                        margin-left:20px;
+                        >#imgStyle{
+                            width:420px; height:630px;
+                            float:left;
+                            margin-bottom:60px;
+                            margin-right:94px;
+                            position: relative; 
+                            @include bg($f:"guess_nana.jpg");
+                            >.imgCover{
+                            width:100px; height:auto;
+                            float:left;
+                            margin-bottom:60px;
+                            position: absolute;
+                            bottom: 10px; left: 50%; 
+                            margin-left: -50px;
+                             display: none;
+                            }
+                        &:hover>.imgCover{display: block;}
+                        }
+
+                        >#imgJacket{
+                            width:420px; height:558px;
+                            float:left;
+                            margin-bottom:60px;
+                            position: relative;
+                            @include bg($f:"guess_suzy_f.jpg");
+                            >.imgCover{
+                            width:100px; height:auto;
+                            float:left;
+                            margin-bottom:60px;
+                            position: absolute;
+                            bottom: 10px; left: 50%; 
+                            margin-left: -50px;
+                             display: none;
+                            }
+                        &:hover>.imgCover{display: block;}
+                        }
+                        >#imgGallery{
+                            width:100%; height:530px;
+                            float:left;
+                            position: relative;
+                            @include bg($f:"guess_suzy_s.jpg");
+                            >.imgCover{
+                            width:100px; height:auto;
+                            float:left;
+                            margin-bottom:60px;
+                            position: absolute;
+                            bottom: 10px; left: 50%; 
+                            margin-left: -50px;
+                             display: none;
+                            }
+                        &:hover>.imgCover{display: block;}
+                        }
+                    }  // #imgBox
+                }  // #gallery
+        }
+}   // #conBox
+
+#footBox{
+        width:100%; height:100px;
+        background-color:#c1c1c1;
+        >p{
+            padding-top:40px;
+            @extend %boxsize;
+            font-size:1em;
+            font-family:$ff;
+            text-align:center;
+        }
+}   // #footBox
