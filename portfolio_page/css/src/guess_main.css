@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* guess_main.html 디자인 영역 */
-#headBox, #headBox > .nav_btn > dl dd:nth-child(2), #headBox > .nav_btn > dl dd:nth-child(3), #headBox > .nav_btn > dl dd:nth-child(4), #headBox > .nav_btn > dl dd:nth-child(5), #headBox > .nav_btn > dl dd:last-child, #conBox > #articleBox > #story > #aboutText, #conBox > #articleBox > #story > #aboutText #btnBox, #footBox > p {
+#headBox, #headBox > .nav_btn > dl dd:nth-child(2), #headBox > .nav_btn > dl dd:nth-child(3), #headBox > .nav_btn > dl dd:nth-child(4), #headBox > .nav_btn > dl dd:nth-child(5), #headBox > .nav_btn > dl dd:last-child, #conBox > #articleBox > #story > #aboutText, #conBox > #articleBox > #story > #aboutText #btnBox, #conBox > #articleBox > #gallery > #imgBox > #imgGallery > i, #conBox > #articleBox > #gallery > #imgBox > #imgGallery > i > .hoverBtn, #footBox > p {
   box-sizing: border-box;
 }
 
@@ -402,7 +402,31 @@ body {
   color: #fff;
 }
 
+#conBox > #articleBox > #gallery > #imgBox > #imgGallery > i {
+  width: 30px;
+  height: 80px;
+  padding: 6px;
+  display: none;
+  border: 2px solid #fff;
+  border-radius: 5px;
+}
+
+#conBox > #articleBox > #gallery > #imgBox > #imgGallery > i > .hoverBtn {
+  width: inherit;
+  height: auto;
+  padding: 70px;
+  margin-left: 60px;
+  text-transform: inherit;
+  font-size: 1em;
+  border: 2px solid #fff;
+  border-radius: 10px;
+}
+
 #conBox > #articleBox > #gallery > #imgBox > #imgGallery:hover > .imgCover {
+  display: block;
+}
+
+#conBox > #articleBox > #gallery > #imgBox > #imgGallery:hover > i {
   display: block;
 }
 

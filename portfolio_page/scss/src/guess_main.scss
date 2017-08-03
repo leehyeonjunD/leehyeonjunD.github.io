@@ -281,7 +281,24 @@ body{overflow-x:hidden;}
                             background-color:#333;
                             color:#fff;
                             }
+                            >i{
+                            width:30px; height:80px;
+                            padding:6px;
+                            display: none;
+                            @extend %boxsize;
+                            border:2px solid #fff;
+                            border-radius:5px;
+                            >.hoverBtn{width:inherit; height:auto;
+                                padding:70px;
+                                @extend %boxsize;
+                                margin-left:60px;
+                                text-transform:inherit;
+                                font-size:1em;
+                                border:2px solid #fff;
+                                border-radius:10px;}
+                            }
                         &:hover>.imgCover{display: block;}
+                        &:hover>i{display: block;}
                         }
                     }  // #imgBox
                 }  // #gallery
