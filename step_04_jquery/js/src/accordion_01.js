@@ -13,10 +13,11 @@
       *   3-2. 원래 가져야하는 높이 값으로 설정
   */
 
-
-  var addH = $('.add_h');
-  var addH_dt = addH.find('dt');
-  var addH_dd = addH.find('dd');
+  var arr = [];
+  var i = 0;
+  for(; i < addH_dd.length; i++){
+    arr[i] = addH_dd.eq(i).height();
+  }
 
   addH_dd.hide();   // display:none
 
@@ -36,8 +37,9 @@
 
 // 숨겨진 dd를 보이게 만들기
     var formView = function(evt){
+      var j = addH_dt.index(_$this);
       evt.css({display:'block', height:0, padding:0, overflow:'hidden'})
-         .animate({height:'200px', padding:'0.5em'});
+         .animate({height:arr[j], padding:'0.5em'});
     };    // formView()
 
     formAni(ddBro);
