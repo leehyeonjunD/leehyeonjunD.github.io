@@ -128,7 +128,7 @@ body{overflow-x:hidden;}
                         font-size:2.25em;
                         font-family:$ff;
                         text-align:center;
-                        border-bottom:2px solid map-get($bgc,primary2);
+                        border-bottom:3px solid map-get($bgc,primary2);
                         padding-bottom:40px;
                         margin: 0 auto 130px;
                     }
@@ -161,8 +161,8 @@ body{overflow-x:hidden;}
                                 font-family:$ff;
                                 border:1px solid #333;
                                 border-radius:10px;
+                                transition:all 200ms ease;
                                 &:hover{
-                                    border:0; border-radius:10px;
                                     background-color:#c33;
                                     color:#fff;
                                 }
@@ -175,7 +175,6 @@ body{overflow-x:hidden;}
                         position:relative;
                         @include bg($f:"guess_model.jpg",$s:auto); 
                         background-position:center;
-                        color: #fff;
                         &::after{
                             content:" "; width:100%; height:100%; 
                             background-color:hsla(0,75%,80%,0.5); 
@@ -198,7 +197,7 @@ body{overflow-x:hidden;}
                         font-size:2.25em;
                         font-family:$ff;
                         text-align:center;
-                        border-bottom:2px solid map-get($bgc,primary2);
+                        border-bottom:3px solid map-get($bgc,primary2);
                         padding-bottom:40px;
                         margin: 0 auto 130px;
                     }
@@ -217,7 +216,7 @@ body{overflow-x:hidden;}
                         font-size:2.25em;
                         font-family:$ff;
                         text-align:center;
-                        border-bottom:2px solid map-get($bgc,primary2);
+                        border-bottom:3px solid map-get($bgc,primary2);
                         padding-bottom:40px;
                         margin: 0 auto 130px;
                     }
@@ -281,24 +280,19 @@ body{overflow-x:hidden;}
                             background-color:#333;
                             color:#fff;
                             }
-                            >i{
-                            width:30px; height:80px;
-                            padding:6px;
-                            display: none;
-                            @extend %boxsize;
-                            border:2px solid #fff;
-                            border-radius:5px;
-                            >.hoverBtn{width:inherit; height:auto;
-                                padding:70px;
-                                @extend %boxsize;
-                                margin-left:60px;
-                                text-transform:inherit;
-                                font-size:1em;
-                                border:2px solid #fff;
-                                border-radius:10px;}
+                            >.hover_left{
+                                width:60px; height:auto;
+                                float:left;
+                                @include bg($f:"left_arrow.png");
                             }
-                        &:hover>.imgCover{display: block;}
-                        &:hover>i{display: block;}
+                            >.hover_right{
+                                width:60px; height:auto;
+                                float:right;
+                                @include bg($f:"right_arrow.png");
+                            }
+                        &:hover>.imgCover{display:block;}
+                        &:hover>.hover_left{display:block;}
+                        &:hover>.hover_right{display:block;}
                         }
                     }  // #imgBox
                 }  // #gallery

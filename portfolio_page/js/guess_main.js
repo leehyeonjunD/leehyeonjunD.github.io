@@ -4,7 +4,7 @@
   var nav = $('.navigation');
   // nav클릭 이벤트 ( .on() )
   btnMenu.on('click', function(){
-    nav.slideToggle();
+    nav.slideToggle(500);
   });
 
 })(this.jQuery);
