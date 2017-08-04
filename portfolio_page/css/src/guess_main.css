@@ -77,9 +77,9 @@ body {
   width: 240px;
   height: 100px;
   float: left;
-  padding: 30px;
+  padding: 40px;
   font-weight: bold;
-  font-size: 1.4em;
+  font-size: 1.3em;
   font-family: "NanumGothic", "OpenSans", arial, sans-serif;
   text-align: center;
   border-bottom: 1px solid #333;
@@ -168,13 +168,13 @@ body {
 
 #conBox > #articleBox {
   width: 100%;
-  height: 3460px;
+  height: auto;
   margin: 0 auto;
 }
 
 #conBox > #articleBox > #story {
   width: 940px;
-  height: 824px;
+  height: 922px;
   margin-bottom: 11.25em;
   text-transform: uppercase;
 }
@@ -235,20 +235,20 @@ body {
   width: 410px;
   height: 700px;
   float: right;
-  margin-left: 190px;
+  margin-right: 4em;
   position: relative;
   background-color: transparent;
   background-image: url("../../img/guess_model.jpg");
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: contain;
   background-position: center;
 }
 
 #conBox > #articleBox > #story > #slideImg::after {
   content: " ";
   width: 100%;
-  height: 100%;
-  background-color: rgba(242, 166, 166, 0.5);
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.3);
   display: none;
   position: absolute;
   top: 0;
@@ -263,7 +263,7 @@ body {
   background-color: transparent;
   background-image: url("../../img/guess_model.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: auto;
 }
 
 #conBox > #articleBox > #video {
@@ -292,7 +292,7 @@ body {
 #conBox > #articleBox > #gallery {
   width: 100%;
   height: 1426px;
-  margin-bottom: 5em;
+  margin-bottom: 6em;
   text-transform: uppercase;
 }
 
@@ -337,8 +337,30 @@ body {
   left: 50%;
   margin-left: -70px;
   display: none;
-  background-color: #333;
+  background-color: #c33;
   color: #fff;
+}
+
+#conBox > #articleBox > #gallery > #imgBox > #imgStyle::after {
+  content: " ";
+  width: 100%;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.3);
+  display: none;
+  position: absolute;
+  top: 10%;
+  left: 0;
+}
+
+#conBox > #articleBox > #gallery > #imgBox > #imgStyle:hover::after {
+  display: block;
+}
+
+#conBox > #articleBox > #gallery > #imgBox > #imgStyle:hover {
+  background-color: transparent;
+  background-image: url("../../img/guess_nana.jpg");
+  background-repeat: no-repeat;
+  background-size: 140%;
 }
 
 #conBox > #articleBox > #gallery > #imgBox > #imgStyle:hover > .imgCover {
@@ -367,8 +389,30 @@ body {
   left: 50%;
   margin-left: -70px;
   display: none;
-  background-color: #333;
+  background-color: #c33;
   color: #fff;
+}
+
+#conBox > #articleBox > #gallery > #imgBox > #imgJacket::after {
+  content: " ";
+  width: 100%;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.3);
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#conBox > #articleBox > #gallery > #imgBox > #imgJacket:hover::after {
+  display: block;
+}
+
+#conBox > #articleBox > #gallery > #imgBox > #imgJacket:hover {
+  background-color: transparent;
+  background-image: url("../../img/guess_suzy_f.jpg");
+  background-repeat: no-repeat;
+  background-size: 120%;
 }
 
 #conBox > #articleBox > #gallery > #imgBox > #imgJacket:hover > .imgCover {
@@ -396,39 +440,33 @@ body {
   left: 50%;
   margin-left: -70px;
   display: none;
-  background-color: #333;
+  background-color: #c33;
   color: #fff;
 }
 
-#conBox > #articleBox > #gallery > #imgBox > #imgGallery > .hover_left {
-  width: 60px;
+#conBox > #articleBox > #gallery > #imgBox > #imgGallery::after {
+  content: " ";
+  width: 100%;
   height: auto;
-  float: left;
-  background-color: transparent;
-  background-image: url("../../img/left_arrow.png");
-  background-repeat: no-repeat;
-  background-size: contain;
+  background-color: rgba(255, 255, 255, 0.3);
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-#conBox > #articleBox > #gallery > #imgBox > #imgGallery > .hover_right {
-  width: 60px;
-  height: auto;
-  float: right;
+#conBox > #articleBox > #gallery > #imgBox > #imgGallery:hover::after {
+  display: block;
+}
+
+#conBox > #articleBox > #gallery > #imgBox > #imgGallery:hover {
   background-color: transparent;
-  background-image: url("../../img/right_arrow.png");
+  background-image: url("../../img/guess_suzy_s.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 120%;
 }
 
 #conBox > #articleBox > #gallery > #imgBox > #imgGallery:hover > .imgCover {
-  display: block;
-}
-
-#conBox > #articleBox > #gallery > #imgBox > #imgGallery:hover > .hover_left {
-  display: block;
-}
-
-#conBox > #articleBox > #gallery > #imgBox > #imgGallery:hover > .hover_right {
   display: block;
 }
 

@@ -4,109 +4,120 @@
 @import "../base/variable";
 @import "../base/mixin";
 
+body{overflow-x:hidden;}
 #wrap{
-      width:940px; height:auto; margin:0 auto;
+      width:100%; min-width:940px; height:auto; margin-top:130px;
 }
 
 #headBox{
-        width:inherit; height:160px;
-        background-color:map-get($color,primary);
-        padding:50px; 
-        box-sizing:border-box;
+        width:940px; height:auto;
+        position:fixed;
+        z-index:100;
+        top:0;
+        left:50%;
+        margin-left:-470px;
+        padding:30px;
+        @extend %boxsize;
+        background-color:map-get($bgc,white);
         text-transform:uppercase;
-        >h1 /*a*/{
-            width:206px; height:50px;
+        >h1{
+            width:220px; height:70px;
             float:left;
             @include bg($f:"guess_logo_3.png");
+            >a{width: 100%; height: auto;}
         }
         >.nav_btn{
-                width:280px; height:auto;
+                width:240px; height:auto;
                 position: relative;
             >#btn_menu{
-                width:54px; height:56px;
+                width:46px; height:48px;
                 float:right;
                 position: absolute;
                 top:10%;
-                right:-200%;
+                right:-260%;
                 @include bg($f:"btn_menu_2.png");
             }
             >dl{
-                width:inherit; height:400px;
+                width:inherit; height:auto;
                 position: absolute; 
                 float:right;
-                top:220%;
-                right:-218%;
+                top:143%;
+                right:-280%;
                 z-index:100;
-                background-color:#e6e6e6;
+                background-color:map-get($bgc,gnb);
                 dd:nth-child(2){
-                    width:280px; height:110px;
+                    width:240px; height:100px;
                     float:left;
-                    padding:40px 150px 40px 40px;
-                    box-sizing: border-box;
+                    padding:40px;
+                    @extend %boxsize;
                     font-weight:bold;
-                    font-size:1.5em;
-                    font-family:'NanumGothic', 'OpenSans', sans-serif;
+                    font-size:1.3em;
+                    font-family:$ff;
                     text-align:center;
-                    border-bottom:1px solid #333;
+                    border-bottom:1px solid map-get($bgc,fblack);
                 }
                 dd:nth-child(3){
-                    width:280px; height:72px;
+                    width:240px; height:72px;
                     float:left;
-                    padding:26px 160px 26px 40px;
-                    box-sizing: border-box;
+                    padding:20px;
+                    @extend %boxsize;
                     font-weight:bold;
-                    font-size:1.5em;
-                    font-family:'NanumGothic', 'OpenSans', sans-serif;
+                    font-size:1.4em;
+                    font-family:$ff;
                     text-align:center;
-                    &:hover{background-color:#c33;}
+                    &:hover{background-color:map-get($bgc,white);}
                 }
                 dd:nth-child(4){
-                    width:280px; height:72px;
+                    width:240px; height:72px;
                     float:left;
-                    padding:20px 140px 26px 40px;
-                    box-sizing: border-box;
+                    padding:20px;
+                    @extend %boxsize;
                     font-weight:bold;
-                    font-size:1.5em;
-                    font-family:'NanumGothic', 'OpenSans', sans-serif;
+                    font-size:1.4em;
+                    font-family:$ff;
                     text-align:center;
-                    &:hover{background-color:#c33;}
+                    &:hover{background-color:map-get($bgc,white);}
                 }
                 dd:nth-child(5){
-                    width:280px; height:72px;
+                    width:240px; height:72px;
                     float:left;
-                    padding:20px 140px 26px 40px;
-                    box-sizing: border-box;
+                    padding:20px;
+                    @extend %boxsize;
                     font-weight:bold;
-                    font-size:1.5em;
-                    font-family:'NanumGothic', 'OpenSans', sans-serif;
+                    font-size:1.4em;
+                    font-family:$ff;
                     text-align:center;
-                    &:hover{background-color:#c33;}
+                    &:hover{background-color:map-get($bgc,white);}
                 }
                 dd:last-child{
-                    width:280px; height:74px;
+                    width:240px; height:74px;
                     float:left;
-                    padding:20px 70px 44px 40px;
-                    box-sizing: border-box;
+                    padding:20px;
+                    @extend %boxsize;
                     font-weight:bold;
-                    font-size:1.5em;
-                    font-family:'NanumGothic', 'OpenSans', sans-serif;
+                    font-size:1.4em;
+                    font-family:$ff;
                     text-align:center;
-                    &:hover{background-color:#c33;}
+                    &:hover{background-color:map-get($bgc,point);}
                 }
             } // dl
         } // .nav_btn
 }   // #headBox
 
-#conBox{}   // #conBox
+#conBox{
+        width:100%; height:800px; 
+        background-color:map-get($bgc,black);
+        @include bg($f:"guess_asap_3.jpg",$s:cover);
+}   // #conBox
 
 #footBox{
-        width:100%; height:60px;
-        background-color:#c1c1c1;
+        width:100%; height:100px;
+        background-color:map-get($bgc,footer);
         >p{
-            padding-top:5px;
-            box-sizing:border-box;
+            padding-top:40px;
+            @extend %boxsize;
             font-size:1em;
-            font-family:'NanumGothic', 'OpenSans', sans-serif;
+            font-family:$ff;
             text-align:center;
         }
 }   // #footBox

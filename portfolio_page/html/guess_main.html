@@ -18,14 +18,14 @@
   <!--  jquery -->
   <script src="../js/jquery/jquery-3.2.1.min.js"></script>
   <script src="../js/jquery/jquery-ui.min.js"></script>
-  <title>guess 게스</title>
+  <title>Guess 게스</title>
 
 </head>
 <body>
     <div id="wrap">
       <header id="headBox" class="clearfix">
         <h1>
-          <a href="./guess_main.html"><span class="hidden">guess</span></a>
+          <a href="#"><span class="hidden">guess</span></a>
         </h1>
         <div class="nav_btn clearfix">
           <button type="button" id="btn_menu">
@@ -58,7 +58,7 @@
                 <a href="#" id="btnBox">view</a>
               </div>
             </div>
-            <div id="slideImg"></div>
+            <div id="slideImg"><!-- 가로 슬라이드 메뉴 --></div>
           </article>
           <article id="video" class="clearfix">
             <h3>Video</h3>
@@ -72,38 +72,22 @@
               <div id="imgStyle">
                 <p class="hidden">가수 나나가 봄 자켓을 입은 모습입니다.</p>
                 <div class="imgCover">글씨가 사진 위에 나타납니다.</div>
-                <button type="button" class="hoverBtn">
-                  <i class="fa fa-angle-left"></i>
+                <!-- <button type="button" class="hover_left">
                   <span class="hidden">이미지 버튼</span>
                 </button>
-                <button type="button" class="hoverBtn">
-                  <i class="fa fa-angle-right"></i>
+                <button type="button" class="hover_right">
                   <span class="hidden">이미지 버튼</span>
-                </button>
+                </button> -->
               </div>
               
-              <div id="imgJacket">
+              <div id="imgJacket" class="clearfix">
                 <p class="hidden">가수 수지가 가을 자켓을 입은 모습입니다.</p>
                 <div class="imgCover">글씨가 사진 위에 나타납니다.</div>
-                <button type="button" class="hoverBtn">
-                  <i class="fa fa-angle-left"></i>
-                  <span class="hidden">이미지 버튼</span>
-                </button>
-                <button type="button" class="hoverBtn">
-                  <i class="fa fa-angle-right"></i>
-                  <span class="hidden">이미지 버튼</span>
-                </button>
               </div>
               
               <div id="imgGallery" class="clearfix">
                 <p class="hidden">가수 수지가 봄 상품을 입은 모습입니다.</p>
                 <div class="imgCover">글씨가 사진 위에 나타납니다.</div>
-                <button type="button" class="hover_left">
-                  <span class="hidden">이미지 버튼</span>
-                </button>
-                <button type="button" class="hover_right">
-                  <span class="hidden">이미지 버튼</span>
-                </button>
               </div>
               
             </div>
@@ -116,6 +100,6 @@
       </footer>
     </div>
 
-    <script src="../js/guess_main.js"></script>
+    <script src="../js/src/guess_main.js"></script>
 </body>     
 </html>

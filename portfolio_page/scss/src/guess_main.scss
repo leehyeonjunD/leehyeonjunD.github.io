@@ -18,7 +18,7 @@ body{overflow-x:hidden;}
         margin-left:-470px;
         padding:30px;
         @extend %boxsize;
-        background-color:map-get($bgc,primary);
+        background-color:map-get($bgc,white);
         text-transform:uppercase;
         >h1{
             width:220px; height:70px;
@@ -44,17 +44,17 @@ body{overflow-x:hidden;}
                 top:143%;
                 right:-280%;
                 z-index:100;
-                background-color:#e6e6e6;
+                background-color:map-get($bgc,gnb);
                 dd:nth-child(2){
                     width:240px; height:100px;
                     float:left;
-                    padding:30px;
+                    padding:40px;
                     @extend %boxsize;
                     font-weight:bold;
-                    font-size:1.4em;
+                    font-size:1.3em;
                     font-family:$ff;
                     text-align:center;
-                    border-bottom:1px solid #333;
+                    border-bottom:1px solid map-get($bgc,fblack);
                 }
                 dd:nth-child(3){
                     width:240px; height:72px;
@@ -65,7 +65,7 @@ body{overflow-x:hidden;}
                     font-size:1.4em;
                     font-family:$ff;
                     text-align:center;
-                    &:hover{background-color:#fff;}
+                    &:hover{background-color:map-get($bgc,white);}
                 }
                 dd:nth-child(4){
                     width:240px; height:72px;
@@ -76,7 +76,7 @@ body{overflow-x:hidden;}
                     font-size:1.4em;
                     font-family:$ff;
                     text-align:center;
-                    &:hover{background-color:#fff;}
+                    &:hover{background-color:map-get($bgc,white);}
                 }
                 dd:nth-child(5){
                     width:240px; height:72px;
@@ -87,7 +87,7 @@ body{overflow-x:hidden;}
                     font-size:1.4em;
                     font-family:$ff;
                     text-align:center;
-                    &:hover{background-color:#fff;}
+                    &:hover{background-color:map-get($bgc,white);}
                 }
                 dd:last-child{
                     width:240px; height:74px;
@@ -98,210 +98,230 @@ body{overflow-x:hidden;}
                     font-size:1.4em;
                     font-family:$ff;
                     text-align:center;
-                    &:hover{background-color:#c33;}
+                    &:hover{background-color:map-get($bgc,point);}
                 }
-            } // dl
-        } // .nav_btn
+            }   // dl
+        }   // .nav_btn
 }   // #headBox
 
 #conBox{
-        width:940px; height:auto;
+    width:940px; height:auto;
+    margin:0 auto;
+    background-color:map-get($bgc,white);
+    >#adBox{
+        width:100vw; height:1000px;
+        position: relative;
+        left:50%;
         margin:0 auto;
-        background-color:map-get($bgc,primary);
-        >#adBox{
-            width:100vw; height:1000px;
-            position: relative;
-            left:50%;
-            margin:0 auto;
-            margin-left:-50vw;
+        margin-left:-50vw;
+        margin-bottom:11.25em;
+        @include bg($f:"guess_ad.jpg",$s:cover);
+    }
+    >#articleBox{
+        width:100%; height:auto; margin:0 auto;
+        >#story{
+            width:940px; height:922px;
             margin-bottom:11.25em;
-            @include bg($f:"guess_ad.jpg",$s:cover);
-        }
-        >#articleBox{
-                width:100%; height:3460px; margin:0 auto;
-                >#story{
-                    width:940px; height:824px;
-                    margin-bottom:11.25em;
-                    text-transform:uppercase;
-                    >h3{
-                        width:380px; height:48px;
-                        font-size:2.25em;
-                        font-family:$ff;
-                        text-align:center;
-                        border-bottom:3px solid map-get($bgc,primary2);
-                        padding-bottom:40px;
-                        margin: 0 auto 130px;
-                    }
-                    >#aboutText{
-                            width:340px; height:620px;
-                            float:left;
-                            background-color:map-get($bgc,primary);
-                            padding:186px 8px 186px 98px;
-                            @extend %boxsize;
-                            text-transform:uppercase;
-                            >#weGuess{
-                                font-weight:bold;
-                                font-size:2em;
-                                font-family:$ff;
-                                text-align:right;
+            text-transform:uppercase;
+            >h3{
+                width:380px; height:48px;
+                font-size:2.25em;
+                font-family:$ff;
+                text-align:center;
+                border-bottom:3px solid map-get($bgc,point);
+                padding-bottom:40px;
+                margin: 0 auto 130px;
+            }
+            >#aboutText{
+                width:340px; height:620px;
+                float:left;
+                background-color:map-get($bgc,white);
+                padding:186px 8px 186px 98px;
+                @extend %boxsize;
+                text-transform:uppercase;
+                >#weGuess{
+                    font-weight:bold;
+                    font-size:2em;
+                    font-family:$ff;
+                    text-align:right;
+                }
+                >#guessWhat{
+                    font-size:1.5em;
+                    font-family:$ff;
+                    text-align:right;
+                    margin-bottom:128px;
                             }
-                            >#guessWhat{
-                                font-size:1.5em;
-                                font-family:$ff;
-                                text-align:right;
-                                margin-bottom:128px;
-                            }
-                             #btnBox{
-                                width:140px; height:50px;
-                                padding:6px 40px;
-                                @extend %boxsize;
-                                margin-left:60px;
-                                text-transform:inherit;
-                                font-size:1.5em;
-                                font-family:$ff;
-                                border:1px solid #333;
-                                border-radius:10px;
-                                transition:all 200ms ease;
-                                &:hover{
-                                    background-color:#c33;
-                                    color:#fff;
-                                }
-                            }
-                    }
-                    >#slideImg{
-                        width:410px; height:700px;
-                        float:right;
-                        margin-left:190px;
-                        position:relative;
-                        @include bg($f:"guess_model.jpg",$s:auto); 
-                        background-position:center;
-                        &::after{
-                            content:" "; width:100%; height:100%; 
-                            background-color:hsla(0,75%,80%,0.5); 
-                            display:none; 
-                            position:absolute; top:0; left:0;
-                        }
-
-                        &:hover::after{display: block;}
-                        &:hover{
-                            @include bg($f:"guess_model.jpg");
-                        }
+                 #btnBox{
+                    width:140px; height:50px;
+                    padding:6px 40px;
+                    @extend %boxsize;
+                    margin-left:60px;
+                    text-transform:inherit;
+                    font-size:1.5em;
+                    font-family:$ff;
+                    border:1px solid map-get($bgc,fblack);
+                    border-radius:10px;
+                    transition:all 200ms ease;
+                    &:hover{
+                        background-color:map-get($bgc,point);
+                        color:map-get($bgc,white);
                     }
                 }
-                >#video{
-                    width:100%; height:770px;
-                    margin-bottom:11.25em;
-                    text-transform:uppercase;
-                    >h3{
-                        width:380px; height:48px;
-                        font-size:2.25em;
-                        font-family:$ff;
-                        text-align:center;
-                        border-bottom:3px solid map-get($bgc,primary2);
-                        padding-bottom:40px;
-                        margin: 0 auto 130px;
-                    }
-                    >#videoImg{
-                        width:940px; height:auto;
-                        // margin-left:20px;
-                        // @include bg($f:"guess_video.png");
-                    }
+            }
+            >#slideImg{
+                width:410px; height:700px;
+                float:right;
+                margin-right:4em;
+                position:relative;
+                @include bg($f:"guess_model.jpg"); 
+                background-position:center;
+                &::after{
+                    content:" "; width:100%; height:auto; 
+                    background-color:rgba(#fff,0.3); 
+                    display:none; 
+                    position:absolute; top:0; left:0;
                 }
-                >#gallery{
-                    width:100%; height:1426px;
-                    margin-bottom:5em;
-                    text-transform:uppercase;
-                    >h3{
-                        width:380px; height:48px;
-                        font-size:2.25em;
-                        font-family:$ff;
-                        text-align:center;
-                        border-bottom:3px solid map-get($bgc,primary2);
-                        padding-bottom:40px;
-                        margin: 0 auto 130px;
-                    }
-                    >#imgBox{
-                        width:100%; height:1218px;
-                        float:right;
-                        margin-left:20px;
-                        >#imgStyle{
-                            width:420px; height:630px;
-                            float:left;
-                            margin-bottom:60px;
-                            margin-right:94px;
-                            position: relative; 
-                            @include bg($f:"guess_nana.jpg");
-                            >.imgCover{
-                            width:140px; height:auto;
-                            float:left;
-                            margin-bottom:150px;
-                            position: absolute;
-                            bottom: 10px; left: 50%; 
-                            margin-left:-70px;
-                            display: none;
-                            background-color:#333;
-                            color:#fff;
-                            }
-                        &:hover>.imgCover{display: block;}
-                        }
-
-                        >#imgJacket{
-                            width:420px; height:558px;
-                            float:left;
-                            margin-bottom:60px;
-                            position: relative;
-                            @include bg($f:"guess_suzy_f.jpg");
-                            >.imgCover{
-                            width:140px; height:auto;
-                            float:left;
-                            margin-bottom:150px;
-                            position: absolute;
-                            bottom: 10px; left: 50%; 
-                            margin-left:-70px;
-                            display: none;
-                            background-color:#333;
-                            color:#fff;
-                            }
-                        &:hover>.imgCover{display: block;}
-                        }
-                        >#imgGallery{
-                            width:100%; height:530px;
-                            float:left;
-                            position: relative;
-                            @include bg($f:"guess_suzy_s.jpg");
-                            >.imgCover{
-                            width:140px; height:auto;
-                            float:left;
-                            margin-bottom:150px;
-                            position: absolute;
-                            bottom: 10px; left: 50%; 
-                            margin-left:-70px;
-                            display: none;
-                            background-color:#333;
-                            color:#fff;
-                            }
-                            >.hover_left{
-                                width:60px; height:auto;
-                                float:left;
-                                @include bg($f:"left_arrow.png");
-                            }
-                            >.hover_right{
-                                width:60px; height:auto;
-                                float:right;
-                                @include bg($f:"right_arrow.png");
-                            }
-                        &:hover>.imgCover{display:block;}
-                        &:hover>.hover_left{display:block;}
-                        &:hover>.hover_right{display:block;}
-                        }
-                    }  // #imgBox
-                }  // #gallery
+                &:hover::after{display: block;}
+                &:hover{
+                    @include bg($f:"guess_model.jpg",$s:auto);
+                }
+            }
         }
+        >#video{
+            width:100%; height:770px;
+            margin-bottom:11.25em;
+            text-transform:uppercase;
+            >h3{
+                width:380px; height:48px;
+                font-size:2.25em;
+                font-family:$ff;
+                text-align:center;
+                border-bottom:3px solid map-get($bgc,point);
+                padding-bottom:40px;
+                margin: 0 auto 130px;
+            }
+            >#videoImg{
+                width:940px; height:auto;
+                // margin-left:20px;
+                // @include bg($f:"guess_video.png");
+            }
+        }
+        >#gallery{
+            width:100%; height:1426px;
+            margin-bottom:6em;
+            text-transform:uppercase;
+            >h3{
+                width:380px; height:48px;
+                font-size:2.25em;
+                font-family:$ff;
+                text-align:center;
+                border-bottom:3px solid map-get($bgc,point);
+                padding-bottom:40px;
+                margin: 0 auto 130px;
+            }
+            >#imgBox{
+                width:100%; height:1218px;
+                float:right;
+                margin-left:20px;
+                >#imgStyle{
+                    width:420px; height:630px;
+                    float:left;
+                    margin-bottom:60px;
+                    margin-right:94px;
+                    position: relative; 
+                    @include bg($f:"guess_nana.jpg");
+                    >.imgCover{
+                        width:140px; height:auto;
+                        float:left;
+                        margin-bottom:150px;
+                        position: absolute;
+                        bottom: 10px; left: 50%; 
+                        margin-left:-70px;
+                        display: none;
+                        background-color:map-get($bgc,point);
+                        color:map-get($bgc,white);
+                    }
+                    &::after{
+                        content:" "; width:100%; height:auto; 
+                        background-color:rgba(#fff,0.3); 
+                        display:none; 
+                        position:absolute; top:10%; left:0;
+                    }
+
+                    &:hover::after{display: block;}
+                    &:hover{
+                        @include bg($f:"guess_nana.jpg",$s:140%);
+                    }
+                    &:hover>.imgCover{display:block;}
+                }
+
+                >#imgJacket{
+                    width:420px; height:558px;
+                    float:left;
+                    margin-bottom:60px;
+                    position: relative;
+                    @include bg($f:"guess_suzy_f.jpg");
+                    >.imgCover{
+                        width:140px; height:auto;
+                        float:left;
+                        margin-bottom:150px;
+                        position: absolute;
+                        bottom: 10px; left: 50%; 
+                        margin-left:-70px;
+                        display: none;
+                        background-color:map-get($bgc,point);
+                        color:map-get($bgc,white);
+                    }
+                    &::after{
+                        content:" "; width:100%; height:auto; 
+                        background-color:rgba(#fff,0.3); 
+                        display:none; 
+                        position:absolute; top:0; left:0;
+                    }
+
+                    &:hover::after{display: block;}
+                    &:hover{
+                        @include bg($f:"guess_suzy_f.jpg",$s:120%);
+                    }
+                    &:hover>.imgCover{display:block;}
+                }
+                >#imgGallery{
+                    width:100%; height:530px;
+                    float:left;
+                    position: relative;
+                    @include bg($f:"guess_suzy_s.jpg");
+                    >.imgCover{
+                        width:140px; height:auto;
+                        float:left;
+                        margin-bottom:150px;
+                        position: absolute;
+                        bottom: 10px; left: 50%; 
+                        margin-left:-70px;
+                        display: none;
+                        background-color:map-get($bgc,point);
+                        color:map-get($bgc,white);
+                    }
+                    &::after{
+                        content:" "; width:100%; height:auto; 
+                        background-color:rgba(#fff,0.3); 
+                        display:none; 
+                        position:absolute; top:0; left:0;
+                    }
+
+                    &:hover::after{display: block;}
+                    &:hover{
+                        @include bg($f:"guess_suzy_s.jpg",$s:120%);
+                    }
+                    &:hover>.imgCover{display:block;}
+                }
+            }   // #imgBox
+        }   // #gallery
+    }   // #articleBox
 }   // #conBox
 
 #footBox{
         width:100%; height:100px;
-        background-color:#c1c1c1;
+        background-color:map-get($bgc,footer);
         >p{
             padding-top:40px;
             @extend %boxsize;
