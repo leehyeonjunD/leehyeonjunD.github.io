@@ -18,7 +18,7 @@ body{overflow-x:hidden;}
     margin-left:-470px;
     padding:10px 0;
     @extend %boxsize;
-    background-color:map-get($bgc,white);
+    background-color:rgba(map-get($bgc,white),0.8);
     text-transform:uppercase;
     >h1{
         width:200px; height:60px;
