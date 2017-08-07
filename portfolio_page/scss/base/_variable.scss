@@ -1,0 +1,17 @@
+@charset "utf-8";
+// variable.scss
+
+$bgc:(white:#fff, 
+    black:#000,
+    red:#c33, 
+    gray:#c1c1c1,
+    fb:#333,
+    gnb:#e6e6e6);
+
+$url:"../../img/";
+
+$ff:'NanumGothic', 'OpenSans', arial, sans-serif;
+
+%boxsize{box-sizing:border-box;}
+
+%ahover{color:map-get($bgc,white);}

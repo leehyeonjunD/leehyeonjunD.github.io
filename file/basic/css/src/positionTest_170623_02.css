@@ -1,0 +1,15 @@
+/* positonTest_170623_02.css */
+@charset "utf-8";
+
+#wrap{width: 960px; height: 3000px; 
+      margin: 0 auto; background-color: #afc;}
+      
+  .menu{width:100px; height:auto; background-color:#ddcfff;
+        padding:3em; box-sizing:border-box;
+        position: fixed; top: 0; left: 0;}
+
+  .side_menu{width:120px; height:400px;
+              padding:0.3em; box-sizing:border-box;
+              background-color:#c7d; color: #fff; border-radius:1em;
+              position: fixed; right:40%; top:3em;
+              margin-right:-500px;}
