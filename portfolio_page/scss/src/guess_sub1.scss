@@ -141,8 +141,6 @@ body{overflow-x:hidden;}
     padding:50px 40px;
     @extend %boxsize;
     @include bg($f:"guess_asap_3.jpg");
-    font-family:$ff;
-    text-align:left;
     >.lowLogin{
         width:860px; height:520px;
         padding:60px 20px;
@@ -152,7 +150,7 @@ body{overflow-x:hidden;}
             width:820px; height:400px;
             background-color:map-get($bgc,white);
             h3{
-                width: 100%; height: auto;
+                width:100%; height:auto;
                 padding:30px;
                 @extend %boxsize;
                 background-color:map-get($bgc,white);
@@ -160,6 +158,7 @@ body{overflow-x:hidden;}
                 p{
                     margin-left:8px;
                     font-size:1.4em;
+                    font-family:$ff;
                     font-weight:400;
                 }
             }
@@ -171,7 +170,8 @@ body{overflow-x:hidden;}
                 @extend %boxsize;
                  legend{
                     margin-bottom:30px;
-                    font-size:1em;
+                    font-size:1.2em;
+                    font-family:$ff;
                 }
                  #userEmail{
                     width:330px; height:32px;
@@ -180,6 +180,7 @@ body{overflow-x:hidden;}
                     @extend %boxsize;
                     margin-bottom:8px;
                     font-size:1em;
+                    font-family:$ff;
                 }
                  #userPwd{
                     width:330px; height:32px;
@@ -188,8 +189,9 @@ body{overflow-x:hidden;}
                     margin-bottom:50px;
                     @extend %boxsize;
                     font-size:1em;
+                    font-family:$ff;
                 }
-                 .login_btn{
+                 .formLog_login_btn{
                     width:150px; height:50px;
                     float:right;
                     padding:14px 40px;
@@ -197,7 +199,8 @@ body{overflow-x:hidden;}
                     background-color:map-get($bgc,bk);
                     >input{
                         color:map-get($bgc,white);
-                        font-size:1.2em;
+                        font-size:1em;
+                        font-family:$ff;
                         text-align:center;
                     }
                 }
@@ -210,25 +213,19 @@ body{overflow-x:hidden;}
                 border-left:1px solid map-get($bgc,gb);
                  legend{
                     margin-bottom:30px;
-                    font-size:1em;
+                    font-size:1.2em;
+                    font-family:$ff;
                 }
-                 #userEmail{
+                 #newEmail{
                     width:330px; height:32px;
                     padding:14px;
                     padding-left:12px;
                     @extend %boxsize;
-                    margin-bottom:8px;
+                    margin-bottom:90px;
                     font-size:1em;
+                    font-family:$ff;
                 }
-                 #userPwd{
-                    width:330px; height:32px;
-                    padding:14px;
-                    padding-left:12px;
-                    margin-bottom:92px;
-                    @extend %boxsize;
-                    font-size:1em;
-                }
-                 .login_btn{
+                 .formIn_login_btn{
                     width:150px; height:50px;
                     float:right;
                     padding:14px 40px;
@@ -236,7 +233,8 @@ body{overflow-x:hidden;}
                     background-color:map-get($bgc,bk);
                     >input{
                         color:map-get($bgc,white);
-                        font-size:1.2em;
+                        font-size:1em;
+                        font-family:$ff;
                         text-align:center;
                     }
                 }

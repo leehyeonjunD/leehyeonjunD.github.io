@@ -25,5 +25,16 @@ info.hide();
         }).fadeIn(4000).fadeOut(4000);
   });
 
+  // input email, pwd 알림창
+if (email === '' || name === '') {
+  alert("Please fill all fields...!!!!!!");
+e.preventDefault();
+} else if (!(email).match(emailReg)) {
+alert("Invalid Email...!!!!!!");
+e.preventDefault();
+} else {
+alert("Form Submitted Successfully......");
+}
+
 
 })(this.jQuery);

@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* guess_sub1.html 디자인 영역 */
-#headBox, #headBox > .nav > dl dd:nth-child(2), #headBox > .nav > dl dd:nth-child(2):hover, #headBox > .nav > dl dd:nth-child(3), #headBox > .nav > dl dd:nth-child(4), #headBox > .nav > dl dd:nth-child(5), #headBox > .nav > dl dd:last-child, #conBox, #conBox > .lowLogin, #conBox > .lowLogin > .innerBox h3, #conBox > .lowLogin > .innerBox #formLog, #conBox > .lowLogin > .innerBox #formLog #userEmail, #conBox > .lowLogin > .innerBox #formLog #userPwd, #conBox > .lowLogin > .innerBox #formLog .login_btn, #conBox > .lowLogin > .innerBox #formIn, #conBox > .lowLogin > .innerBox #formIn #userEmail, #conBox > .lowLogin > .innerBox #formIn #userPwd, #conBox > .lowLogin > .innerBox #formIn .login_btn, #footBox {
+#headBox, #headBox > .nav > dl dd:nth-child(2), #headBox > .nav > dl dd:nth-child(2):hover, #headBox > .nav > dl dd:nth-child(3), #headBox > .nav > dl dd:nth-child(4), #headBox > .nav > dl dd:nth-child(5), #headBox > .nav > dl dd:last-child, #conBox, #conBox > .lowLogin, #conBox > .lowLogin > .innerBox h3, #conBox > .lowLogin > .innerBox #formLog, #conBox > .lowLogin > .innerBox #formLog #userEmail, #conBox > .lowLogin > .innerBox #formLog #userPwd, #conBox > .lowLogin > .innerBox #formLog .formLog_login_btn, #conBox > .lowLogin > .innerBox #formIn, #conBox > .lowLogin > .innerBox #formIn #newEmail, #conBox > .lowLogin > .innerBox #formIn .formIn_login_btn, #footBox {
   box-sizing: border-box;
 }
 
@@ -174,8 +174,6 @@ body {
   background-image: url("../../img/guess_asap_3.jpg");
   background-repeat: no-repeat;
   background-size: contain;
-  font-family: "NanumGothic", "OpenSans", arial, sans-serif;
-  text-align: left;
 }
 
 #conBox > .lowLogin {
@@ -202,6 +200,7 @@ body {
 #conBox > .lowLogin > .innerBox h3 p {
   margin-left: 8px;
   font-size: 1.4em;
+  font-family: "NanumGothic", "OpenSans", arial, sans-serif;
   font-weight: 400;
 }
 
@@ -214,7 +213,8 @@ body {
 
 #conBox > .lowLogin > .innerBox #formLog legend {
   margin-bottom: 30px;
-  font-size: 1em;
+  font-size: 1.2em;
+  font-family: "NanumGothic", "OpenSans", arial, sans-serif;
 }
 
 #conBox > .lowLogin > .innerBox #formLog #userEmail {
@@ -224,6 +224,7 @@ body {
   padding-left: 12px;
   margin-bottom: 8px;
   font-size: 1em;
+  font-family: "NanumGothic", "OpenSans", arial, sans-serif;
 }
 
 #conBox > .lowLogin > .innerBox #formLog #userPwd {
@@ -233,9 +234,10 @@ body {
   padding-left: 12px;
   margin-bottom: 50px;
   font-size: 1em;
+  font-family: "NanumGothic", "OpenSans", arial, sans-serif;
 }
 
-#conBox > .lowLogin > .innerBox #formLog .login_btn {
+#conBox > .lowLogin > .innerBox #formLog .formLog_login_btn {
   width: 150px;
   height: 50px;
   float: right;
@@ -243,9 +245,10 @@ body {
   background-color: #333;
 }
 
-#conBox > .lowLogin > .innerBox #formLog .login_btn > input {
+#conBox > .lowLogin > .innerBox #formLog .formLog_login_btn > input {
   color: #fff;
-  font-size: 1.2em;
+  font-size: 1em;
+  font-family: "NanumGothic", "OpenSans", arial, sans-serif;
   text-align: center;
 }
 
@@ -259,39 +262,32 @@ body {
 
 #conBox > .lowLogin > .innerBox #formIn legend {
   margin-bottom: 30px;
-  font-size: 1em;
+  font-size: 1.2em;
+  font-family: "NanumGothic", "OpenSans", arial, sans-serif;
 }
 
-#conBox > .lowLogin > .innerBox #formIn #userEmail {
+#conBox > .lowLogin > .innerBox #formIn #newEmail {
   width: 330px;
   height: 32px;
   padding: 14px;
   padding-left: 12px;
-  margin-bottom: 8px;
+  margin-bottom: 90px;
   font-size: 1em;
+  font-family: "NanumGothic", "OpenSans", arial, sans-serif;
 }
 
-#conBox > .lowLogin > .innerBox #formIn #userPwd {
-  width: 330px;
-  height: 32px;
-  padding: 14px;
-  padding-left: 12px;
-  margin-bottom: 50px;
-  font-size: 1em;
-}
-
-#conBox > .lowLogin > .innerBox #formIn .login_btn {
+#conBox > .lowLogin > .innerBox #formIn .formIn_login_btn {
   width: 150px;
   height: 50px;
   float: right;
   padding: 14px 40px;
-  margin-bottom: 42px;
   background-color: #333;
 }
 
-#conBox > .lowLogin > .innerBox #formIn .login_btn > input {
+#conBox > .lowLogin > .innerBox #formIn .formIn_login_btn > input {
   color: #fff;
-  font-size: 1.2em;
+  font-size: 1em;
+  font-family: "NanumGothic", "OpenSans", arial, sans-serif;
   text-align: center;
 }
 
