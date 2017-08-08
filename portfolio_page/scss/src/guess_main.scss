@@ -134,6 +134,17 @@ body{overflow-x:hidden;}
     } // .nav_btn
 }   // #headBox
 
+#adBox{
+    width:100vw; height:1000px;
+    position: relative;
+    left:50%;
+    margin:0 auto;
+    margin-left:-50vw;
+    margin-bottom:11.25em;
+    @include bg($f:"guess_ad.jpg",$s:cover);
+    background-attachment:fixed;
+}   // #adBox
+
 #conBox{
     width:940px; height:auto;
     margin:0 auto;
@@ -141,23 +152,14 @@ body{overflow-x:hidden;}
     color:map-get($bgc,bk);
     font-family:$ff;
     text-align:center;
-    >#adBox{
-        width:100vw; height:1000px;
-        position: relative;
-        left:50%;
-        margin:0 auto;
-        margin-left:-50vw;
-        margin-bottom:11.25em;
-        @include bg($f:"guess_ad.jpg",$s:cover);
-        background-attachment:fixed;
-    }   // #adBox
+    
     >#articleBox{
         width:100%; height:auto; margin:0 auto;
         >#story{
             width:940px; height:922px;
             margin-bottom:11.25em;
             text-transform:uppercase;
-            >h3{
+            >h4{
                 width:380px; height:48px;
                 padding-bottom:40px;
                 margin:0 auto 130px;
@@ -221,7 +223,7 @@ body{overflow-x:hidden;}
             width:100%; height:770px;
             margin-bottom:11.25em;
             text-transform:uppercase;
-            >h3{
+            >h4{
                 width:380px; height:48px;
                 padding-bottom:40px;
                 margin:0 auto 130px;
@@ -238,7 +240,7 @@ body{overflow-x:hidden;}
             width:100%; height:1426px;
             margin-bottom:6em;
             text-transform:uppercase;
-            >h3{
+            >h4{
                 width:380px; height:48px;
                 padding-bottom:40px;
                 margin:0 auto 130px;

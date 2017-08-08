@@ -164,17 +164,7 @@ body {
   color: #fff;
 }
 
-#conBox {
-  width: 940px;
-  height: auto;
-  margin: 0 auto;
-  background-color: #fff;
-  color: #333;
-  font-family: "NanumGothic", "OpenSans", arial, sans-serif;
-  text-align: center;
-}
-
-#conBox > #adBox {
+#adBox {
   width: 100vw;
   height: 1000px;
   position: relative;
@@ -187,6 +177,16 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+}
+
+#conBox {
+  width: 940px;
+  height: auto;
+  margin: 0 auto;
+  background-color: #fff;
+  color: #333;
+  font-family: "NanumGothic", "OpenSans", arial, sans-serif;
+  text-align: center;
 }
 
 #conBox > #articleBox {
@@ -202,7 +202,7 @@ body {
   text-transform: uppercase;
 }
 
-#conBox > #articleBox > #story > h3 {
+#conBox > #articleBox > #story > h4 {
   width: 380px;
   height: 48px;
   padding-bottom: 40px;
@@ -291,7 +291,7 @@ body {
   text-transform: uppercase;
 }
 
-#conBox > #articleBox > #video > h3 {
+#conBox > #articleBox > #video > h4 {
   width: 380px;
   height: 48px;
   padding-bottom: 40px;
@@ -312,7 +312,7 @@ body {
   text-transform: uppercase;
 }
 
-#conBox > #articleBox > #gallery > h3 {
+#conBox > #articleBox > #gallery > h4 {
   width: 380px;
   height: 48px;
   padding-bottom: 40px;

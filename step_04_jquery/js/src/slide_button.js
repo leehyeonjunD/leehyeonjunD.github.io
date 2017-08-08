@@ -3,31 +3,56 @@
 (function($){
 // ---------------------------------------------------
 
-  /*
-    1. .me_link이름을 .slide_btn>ul에 적용
-    2. .slide_btn>ul>li의 가로값을 세로에도 적용(가로 == 세로)
-  */
+var slide_btn    = $('.slide_btn');
+var slide_ul     = slide_btn.children('ul');
+var slide_li     = slide_ul.children('li');
+var slide_button = $('.slide_btn').find('button');
+var slide_icon   = slide_button.find('i');
 
-// 1
-// show/hide -  fadeIn/fadeOut - slideDown/slideUp
-// addClass/removeClass
-
-$('.slide_btn>ul').addClass('me_link');
-
-// 2
-// .slide_btn>ul>li의 가로값
-
-// $('.slide_btn>ul>li').css('width');       // 기본 가로값 파악
-// $('.slide_btn>ul>li').width();            // 기본 가로값
-// $('.slide_btn>ul>li').innerWidth();       // padding 포함
-// $('.slide_btn>ul>li').outerWidth();       // border 포함
-// $('.slide_btn>ul>li').outerWidth(true);   // margin 포함
-
-var slide_li_width = $('.slide_btn>ul>li').width();
-$('.slide_btn>ul>li').height(slide_li_width);
+slide_ul.addClass('me_link')
 
 
+var slide_li_width = slide_li.width();
+slide_li.height(slide_li_width);
 
+slide_btn.addClass('leftMove')
+
+// console.log(slide_btn.css('left'));
+
+slide_button.on('click',function(e){
+  e.preventDefault();
+
+  // hasClass()     : class이름의 존재 유무를 판단(true/false)
+  // is()           : class뿐 아니라 다른 내용도 판단가능
+
+  // var slide_left = parseInt( slide_btn.css('left') );
+     // var slide_left = slide_btn.hasClass('leftMove');
+     var slide_left = slide_btn.is('.leftMove');
+     console.log(slide_left);
+
+  if( slide_left < 0 ){
+    slide_btn.removeClass('leftMove', 500);
+    slide_icon.removeClass('fa-arrow-right').addClass('fa-arrow-left');
+    slide_button.find('span').text('닫기');
+  }else{
+    slide_btn.addClass('leftMove', 500);
+    slide_icon.removeClass('fa-arrow-left').addClass('fa-arrow-right');
+    slide_button.find('span').text('열기');
+  }
+
+});
+
+// $('.moveBox').css({left:'-230px'});
+var timed = 500;
+// 3. 버튼에 마우스 올렸을경우 .slide_btn이 살짝 나오기
+slide_button.on('mouseenter', function(event){
+  event.preventDefault();
+  slide_btn.animate({left:'-230px'}, timed);
+});
+slide_button.on('mouseleave', function(event){
+  event.preventDefault();
+  slide_btn.animate({left:'-250px'}, timed);
+});
 
 // ---------------------------------------------------
 })(this.jQuery);

@@ -49,7 +49,6 @@ body{overflow-x:hidden;}
 }
 .slide_btn>button:hover{background-color: #07a;}
 
-
 .slide_btn>ul{
     width: 100%; height: auto; 
     padding: 0 10%; 
@@ -59,13 +58,23 @@ body{overflow-x:hidden;}
     width: 100%; 
     background-color: #afc;
     border-radius: 100px; 
+    overflow: hidden;
 }
 
-
-.slide_btn>ul>li>a{background-size: cover; background-position: center;}
-.slide_btn>ul>li:nth-child(1)>a{background-image: url("../../img/actor/wb1.jpg");}
-.slide_btn>ul>li:nth-child(2)>a{background-image: url("../../img/actor/jd1.jpg");}
-.slide_btn>ul>li:nth-child(3)>a{background-image: url("../../img/actor/ir1.jpg");}
+.slide_btn>ul>li>a{
+    background-size: cover; 
+    background-position: center;
+    transition: all 500ms;
+}
+.slide_btn>ul>li:nth-child(1)>a{
+    background-image: url("../../img/actor/wb1.jpg");
+}
+.slide_btn>ul>li:nth-child(2)>a{
+    background-image: url("../../img/actor/jd1.jpg");
+}
+.slide_btn>ul>li:nth-child(3)>a{
+    background-image: url("../../img/actor/ir1.jpg");
+}
 
 .slide_btn>ul>li:nth-child(1)>a:hover{
     background-image: url("../../img/actor/wb2.jpg");
@@ -77,7 +86,9 @@ body{overflow-x:hidden;}
     background-image: url("../../img/actor/ir2.jpg");
 }
 
-/*
+.leftMove{left:-250px; /*transform:traslateX(-250px);*/}
+
+/* 문제!
     1. .me_link이름을 .slide_btn>ul에 적용
     2. .slide_btn>ul>li의 가로값을 세로에도 적용(가로 == 세로)
 */
