@@ -26,15 +26,15 @@ info.hide();
   });
 
   // input email, pwd 알림창
-if (email === '' || name === '') {
-  alert("Please fill all fields...!!!!!!");
-e.preventDefault();
-} else if (!(email).match(emailReg)) {
-alert("Invalid Email...!!!!!!");
-e.preventDefault();
-} else {
-alert("Form Submitted Successfully......");
-}
+// if (email === '' || name === '') {
+//   alert("Please fill all fields...!!!!!!");
+// e.preventDefault();
+// } else if (!(email).match(emailReg)) {
+// alert("Invalid Email...!!!!!!");
+// e.preventDefault();
+// } else {
+// alert("Form Submitted Successfully......");
+// }
 
 
 })(this.jQuery);

@@ -208,7 +208,7 @@ body {
   padding-bottom: 40px;
   margin: 0 auto 130px;
   font-size: 2.25em;
-  border-bottom: 3px solid #c33;
+  border-bottom: 4px solid #c33;
 }
 
 #conBox > #articleBox > #story > #aboutText {
@@ -297,7 +297,7 @@ body {
   padding-bottom: 40px;
   margin: 0 auto 130px;
   font-size: 2.25em;
-  border-bottom: 3px solid #c33;
+  border-bottom: 4px solid #c33;
 }
 
 #conBox > #articleBox > #video > #videoImg {
@@ -318,7 +318,7 @@ body {
   padding-bottom: 40px;
   margin: 0 auto 130px;
   font-size: 2.25em;
-  border-bottom: 3px solid #c33;
+  border-bottom: 4px solid #c33;
 }
 
 #conBox > #articleBox > #gallery > #imgBox {

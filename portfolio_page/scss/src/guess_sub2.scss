@@ -138,7 +138,7 @@ body{overflow-x:hidden;}
     width:940px; height:auto;
     margin:0 auto;
     background-color:map-get($bgc,white);
-    font-family:$ff;
+    color:map-get($bgc,bk);
     text-align:center;
     >#adBox{
         width:100%; height:226px;
@@ -146,105 +146,197 @@ body{overflow-x:hidden;}
         @include bg($f:"guess_ads.jpg",$s:cover);
     }
     >#articleBox{
-        width:100%; height:4944px;
+        width:100%; height:auto;
+        margin:0 auto;
         background-color:map-get($bgc,white);
-        border:2px solid map-get($bgc,black);
         
-        >#aboutInfo{
-            width:100%; height:826px;
+        >.about_info{
+            width:940px; height:auto;
             margin-bottom:11.25em;
-            background-color:gray;
             text-transform:uppercase;
-            >h3{
-                width:380px; height: 48px;
-                padding-bottom:16px;
-                margin:0 auto 8.125em;
+            >h4{
+                width:380px; height:48px;
+                padding-bottom:40px;
+                margin:0 auto 130px;
                 font-size:2.25em;
-                border-bottom:2px solid map-get($bgc,red);
+                font-family:$ff;
+                border-bottom:4px solid map-get($bgc,red);
             }
-            >#aboutBox{
+            >.about_box{
                 position: relative;
-                >#aboutImg{
+                >.about_img{
                     width:80%; height:296px;
                     float:right;
                     @include bg($f:"guess_banner.jpg", $s:cover);
                     background-position:right center;
                 }
-                >#aboutText{
-                    width:340px; height:240px;
+                >.about_text{
+                    width:340px; height:auto;
                     position:absolute; 
                     left:0; top:50%;
                     margin-top:-120px;
+                    padding:120px 20px 60px 0;
+                    @extend %boxsize;
                     background-color:map-get($bgc,white);
+                    text-align:right;
+                    line-height:30px;
+                    >#totalLife{
+                        color:map-get($bgc,gb);
+                        font-size:16px;
+                        font-family:$ff;
+                        font-weight:600;
+                    }
+                    >#weGuess{
+                        font-size:38px; 
+                        font-family:$ff;
+                        font-weight:600;
+                    }
                 }
             }
-            >#guessBox{
-                width:296px; height:280px;
+            >.guess_box{
+                width:100%; height:auto;
+                margin-top:30px;
                 >#guessImg{
-                    width:100%; height:auto;
+                    width:288px; height:280px;
                     float:left;
-                    @include bg($f:"guess_ad_k1.jpg");
-                }
-                >#guessHug{
-                    width:100%; height:auto;
-                    float:right;
-                    @include bg($f:"guess_ad_k2.jpg");
+                    @include bg($f:"guess_ad_k1.jpg",$s:cover);
                 }
                 >#guessText{
                     width:340px; height:280px;
-                    float:center;
+                    float:left;
+                    padding:90px 50px;
+                    @extend %boxsize;
                     background-color:map-get($bgc,white);
+                    >#worldDenim{
+                        margin-bottom:36px;
+                        font-size:20px; 
+                        font-family:$ff;
+                    }
+                    >#guessGray{
+                        color:map-get($bgc,gb);
+                        font-size:20px; 
+                        font-family:$ff;
+                        font-weight:500;
+                    }
+                }
+                >#guessHug{
+                    width:294px; height:280px;
+                    float:right;
+                    @include bg($f:"guess_ad_k2.jpg",$s:cover);
                 }
             }
         }
 
-        >#brandInfo{
-            width:100%; height:520px;
+        >.brand_info{
+            width:100%; height:auto;
             margin-bottom:11.25em;
-            border:1px solid map-get($bgc,fb);
             >#brandImg{
-                width:260px; height:500px;
+                width:400px; height:600px;
                 float:right;
-                margin-left:100px;
-                margin-left:160px;
-                @include bg($f:"guess_model2.jpg");
+                @include bg($f:"guess_spring.jpg");
             }
             >#brandText{
-                width:200px;
+                width:330px; height:140px;
                 float:left;
-                background-color: #cc9;
-                font-size:1em;
+                padding:230px 100px;
+                >p{
+                    width:100%; height:auto;
+                    margin-bottom:20px;
+                    line-height:20px;
+                    font-size:1em;
+                    font-family:$ff;
+                    text-align:left;
+                }
             }
         }
 
-        >#totalInfo{
+        >.total_info{
             width:100%; height:500px;
+            padding-left:80px;
+            @extend %boxsize;
             margin-bottom:11.25em;      
-            border:1px solid map-get($bgc,fb);
+            border:1px solid map-get($bgc,bk);
+            >#totalImg{
+                width:370px; height:500px;
+                float:left;
+                padding:0;
+                @include bg($f:"guess_cf3.jpg");
+            }
+            >#totalText{
+                width:340px; height:140px;
+                float:right;
+                padding:180px 70px;
+                >p{
+                    width:100%; height:auto;
+                    margin-bottom:20px;
+                    line-height:20px;
+                    font-size:1em;
+                    font-family:$ff;
+                    text-align:left;
+                    >strong{
+                        color:map-get($bgc,red);
+                        font-size:18px;
+                        font-weight:bold;
+                    }
+
+                }
+            }
         }
 
-        >#styleInfo{
+        >.style_info{
             width:100%; height:500px;
             margin-bottom:11.25em;
-            border:1px solid map-get($bgc,fb);
+            border:1px solid map-get($bgc,bk);
+            >#styleImg{
+                width:380px; height:500px;
+                float:right;
+                margin-right:40px;
+                @include bg($f:"guess_suzy_f.jpg");
+            }
+            >#styleText{
+                width:330px; height:140px;
+                float:left;
+                padding:180px 90px;
+                >dt{
+                    width:100%; height:auto;
+                    margin-bottom:20px;
+                    line-height:20px;
+                    text-align:left;
+                    font-size:2em;
+                    font-family:$ff;
+                }
+                >dd{
+                    width:100%; height:auto;
+                    margin-bottom:20px;
+                    line-height:20px;
+                    text-align:left;
+                    font-size:1em;
+                    font-family:$ff;
+                    >strong{
+                        color:map-get($bgc,red);
+                        font-size:18px;
+                        font-weight:bold;
+                    }
+                }
+            }
         }
 
-        >#logoInfo{
+        >.logo_info{
             width:100%; height:480px;
-            margin-bottom:11.25em;
-            border:1px solid map-get($bgc,fb);
+            // margin-bottom:11.25em;
+            border:1px solid map-get($bgc,bk);
         }
 
-        >#asapInfo{ 
+        >.asap_info{ 
             width:100%; height:500px;
-            margin-bottom:10em;
-            border:1px solid map-get($bgc,fb);
+            // margin-bottom:10em;
+            border:1px solid map-get($bgc,bk);
         }
 
-        >#lifeInfo{
+        >.life_info{
             width:100%; height:500px;
-            margin-bottom:5em;
-            border:1px solid map-get($bgc,fb);
+            margin-bottom:6em;
+            border:1px solid map-get($bgc,bk);
         }
 
     }   // #articleBox
