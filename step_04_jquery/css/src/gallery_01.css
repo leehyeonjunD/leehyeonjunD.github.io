@@ -9,7 +9,7 @@ h1{
   width: 100%; height: auto;
   font-size: 3em;
   border-bottom: 1px solid #755;
-  font-family:/*"myriad pro",*/ arial, nanumGothic, dotum, sans-serif, Helvetica;
+  font-family:"Amaranth"/*, arial, nanumGothic, dotum,*/, sans-serif, Helvetica;
 }
 
 .gallery{width: 700px; height: auto; margin: 0 auto;}
