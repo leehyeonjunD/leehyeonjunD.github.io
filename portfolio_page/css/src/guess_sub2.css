@@ -48,7 +48,7 @@ body {
   float: left;
   margin-left: 70px;
   background-color: transparent;
-  background-image: url("../../img/guess_logo_3.png");
+  background-image: url("../../img/guess_h1_logo.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -67,7 +67,7 @@ body {
   margin-top: 10px;
   margin-right: 80px;
   background-color: transparent;
-  background-image: url("../../img/btn_menu_2.png");
+  background-image: url("../../img/btn_menu.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -178,7 +178,7 @@ body {
   height: 226px;
   margin-bottom: 5em;
   background-color: transparent;
-  background-image: url("../../img/guess_ads.jpg");
+  background-image: url("../../img/guess_sale.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -333,7 +333,6 @@ body {
   height: 500px;
   padding-left: 80px;
   margin-bottom: 11.25em;
-  border: 1px solid #333;
 }
 
 #conBox > #articleBox > .total_info > #totalImg {
@@ -374,7 +373,6 @@ body {
   width: 100%;
   height: 500px;
   margin-bottom: 11.25em;
-  border: 1px solid #333;
 }
 
 #conBox > #articleBox > .style_info > #styleImg {
@@ -392,17 +390,18 @@ body {
   width: 330px;
   height: 140px;
   float: left;
-  padding: 180px 90px;
+  padding: 160px 90px;
 }
 
 #conBox > #articleBox > .style_info > #styleText > dt {
   width: 100%;
   height: auto;
   margin-bottom: 20px;
-  line-height: 20px;
+  line-height: 30px;
   text-align: left;
   font-size: 2em;
   font-family: "NanumGothic", "OpenSans", arial, sans-serif;
+  font-weight: 400;
 }
 
 #conBox > #articleBox > .style_info > #styleText > dd {
@@ -424,7 +423,42 @@ body {
 #conBox > #articleBox > .logo_info {
   width: 100%;
   height: 480px;
+  margin-bottom: 11.25em;
   border: 1px solid #333;
+}
+
+#conBox > #articleBox > .logo_info > #logoImg {
+  width: 400px;
+  height: 600px;
+  float: right;
+  background-color: transparent;
+  background-image: url("../../img/guess_logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#conBox > #articleBox > .logo_info > #logoImg:hover {
+  background-color: transparent;
+  background-image: url("../../img/guess_logo_hover.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#conBox > #articleBox > .logo_info > #logoText {
+  width: 330px;
+  height: 140px;
+  float: left;
+  padding: 180px 90px;
+}
+
+#conBox > #articleBox > .logo_info > #logoText > p {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  line-height: 20px;
+  font-size: 1em;
+  font-family: "NanumGothic", "OpenSans", arial, sans-serif;
+  text-align: left;
 }
 
 #conBox > #articleBox > .asap_info {

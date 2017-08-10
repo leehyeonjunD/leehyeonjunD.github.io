@@ -31,7 +31,7 @@ body{overflow-x:hidden;}
             width:inherit; height:60px;
             float:left;
             margin-left:70px;
-            @include bg($f:"guess_logo_3.png");
+            @include bg($f:"guess_h1_logo.png");
         }
     }
     >.nav{
@@ -43,7 +43,7 @@ body{overflow-x:hidden;}
             float:right;
             margin-top:10px;
             margin-right:80px;
-            @include bg($f:"btn_menu_2.png");
+            @include bg($f:"btn_menu.png");
         }
         >dl{
             width:260px; height:auto;
