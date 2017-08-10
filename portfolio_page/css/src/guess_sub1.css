@@ -213,7 +213,7 @@ body {
 
 #conBox > .lowLogin > .innerBox #formLog legend {
   margin-bottom: 30px;
-  font-size: 1.2em;
+  font-size: 1.22em;
   font-family: "NanumGothic", "OpenSans", arial, sans-serif;
 }
 
@@ -247,7 +247,7 @@ body {
 
 #conBox > .lowLogin > .innerBox #formLog .formLog_login_btn > input {
   color: #fff;
-  font-size: 1em;
+  font-size: 1.18em;
   font-family: "NanumGothic", "OpenSans", arial, sans-serif;
   text-align: center;
 }
@@ -262,7 +262,7 @@ body {
 
 #conBox > .lowLogin > .innerBox #formIn legend {
   margin-bottom: 30px;
-  font-size: 1.2em;
+  font-size: 1.22em;
   font-family: "NanumGothic", "OpenSans", arial, sans-serif;
 }
 
@@ -286,7 +286,7 @@ body {
 
 #conBox > .lowLogin > .innerBox #formIn .formIn_login_btn > input {
   color: #fff;
-  font-size: 1em;
+  font-size: 1.18em;
   font-family: "NanumGothic", "OpenSans", arial, sans-serif;
   text-align: center;
 }

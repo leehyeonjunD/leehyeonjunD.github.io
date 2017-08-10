@@ -170,7 +170,7 @@ body{overflow-x:hidden;}
                 @extend %boxsize;
                  legend{
                     margin-bottom:30px;
-                    font-size:1.2em;
+                    font-size:1.22em;
                     font-family:$ff;
                 }
                  #userEmail{
@@ -199,7 +199,7 @@ body{overflow-x:hidden;}
                     background-color:map-get($bgc,bk);
                     >input{
                         color:map-get($bgc,white);
-                        font-size:1em;
+                        font-size:1.18em;
                         font-family:$ff;
                         text-align:center;
                     }
@@ -213,7 +213,7 @@ body{overflow-x:hidden;}
                 border-left:1px solid map-get($bgc,gb);
                  legend{
                     margin-bottom:30px;
-                    font-size:1.2em;
+                    font-size:1.22em;
                     font-family:$ff;
                 }
                  #newEmail{
@@ -233,7 +233,7 @@ body{overflow-x:hidden;}
                     background-color:map-get($bgc,bk);
                     >input{
                         color:map-get($bgc,white);
-                        font-size:1em;
+                        font-size:1.18em;
                         font-family:$ff;
                         text-align:center;
                     }
