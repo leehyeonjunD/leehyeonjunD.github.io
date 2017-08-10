@@ -15,14 +15,20 @@
   var li_last      = banner_group.children('li').last();
   banner_group.prepend(li_last);
 
-  btn_r.on('click',function(e){
-    e.preventDefault();
+  setInterval(BtnR, timed*3);   // 일정시간마다 반복(함수이름, 시간);
+  // clearInteral()
+
+  btn_r.on('click', BtnR);
+  
+  function BtnR( ){
+    // e.preventDefault();
     banner_group.stop().animate({marginLeft:'-200%'}, timed, function(){
       var li_fr    = banner_group.children('li').first();
         banner_group.append(li_fr);
         banner_group.css({marginLeft:'-100%'});
     });
-  });
+    return false;
+  };
 
   // 5. 왼쪽 버튼을 클릭하면, 위와 동일한 반복기능 처리
   btn_l.on('click',function(e){
