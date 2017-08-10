@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*! guess_sub2.html 디자인 영역*/
-#headBox, #headBox > .nav > dl dd:nth-child(2), #headBox > .nav > dl dd:nth-child(2):hover, #headBox > .nav > dl dd:nth-child(3), #headBox > .nav > dl dd:nth-child(4), #headBox > .nav > dl dd:nth-child(5), #headBox > .nav > dl dd:last-child, #conBox > #articleBox > .about_info > .about_box > .about_text, #conBox > #articleBox > .about_info > .guess_box > #guessText, #conBox > #articleBox > .total_info, #footBox {
+#headBox, #headBox > .nav > dl dd:nth-child(2), #headBox > .nav > dl dd:nth-child(2):hover, #headBox > .nav > dl dd:nth-child(3), #headBox > .nav > dl dd:nth-child(4), #headBox > .nav > dl dd:nth-child(5), #headBox > .nav > dl dd:last-child, #conBox > #articleBox > .about_info > .about_box > .about_text, #conBox > #articleBox > .about_info > .guess_box > #guessText, #conBox > #articleBox > .total_info, #conBox > #articleBox > .asap_info > #asapText, #conBox > #articleBox > .life_info, #footBox {
   box-sizing: border-box;
 }
 
@@ -315,7 +315,7 @@ body {
   width: 330px;
   height: 140px;
   float: left;
-  padding: 230px 100px;
+  padding: 230px 90px;
 }
 
 #conBox > #articleBox > .brand_info > #brandText > p {
@@ -331,7 +331,7 @@ body {
 #conBox > #articleBox > .total_info {
   width: 100%;
   height: 500px;
-  padding-left: 80px;
+  padding-left: 60px;
   margin-bottom: 11.25em;
 }
 
@@ -339,7 +339,6 @@ body {
   width: 370px;
   height: 500px;
   float: left;
-  padding: 0;
   background-color: transparent;
   background-image: url("../../img/guess_cf3.jpg");
   background-repeat: no-repeat;
@@ -350,7 +349,7 @@ body {
   width: 340px;
   height: 140px;
   float: right;
-  padding: 180px 70px;
+  padding: 180px 50px;
 }
 
 #conBox > #articleBox > .total_info > #totalText > p {
@@ -379,7 +378,6 @@ body {
   width: 380px;
   height: 500px;
   float: right;
-  margin-right: 40px;
   background-color: transparent;
   background-image: url("../../img/guess_suzy_f.jpg");
   background-repeat: no-repeat;
@@ -424,13 +422,14 @@ body {
   width: 100%;
   height: 480px;
   margin-bottom: 11.25em;
-  border: 1px solid #333;
 }
 
 #conBox > #articleBox > .logo_info > #logoImg {
-  width: 400px;
-  height: 600px;
+  width: 340px;
+  height: 240px;
   float: right;
+  margin-top: 120px;
+  margin-right: 100px;
   background-color: transparent;
   background-image: url("../../img/guess_logo.png");
   background-repeat: no-repeat;
@@ -445,10 +444,10 @@ body {
 }
 
 #conBox > #articleBox > .logo_info > #logoText {
-  width: 330px;
-  height: 140px;
+  width: 270px;
+  height: 90px;
   float: left;
-  padding: 180px 90px;
+  padding: 190px 100px 190px 80px;
 }
 
 #conBox > #articleBox > .logo_info > #logoText > p {
@@ -464,14 +463,81 @@ body {
 #conBox > #articleBox > .asap_info {
   width: 100%;
   height: 500px;
-  border: 1px solid #333;
+  margin-bottom: 10em;
+  position: relative;
+}
+
+#conBox > #articleBox > .asap_info > #asapImg {
+  width: 720px;
+  height: 460px;
+  background-color: transparent;
+  background-image: url("../../img/guess_asap_1.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#conBox > #articleBox > .asap_info > #asapText {
+  width: 390px;
+  height: 260px;
+  float: right;
+  z-index: 100;
+  position: absolute;
+  left: 58%;
+  top: 28%;
+  padding: 50px 20px;
+  background-color: #fff;
+  text-align: left;
+}
+
+#conBox > #articleBox > .asap_info > #asapText > dt {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  line-height: 20px;
+  color: #666;
+  font-size: 18px;
+  font-family: "NanumGothic", "OpenSans", arial, sans-serif;
+  font-weight: 500;
+}
+
+#conBox > #articleBox > .asap_info > #asapText > dd {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  font-size: 1em;
+  font-family: "NanumGothic", "OpenSans", arial, sans-serif;
 }
 
 #conBox > #articleBox > .life_info {
   width: 100%;
-  height: 500px;
+  height: 400px;
+  padding: 50px 0;
   margin-bottom: 6em;
-  border: 1px solid #333;
+}
+
+#conBox > #articleBox > .life_info > #lifeImg {
+  width: 450px;
+  height: 300px;
+  float: left;
+  background-color: transparent;
+  background-image: url("../../img/guess_asap_2.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#conBox > #articleBox > .life_info > #lifeText {
+  width: 380px;
+  height: 90px;
+  float: right;
+  margin: 100px 10px 0 50px;
+}
+
+#conBox > #articleBox > .life_info > #lifeText > p {
+  width: 100%;
+  height: auto;
+  font-size: 1em;
+  font-family: "NanumGothic", "OpenSans", arial, sans-serif;
+  text-align: left;
 }
 
 #footBox {
