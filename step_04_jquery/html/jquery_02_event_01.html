@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keyword" content="html, css, jquery" />
+    <!--[if lte IE 9]>
+        <script src="../ie/html5shiv/src/html5shiv.js"></script>
+        <script src="../ie/ie7/IE9.js"></script>
+        <script src="../ie/css3pie/PIE_IE9.js"></script>
+        <script src="../ie/Respond/Respond-master/dest/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="apple-touch-icon" href="#" />
+    <link rel="shortcut icon" type="image/x-icon" href="#" />
+    <link rel="stylesheet" href="../css/base/reset.css" />
+    <!-- jquery -->
+    <script src="../js/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../js/jquery/jquery-ui.min.js"></script>
+
+    <title>my title</title>
+    <style>
+        h1{
+            width: 100%; height: auto; 
+            padding: 2em; box-sizing:border-box;
+            border-bottom:2px solid #faa; margin-bottom:1em;
+            text-align:center;
+
+        }
+        .btn{width: 900px; height: auto; margin: 0 auto;}
+        .btn>button{
+            padding:0.5em; 
+            background-color: #09a; color: #fff; 
+            font-size: 1.3em;
+            transition:all 500ms ease-in;
+        }
+        .btn>button:hover{
+            background-color: #56c; border-radius:0.3em;
+        }
+        .input_box{
+            font-size:1.5em; padding: 0.5em; border:1px solid #555;
+        }
+        .tab_box{
+            width: 960px; height: auto;
+            border: 2px solid #ccc;
+        }
+        .tab_box:after{
+            content:" "; display: block; clear: both;
+        }
+        .tab_menu{width: 100%; height: 20px;}
+        .tab_menu>li{
+            width: 150px; height: 100%;
+            float: left; 
+            text-align:center;
+            border-right:1px solid #ccc;
+            cursor:pointer;
+        }
+        .tab_content{
+            width: 100%; height: auto;
+            box-sizing:border-box; padding: 0.5em;
+        }
+        .tab_content>div{display: none;}
+        .tab_content>div.tab_c_1{display: block;}
+    </style>
+</head>
+<body>
+    <h1>event test</h1>
+    <input type="text" class="input_box" />
+    <div class="btn">
+        <button type="button" class="btn_01">click</button>
+    </div>
+    <div class="tab_box">
+        <ul class="tab_menu">
+            <li>tab_01</li>
+            <li>tab_02</li>
+            <li>tab_03</li>
+        </ul>
+        <div class="tab_content">
+            <div class="tab_c_1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, ratione.</div>
+            <div class="tab_c_2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, deserunt. Sint laudantium nobis earum quidem perferendis quae, deserunt. Neque, ullam.</div>
+            <div class="tab_c_3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero ipsam deleniti dicta vel, fugiat commodi exercitationem tenetur fuga culpa consequatur amet sequi esse repudiandae repellendus, corrupti quisquam sint maiores aspernatur non voluptatum accusamus pariatur! Iste consequuntur ab officia magnam porro omnis, cupiditate odio excepturi. At illo dolorum exercitationem ullam dolor doloribus ea reiciendis laboriosam quaerat animi! Eum eos officia in nesciunt quo est nostrum quos illum, laboriosam libero quasi debitis. Repellendus dolorem iure iusto tempore accusantium vitae laboriosam deserunt, atque similique quasi incidunt id iste esse eos corrupti delectus possimus praesentium, et, nostrum consequuntur veniam velit eveniet beatae reprehenderit laudantium.</div>
+        </div>
+    </div>
+
+    <script>
+        (function($){
+            //$('[선택자]').on([이벤트명], function(){});
+
+// 마우스 클릭 이벤트 확인
+            $('.btn_01').on('mousedown', function(event){
+                // $('h1').text(event.which);
+                // console.log(event.which);
+
+                // if(event.which == 3){return false
+                // }else{
+                //     $('h1').text('마우스 클릭하였습니다.');
+                //     console.log(event.which);
+                // }
+
+                switch(event.which){
+                 case 1:
+                  $('h1').text('마우스 왼쪽버튼 클릭하였습니다.');
+                  console.log('마우스 1');
+                  break;
+                 case 2:
+                  $('h1').text('마우스 가운데버튼 클릭하였습니다.');
+                  console.log('마우스 2');
+                  break;
+                 case 3:
+                  $('h1').text('마우스 오른버튼 클릭하였습니다.');
+                  console.log('마우스 3');
+                  break;
+                 default:
+                  console.log('마우스 클릭하셨나요?');
+                  $('h1').text('마우스 클릭하셨나요?');
+                }
+            });
+
+// 키보드 확인
+            $('.input_box').on('keypress', function(event){
+                console.log('키이름: ' + event.key + ', 키번호: '+event.keyCode);
+                $('h1').text('키이름: ' + event.key + ', 키번호: '+event.keyCode);
+            });
+
+// tab menu test
+     var tabMenu = $('.tab_menu');
+     var tabCon = $('.tab_content');
+
+     tabMenu.children('li').on('click', function(){
+        var _$this = $(this); // 선택한 그 자신
+        var tab_index = _$this.index();  // 선택한 것의 위치(순서) 파악
+        // console.log(tab_index);  // 순서 검증
+
+        tabCon.children('div').eq(tab_index).siblings().css({'display':'none'});
+        tabCon.children('div').eq(tab_index).css({'display':'block'});
+     });
+
+     })(this.jQuery);    
+    </script>
+</body>
+</html>
