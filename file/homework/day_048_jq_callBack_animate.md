@@ -23,6 +23,6 @@
 
 ---
 
-```
+```javascript
 $('dd').not( $(this).next('dd') )
 ```

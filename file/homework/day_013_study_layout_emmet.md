@@ -5,25 +5,28 @@
 * outline
   - 일반 사용x
   - focus(활성화)
-  	활성화 상태를 테두리선으로 보이게 만드는 것!
-
+    활성화 상태를 테두리선으로 보이게 만드는 것!
 
 
 ___
 ## layout_01
 
 * 구형브라우저에서는 header, section, aside, article, footer를 인지할 수 없다! 그래서 강제로 블럭처리한다!
-```
+```javascript
 <script>
     var hd = document.getElementsByTagName('header');  </script>
 ```
 * clearfix
-`.clearfix::after{content:" "; display: block; 
-width: 0; height: 0; clear: both;}`
+
+  ```css
+  .clearfix::after{content:" "; display: block;  width: 0; height: 0; clear: both;}
+  ```
+
+  ​
 
 cc:ie6
 ->
-```
+```html
 <!--[if lte IE 6]>
     <script src="../ie/html5shiv/dist/html5shiv.js"></script>
 <![endif]-->
@@ -31,15 +34,17 @@ cc:ie6
 
 ***
 단축키: #wrap
-```
+```html
 <div id="wrap"></div>
 ```
 header#headbox
-```
+```html
 <header id="headbox"></header>
 ```
   <ul>
-    <li></li>
+```html
+<li></li>
+```
   </ul>
 
 ### emmet
