@@ -62,9 +62,9 @@ $('[선택]').on('[이벤트]', function(event){
 - `keyup`          // 떼고 있을때
   ​
 
-- `mouseenter`
+- `mouseenter`   // 올린것
 
-- `mouseleave`
+- `mouseleave`   // 벗어난것
 
 - `mouseover`
 
