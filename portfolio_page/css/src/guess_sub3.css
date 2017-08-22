@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /*! guess_sub3.html 디자인 영역*/
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 #headBox, #headBox > .nav > dl dd:nth-child(2), #headBox > .nav > dl dd:nth-child(2):hover, #headBox > .nav > dl dd:nth-child(3), #headBox > .nav > dl dd:nth-child(4), #headBox > .nav > dl dd:nth-child(5), #headBox > .nav > dl dd:last-child, #conBox > .new_products > .select_area > .select_color, #conBox > .new_products > .select_area > .select_size, #conBox > .new_products > .select_area > .select_sort, #footBox {
   box-sizing: border-box;
 }
@@ -31,7 +32,7 @@ body {
   background-color: rgba(255, 255, 255, 0.8);
   color: #333;
   font-size: 1.2em;
-  font-family: "NanumGothic", "OpenSans", arial, sans-serif;
+  font-family: "Nanum Gothic", "OpenSans", arial, sans-serif;
   text-align: center;
   text-transform: uppercase;
 }
@@ -224,7 +225,7 @@ body {
   padding-bottom: 40px;
   margin: 0 auto 130px;
   font-size: 2.25em;
-  font-family: "NanumGothic", "OpenSans", arial, sans-serif;
+  font-family: "Nanum Gothic", "OpenSans", arial, sans-serif;
   border-bottom: 4px solid #c33;
 }
 
@@ -242,7 +243,7 @@ body {
   background-color: #fff;
   text-transform: uppercase;
   font-size: 1em;
-  font-family: "NanumGothic", "OpenSans", arial, sans-serif;
+  font-family: "Nanum Gothic", "OpenSans", arial, sans-serif;
   text-align: center;
 }
 
@@ -255,7 +256,7 @@ body {
   background-color: #fff;
   text-transform: uppercase;
   font-size: 1em;
-  font-family: "NanumGothic", "OpenSans", arial, sans-serif;
+  font-family: "Nanum Gothic", "OpenSans", arial, sans-serif;
   text-align: center;
 }
 
@@ -267,7 +268,7 @@ body {
   background-color: #fff;
   text-transform: uppercase;
   font-size: 1em;
-  font-family: "NanumGothic", "OpenSans", arial, sans-serif;
+  font-family: "Nanum Gothic", "OpenSans", arial, sans-serif;
   text-align: center;
 }
 
@@ -450,7 +451,7 @@ body {
   padding: 30px;
   background-color: #c1c1c1;
   color: #333;
-  font-family: "NanumGothic", "OpenSans", arial, sans-serif;
+  font-family: "Nanum Gothic", "OpenSans", arial, sans-serif;
   text-align: center;
 }
 

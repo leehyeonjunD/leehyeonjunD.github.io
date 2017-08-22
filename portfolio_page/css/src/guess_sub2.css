@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /* guess_sub2.html 디자인 영역 */
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 #headBox, #headBox > .nav > dl dd:nth-child(2), #headBox > .nav > dl dd:nth-child(2):hover, #headBox > .nav > dl dd:nth-child(3), #headBox > .nav > dl dd:nth-child(4), #headBox > .nav > dl dd:nth-child(5), #headBox > .nav > dl dd:last-child, #conBox > #articleBox > .about_info > .about_box > .about_text, #conBox > #articleBox > .about_info > .guess_box > #guessText, #conBox > #articleBox > .total_info, #conBox > #articleBox > .asap_info > #asapText, #conBox > #articleBox > .life_info, #footBox {
   box-sizing: border-box;
 }
@@ -31,7 +32,7 @@ body {
   background-color: rgba(255, 255, 255, 0.8);
   color: #333;
   font-size: 1.2em;
-  font-family: "NanumGothic", "OpenSans", arial, sans-serif;
+  font-family: "Nanum Gothic", "OpenSans", arial, sans-serif;
   text-align: center;
   text-transform: uppercase;
 }
@@ -203,7 +204,7 @@ body {
   padding-bottom: 40px;
   margin: 0 auto 130px;
   font-size: 2.25em;
-  font-family: "NanumGothic", "OpenSans", arial, sans-serif;
+  font-family: "Nanum Gothic", "OpenSans", arial, sans-serif;
   border-bottom: 4px solid #c33;
 }
 
@@ -238,13 +239,13 @@ body {
 #conBox > #articleBox > .about_info > .about_box > .about_text > #totalLife {
   color: #666;
   font-size: 16px;
-  font-family: "NanumGothic", "OpenSans", arial, sans-serif;
+  font-family: "Nanum Gothic", "OpenSans", arial, sans-serif;
   font-weight: 600;
 }
 
 #conBox > #articleBox > .about_info > .about_box > .about_text > #weGuess {
   font-size: 38px;
-  font-family: "NanumGothic", "OpenSans", arial, sans-serif;
+  font-family: "Nanum Gothic", "OpenSans", arial, sans-serif;
   font-weight: 600;
 }
 
@@ -275,13 +276,13 @@ body {
 #conBox > #articleBox > .about_info > .guess_box > #guessText > #worldDenim {
   margin-bottom: 36px;
   font-size: 20px;
-  font-family: "NanumGothic", "OpenSans", arial, sans-serif;
+  font-family: "Nanum Gothic", "OpenSans", arial, sans-serif;
 }
 
 #conBox > #articleBox > .about_info > .guess_box > #guessText > #guessGray {
   color: #666;
   font-size: 20px;
-  font-family: "NanumGothic", "OpenSans", arial, sans-serif;
+  font-family: "Nanum Gothic", "OpenSans", arial, sans-serif;
   font-weight: 500;
 }
 
@@ -324,7 +325,7 @@ body {
   margin-bottom: 20px;
   line-height: 20px;
   font-size: 1em;
-  font-family: "NanumGothic", "OpenSans", arial, sans-serif;
+  font-family: "Nanum Gothic", "OpenSans", arial, sans-serif;
   text-align: left;
 }
 
@@ -358,7 +359,7 @@ body {
   margin-bottom: 20px;
   line-height: 20px;
   font-size: 1em;
-  font-family: "NanumGothic", "OpenSans", arial, sans-serif;
+  font-family: "Nanum Gothic", "OpenSans", arial, sans-serif;
   text-align: left;
 }
 
@@ -398,7 +399,7 @@ body {
   line-height: 30px;
   text-align: left;
   font-size: 2em;
-  font-family: "NanumGothic", "OpenSans", arial, sans-serif;
+  font-family: "Nanum Gothic", "OpenSans", arial, sans-serif;
   font-weight: 400;
 }
 
@@ -409,7 +410,7 @@ body {
   line-height: 20px;
   text-align: left;
   font-size: 1em;
-  font-family: "NanumGothic", "OpenSans", arial, sans-serif;
+  font-family: "Nanum Gothic", "OpenSans", arial, sans-serif;
 }
 
 #conBox > #articleBox > .style_info > #styleText > dd > strong {
@@ -456,7 +457,7 @@ body {
   margin-bottom: 20px;
   line-height: 20px;
   font-size: 1em;
-  font-family: "NanumGothic", "OpenSans", arial, sans-serif;
+  font-family: "Nanum Gothic", "OpenSans", arial, sans-serif;
   text-align: left;
 }
 
@@ -496,7 +497,7 @@ body {
   line-height: 20px;
   color: #666;
   font-size: 18px;
-  font-family: "NanumGothic", "OpenSans", arial, sans-serif;
+  font-family: "Nanum Gothic", "OpenSans", arial, sans-serif;
   font-weight: 500;
 }
 
@@ -505,7 +506,7 @@ body {
   height: auto;
   margin-bottom: 20px;
   font-size: 1em;
-  font-family: "NanumGothic", "OpenSans", arial, sans-serif;
+  font-family: "Nanum Gothic", "OpenSans", arial, sans-serif;
 }
 
 #conBox > #articleBox > .life_info {
@@ -536,7 +537,7 @@ body {
   width: 100%;
   height: auto;
   font-size: 1em;
-  font-family: "NanumGothic", "OpenSans", arial, sans-serif;
+  font-family: "Nanum Gothic", "OpenSans", arial, sans-serif;
   text-align: left;
 }
 
@@ -546,7 +547,7 @@ body {
   padding: 30px;
   background-color: #c1c1c1;
   color: #333;
-  font-family: "NanumGothic", "OpenSans", arial, sans-serif;
+  font-family: "Nanum Gothic", "OpenSans", arial, sans-serif;
   text-align: center;
 }
 

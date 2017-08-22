@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /* guess_sub1.html 디자인 영역 */
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 #headBox, #headBox > .nav > dl dd:nth-child(2), #headBox > .nav > dl dd:nth-child(2):hover, #headBox > .nav > dl dd:nth-child(3), #headBox > .nav > dl dd:nth-child(4), #headBox > .nav > dl dd:nth-child(5), #headBox > .nav > dl dd:last-child, #conBox, #conBox > .lowLogin, #conBox > .lowLogin > .innerBox h3, #conBox > .lowLogin > .innerBox #formLog, #conBox > .lowLogin > .innerBox #formLog #userEmail, #conBox > .lowLogin > .innerBox #formLog #userPwd, #conBox > .lowLogin > .innerBox #formLog .formLog_login_btn, #conBox > .lowLogin > .innerBox #formIn, #conBox > .lowLogin > .innerBox #formIn #newEmail, #conBox > .lowLogin > .innerBox #formIn .formIn_login_btn, #footBox {
   box-sizing: border-box;
 }
@@ -31,7 +32,7 @@ body {
   background-color: rgba(255, 255, 255, 0.8);
   color: #333;
   font-size: 1.2em;
-  font-family: "NanumGothic", "OpenSans", arial, sans-serif;
+  font-family: "Nanum Gothic", "OpenSans", arial, sans-serif;
   text-align: center;
   text-transform: uppercase;
 }
@@ -200,7 +201,7 @@ body {
 #conBox > .lowLogin > .innerBox h3 p {
   margin-left: 8px;
   font-size: 1.4em;
-  font-family: "NanumGothic", "OpenSans", arial, sans-serif;
+  font-family: "Nanum Gothic", "OpenSans", arial, sans-serif;
   font-weight: 400;
 }
 
@@ -214,7 +215,7 @@ body {
 #conBox > .lowLogin > .innerBox #formLog legend {
   margin-bottom: 30px;
   font-size: 1.22em;
-  font-family: "NanumGothic", "OpenSans", arial, sans-serif;
+  font-family: "Nanum Gothic", "OpenSans", arial, sans-serif;
 }
 
 #conBox > .lowLogin > .innerBox #formLog #userEmail {
@@ -224,7 +225,7 @@ body {
   padding-left: 12px;
   margin-bottom: 8px;
   font-size: 1em;
-  font-family: "NanumGothic", "OpenSans", arial, sans-serif;
+  font-family: "Nanum Gothic", "OpenSans", arial, sans-serif;
 }
 
 #conBox > .lowLogin > .innerBox #formLog #userPwd {
@@ -234,7 +235,7 @@ body {
   padding-left: 12px;
   margin-bottom: 50px;
   font-size: 1em;
-  font-family: "NanumGothic", "OpenSans", arial, sans-serif;
+  font-family: "Nanum Gothic", "OpenSans", arial, sans-serif;
 }
 
 #conBox > .lowLogin > .innerBox #formLog .formLog_login_btn {
@@ -248,7 +249,7 @@ body {
 #conBox > .lowLogin > .innerBox #formLog .formLog_login_btn > input {
   color: #fff;
   font-size: 1.18em;
-  font-family: "NanumGothic", "OpenSans", arial, sans-serif;
+  font-family: "Nanum Gothic", "OpenSans", arial, sans-serif;
   text-align: center;
 }
 
@@ -263,7 +264,7 @@ body {
 #conBox > .lowLogin > .innerBox #formIn legend {
   margin-bottom: 30px;
   font-size: 1.22em;
-  font-family: "NanumGothic", "OpenSans", arial, sans-serif;
+  font-family: "Nanum Gothic", "OpenSans", arial, sans-serif;
 }
 
 #conBox > .lowLogin > .innerBox #formIn #newEmail {
@@ -273,7 +274,7 @@ body {
   padding-left: 12px;
   margin-bottom: 90px;
   font-size: 1em;
-  font-family: "NanumGothic", "OpenSans", arial, sans-serif;
+  font-family: "Nanum Gothic", "OpenSans", arial, sans-serif;
 }
 
 #conBox > .lowLogin > .innerBox #formIn .formIn_login_btn {
@@ -287,7 +288,7 @@ body {
 #conBox > .lowLogin > .innerBox #formIn .formIn_login_btn > input {
   color: #fff;
   font-size: 1.18em;
-  font-family: "NanumGothic", "OpenSans", arial, sans-serif;
+  font-family: "Nanum Gothic", "OpenSans", arial, sans-serif;
   text-align: center;
 }
 
@@ -297,7 +298,7 @@ body {
   padding: 30px;
   background-color: #c1c1c1;
   color: #333;
-  font-family: "NanumGothic", "OpenSans", arial, sans-serif;
+  font-family: "Nanum Gothic", "OpenSans", arial, sans-serif;
   text-align: center;
 }
 
