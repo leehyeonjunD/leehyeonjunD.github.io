@@ -1,4 +1,4 @@
-
+﻿
 # .gitignore 주석표기는 '#'으로 한다.(한줄주석)
 # .gitignore는 git에 전송하지 않을 파일을 작성하기 위한 문서
 # .gitignore는 숨김처리된 파일
@@ -18,4 +18,6 @@ leehyeonjunD.github.io/graphic/photoshop/template/*
 # 포토샵 템플릿 파일 제한
 ./graphic
 
-#ppt 파일 제한
+# ppt 파일 제한
+
+step_05_gulp/
