@@ -10,6 +10,7 @@
 # 무엇을 어떠한 상황에서 git에 올리지 않을지 표기해야하기 때문!
 
 **/*.psd
+**/*.ai
 ./assets/graphic/
 ./assets/graphic/**
 
