@@ -5,7 +5,7 @@
   // para.text('test');
   var html = $('html');
   // var body = $('body');
-
+  
   // html.on('mousewheel DOMMouseScroll', WheelEvent);
   html.on('mousewheel DOMMouseScroll', WheelEvent);
 
@@ -30,13 +30,20 @@
     }
 
     // 각 OS별 수치값이 다르기 때문에 동일한 수치로 조정
-    if(delta <= 0){
-      delta = -1;
-    }else{
-      delta = 1;
-    }
+    // (삼항식)
+    (delta <= 0) ? (delta = -1) : (delta = 1);
 
-    console.log(delta);
+    // console.log(delta);
+    // (스위치문)
+   switch(delta){
+     case -1:
+       $('body').addClass('down').removeClass('up');
+     break;
+
+     case 1:
+       $('body').addClass('up').removeClass('down');
+     break;
+   }
   };
  
 
