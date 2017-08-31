@@ -109,10 +109,14 @@
 - before( )	 	-> 선택자의 동일레벨 상태에서 이전에 생성자(요소)처리  또는 선택
 - after( )            -> 선택자의 동일레벨 상태에서 다음에 위치한 선택자 또는 생성자(요소)처리
 
+
+
 ## 9. gallery step3, modal window, popup page, popup banner
 
 - next( )
 - prev( )
+
+
 
 ## 10. onepage scroll
 
@@ -126,6 +130,8 @@
   - right
 
 
+
+
 ## 11. mousewheel, DOMMouseScroll
 
 - mousewheel : ie, chrome, opera
@@ -135,3 +141,19 @@
 > 마우스 휠을 위로 올릴것인지, 아래로 내릴것인지 판단.
 
 - on( 'touchmove' )  : 터치마우스의 경우는 원활한 동작이 다소 어렵다!
+
+
+
+## 12. landing page
+
+> landing page란?
+> 웹에서 일정한 위치, 스크롤의 변화를 감지하여 지정된 위치에 원하는 기능을 
+> 동작하도록 만드는 기능
+
+
+
+## 13. parallax page
+
+> parallax 란?
+> 시간차 라는 의미
+> 스크롤의 기능에 따라 몇가지 반응이 다소 다르게 변화하는 것!
