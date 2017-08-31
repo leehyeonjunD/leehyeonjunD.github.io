@@ -2,6 +2,7 @@
 /* guess_sub2.html 디자인 영역 */
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 #headBox, #headBox > .nav > dl dd:nth-child(2), #headBox > .nav > dl dd:nth-child(2):hover, #headBox > .nav > dl dd:nth-child(3), #headBox > .nav > dl dd:nth-child(4), #headBox > .nav > dl dd:nth-child(5), #headBox > .nav > dl dd:last-child, #conBox > #articleBox > .about_info > .about_box > .about_text, #conBox > #articleBox > .about_info > .guess_box > #guessText, #conBox > #articleBox > .total_info, #conBox > #articleBox > .asap_info > #asapText, #conBox > #articleBox > .life_info, #footBox {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -100,6 +101,8 @@ body {
   padding: 24px;
   font-size: 1.5em;
   border: 0.2em solid #333;
+  -webkit-transition: all 0.4s ease 0.18s;
+  -o-transition: all 0.4s ease 0.18s;
   transition: all 0.4s ease 0.18s;
 }
 
@@ -109,6 +112,8 @@ body {
   float: left;
   padding: 20px;
   font-weight: bold;
+  -webkit-transition: color 0.3s linear;
+  -o-transition: color 0.3s linear;
   transition: color 0.3s linear;
 }
 
@@ -124,6 +129,8 @@ body {
   float: left;
   padding: 20px;
   font-weight: bold;
+  -webkit-transition: color 0.3s linear;
+  -o-transition: color 0.3s linear;
   transition: color 0.3s linear;
 }
 
@@ -139,6 +146,8 @@ body {
   float: left;
   padding: 20px;
   font-weight: bold;
+  -webkit-transition: color 0.3s linear;
+  -o-transition: color 0.3s linear;
   transition: color 0.3s linear;
 }
 
@@ -156,6 +165,8 @@ body {
   padding-left: 0px;
   font-weight: bold;
   border-left: 1em solid #c33;
+  -webkit-transition: color 0.3s linear;
+  -o-transition: color 0.3s linear;
   transition: color 0.3s linear;
 }
 
@@ -252,6 +263,7 @@ body {
 #conBox > #articleBox > .about_info > .guess_box {
   width: 100%;
   height: auto;
+  position: relative;
   margin-top: 30px;
 }
 
@@ -259,16 +271,33 @@ body {
   width: 288px;
   height: 280px;
   float: left;
+  position: absolute;
+  -webkit-transition: all 400ms ease-in;
+  -o-transition: all 400ms ease-in;
+  transition: all 400ms ease-in;
+  -webkit-transform: translateY(-300px);
+  -ms-transform: translateY(-300px);
+  transform: translateY(-300px);
+  opacity: 0;
   background-color: transparent;
   background-image: url("../../img/guess_ad_k1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+#conBox > #articleBox > .about_info > .guess_box > #guessImg.addView {
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 1;
+}
+
 #conBox > #articleBox > .about_info > .guess_box > #guessText {
   width: 340px;
   height: 280px;
   float: left;
+  margin-left: 288px;
+  margin-right: 340px;
   padding: 90px 50px;
   background-color: #fff;
 }
@@ -290,10 +319,25 @@ body {
   width: 294px;
   height: 280px;
   float: right;
+  position: absolute;
+  -webkit-transition: all 400ms ease-in;
+  -o-transition: all 400ms ease-in;
+  transition: all 400ms ease-in;
+  -webkit-transform: translateX(946px) translateY(300px);
+  -ms-transform: translateX(946px) translateY(300px);
+  transform: translateX(946px) translateY(300px);
+  opacity: 0;
   background-color: transparent;
   background-image: url("../../img/guess_ad_k2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+#conBox > #articleBox > .about_info > .guess_box > #guessHug.addView {
+  -webkit-transform: translateX(646px) translateY(0);
+  -ms-transform: translateX(646px) translateY(0);
+  transform: translateX(646px) translateY(0);
+  opacity: 1;
 }
 
 #conBox > #articleBox > .brand_info {

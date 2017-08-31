@@ -5,6 +5,7 @@
   var nav       = $('.navigation');
   var footHover = $('#footBox').children('p');
   var address   = $('address');
+  var conOffset = $('.guess_box').offset().top;
 
 nav.hide();
 
@@ -23,6 +24,19 @@ address.hide();
           fontSize:'0.8em', 
           height:100
         }).fadeIn(4000).fadeOut(4000);
+  });
+
+  $(window).on('scroll', function(){
+    var winOffset = $(this).scrollTop();
+    var timed = 600;
+
+    if(winOffset >= (conOffset - 600) ){
+      $('#guessImg').addClass('addView');
+      $('#guessHug').addClass('addView');
+    }else {
+      $('#guessImg').removeClass('addView');
+      $('#guessHug').removeClass('addView');
+    }
   });
 
 
