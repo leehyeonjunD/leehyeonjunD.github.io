@@ -10,28 +10,28 @@
 
 // 좌, 우 버튼 일정 위치에서 사라지거나, 나타나게 만드는 기능을 함수화 처리
   function BtnEnd(i){
-    // if(i <= 0){
-    //   i=0;
-    //   lBtn.fadeOut();
-    //   rBtn.fadeIn();
-    // }else if(i >= banner_i-1){
-    //   i=banner_i-1;
-    //   rBtn.fadeOut();
-    //   lBtn.fadeIn();
-    // }else{
-    //   lBtn.fadeIn();
-    //   rBtn.fadeIn();
-    // }
-    // console.log(i);
+    if(i <= 0){
+
+      i =0;
+      // 복제된 처음 이미지로 이동 후
+      banner.stop().animate({marginLeft: -i * 100 + '%'},function(){
+        // 마지막으로 위치 이동
+        i = banner_i-1;
+        $(this).css({marginLeft: -i * 100 + '%'});
+      });
+
+    }else if(i >= banner_i-1){
+      i = banner_i-1;
+    }
+
     banner.stop().animate({marginLeft: -i * 100 + '%'});
-    // indi_li.eq(i).addClass('active').siblings().removeClass('active');
+    indi_li.eq(i).addClass('active').siblings().removeClass('active');
   }
 
   // indicator클릭시 해당하는 값이 이동
   var banner = $('#bannerBox');
   var banner_child = banner.children();
   var banner_i = banner_child.length;   // 복제하기 전의 갯수를 파악
-  // console.log(banner_i);
 
   var lBtn = $('.l_btn');
   var rBtn = $('.r_btn');
@@ -56,6 +56,8 @@
   // banner의 자식요소 또한 전체크기 / 갯수% 만큼으로 수정
   banner_child.css({'width': 100 / banner_i + '%'});
 
+// =======================================================
+
   // banner갯수와 동일하게 indicator 처리 및 생성
   var slideBanner = $('#slideBanner');
   slideBanner.append('<ol class="indicator"></ol>');
@@ -65,13 +67,21 @@
   // 반복기능을 이용하여 여러개의 li 생성
   var j = 0;
   for(; j < banner_i; j++){
-    indi.append('<li><button><span class="me_hidden">숨김내용</span></button></li>');
+    // 배너 내부의 li 각각에 존재하는 속성 title의 값 가져오기
+    var banner_t = banner_child.eq(j).attr('title');
+
+
+    indi.append('<li class="indi_'
+                + j +'"><button type="button"><span class="me_hidden">'
+                + banner_t +'</span></button></li>');
   }
 
+  var indi_width = indi.width();
+  indi.css({marginLeft: -indi_width / 2})
 
   var indi_li = indi.children();
 
-  // -------------------------------------------------------
+// =======================================================
 
 // ------------ indicator 클릭
   indi_li.on('click',['button'],function(e) {
