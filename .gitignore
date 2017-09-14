@@ -27,3 +27,6 @@ multi/
 
 codeTest_monkey/
 code/
+
+# prepros 파일 제한
+**/*.config
