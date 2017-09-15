@@ -30,3 +30,5 @@ code/
 
 # prepros 파일 제한
 **/*.config
+
+pf_page2/
