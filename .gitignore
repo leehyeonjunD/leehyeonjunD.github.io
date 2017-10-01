@@ -1,9 +1,18 @@
 ﻿
+# photoshop
 **/*.psd
+**/*.psb
+
+# illustrator
 **/*.ai
+**/*.eps
 
 file/
 portfolio/
 
 # prepros 파일 제한
 **/*.config
+
+# node_modules/ 파일 제한
+**/node_modules
+**/notUploadGit
