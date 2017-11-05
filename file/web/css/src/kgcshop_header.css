@@ -1,0 +1,230 @@
+@charset "utf-8";
+/*! kgcshop_header.css */
+
+#wrap{width:960px; height:auto; margin:0 auto;}
+
+#headBox{
+    width:100%; height:185px;
+}
+    .menu_utill{
+        width:100%; height:34px;
+        border-bottom:2px solid #ccc;
+    }
+        .menu_utill>.inner_box{
+            width:956px; height:14px;
+            padding:10 4 10px 0;
+            box-sizing:border-box;
+            background-color:#cbb;
+        }
+            .link{
+                width:100px; height:14px;
+                float:left;
+                margin-right:400px;
+                text-decoration:none;
+                font-size:0.5rem;
+            }
+            .unb{
+                width:344px; height:14px;
+                float:right;
+            }
+                .unb>ul{width: 100%; height: 100%;}
+                .unb>ul>li{
+                    width: auto;
+                    height: 100%;
+                    float:left;
+                    padding:0 2px;
+                    margin-right:22px;
+                    position:relative;
+                }
+                .unb>ul>li>a{
+                    width: 100%;
+                    height: 100%;
+                    text-decoration:none;
+                    font-size:0.5rem;
+                    color:inherit;
+                }
+
+        .header_top{
+            width: 100%; height:76px;
+        }
+            .header_top>h1{
+                width:180px; height:32px;
+                float:left;
+                padding:46px 0 46px 0;
+                box-sizing:border-box;
+                margin-right:90px;
+                background-image: url("../../img/jg/content/logo.png");
+                background-repeat:no-repeat;
+                background-position:left;
+            }
+            .search_box{
+                width:380px; height:71px;
+                float:left;
+                padding:20px 0;
+                box-sizing:border-box;
+                margin-right:48px;
+            }
+                .search_area{
+                    width:380px;
+                    height: 46px;
+                    display:block;
+                    position: relative;
+                    border:2px solid #d81d25;
+                    background-color:#fff;
+                }
+                    #srhBar{
+                        width:300px;
+                        height:42px;
+                        padding-left:15px;
+                        border:0;
+                        text-indent:10px;
+                        color:#333;
+                        font-size:12px;
+                    }
+                    #srhBtn{
+                        height:42px;
+                        position:absolute;
+                        top:0; right:15px;
+                        color:#d81d25;
+                    }
+                        #srhBtn::before{
+                            content:" ";
+                            display:inline-block;
+                            width:18px;
+                            height:17px;
+                            background-image: url("../../img/jg/content/split.png");
+                            background-repeat:no-repeat;
+                            background-position:-15px 0;
+                        }
+
+            .header_banner{
+                width:255px; height:80px;
+                float:right;
+                margin-top:6px;
+                background-image: url("../../img/jg/content/ad_btn_11.jpg");
+                background-repeat:no-repeat;
+                background-position:right;
+            }
+
+
+    .header_top{
+        width:100%; height:94px;
+    }
+
+    .gnb{
+        width:100%; height:70px;
+        border:2px solid #e0e0e0;
+    }
+        .gnb>.inner_box{
+            display:block;
+            position: relative;
+        }
+        .gnb>.inner_box>.menu_all{
+            width: 170px;
+            height: 60px;
+            display: block;
+            border:0 1px solid #e0e0e0;
+            color:#d81d25;
+            font-size:1rem;
+            font-weight:bold;
+            font-family:sans-serif, serif;
+        } 
+            .gnb>.inner_box>.menu_all::before{
+                content:" ";
+                display:inline-block;
+                width:15px;
+                height:12px;               
+                background-image: url("../../img/js/content/split.png");
+                background-repeat:no-repeat;
+                background-position:-74px 0;
+            } 
+        .gnb>.inner_box>.menu_link{
+
+        } 
+
+
+#conBox{
+    width:100%; height:auto;
+}
+    .main_banner{
+        width:100%; height:500px; 
+        float:left;
+        background-image: url("../../img/jg/content/ad_btn_3.png");
+        background-repeat:no-repeat;
+        background-position:center;
+    }
+    .banner_area{
+        width:100%; height:172px;  
+        float:left;
+        background-image: url("../../img/jg/content/ad_btn_10.jpg");
+        background-repeat:no-repeat;
+        background-position:center;
+    }
+    .recomm_area{
+        width:100%; height:1214px;  
+        float:left;
+        background-color:#f39;
+    }
+    .theme_banner{
+        width:100%; height:470px;  
+        float:left;
+        background-image: url("../../img/jg/content/ad_btn_6.png");
+        background-repeat:no-repeat;
+        background-position:center;
+    }
+
+    .brand_contents{
+        width:100%; height:763px;  
+        float:left;
+        background-color:#e6f;
+    }
+    .brand_products{
+        width:100%; height:575px;  
+        float:left;
+        background-color:#ecf;
+    }
+    .brand_banner{
+        width:100%; height:440px;  
+        float:left;
+        position:relative;
+    }
+        .brand_banner::before{
+            content:" ";
+            display:block;
+            width:100vw;
+            height: 100%;
+            background-image: url("../../img/jg/content/ad_btn_17.png");
+            background-repeat:no-repeat;
+            background-position:center;
+            position:absolute;
+            top:0; left:50%;
+            margin-left:-50vw;
+            background-position:center;
+        }
+
+#footBox{
+    width:100%; height:515px;
+    padding:; 
+    box-sizing:border-box; 
+    background-color:#f28;
+}
+    .notice_area{
+        width:100%; height:66px;
+        background-color:#95c;
+    }
+    .quick_link{
+        width:100%; height:56px;
+        background-color:#35c;
+    }
+    #footBox>.menu_link{
+        width:100%; height:108px;
+        background-color:#05c;
+    }
+    .footer{
+        width:100%; height:50px;
+        background-color:#c5c;
+    }
+    .info_footer{
+        width:100%; height:236px;
+        background-color:#cfc;
+    }

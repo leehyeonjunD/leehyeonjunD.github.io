@@ -1,0 +1,8 @@
+# node폴더 설정
+node_modules/
+
+# 그래픽파일
+**/*.psd
+**/*.ai
+**/*.eps
+

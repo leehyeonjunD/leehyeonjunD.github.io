@@ -1,0 +1,7 @@
+// test1.scss
+
+body{background-color: #acc;}
+#wrap{width:100%; height: auto;}
+#headBox{width:inherit;
+    .test{width:100%;}
+}
